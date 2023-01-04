@@ -67,3 +67,43 @@ window.addEventListener('click', function (event) {
     modal.style.display = 'none';
   }
 });
+
+
+
+
+ 
+//  secao de destaque
+ // Obtém a lista de todos os card de produtos
+ const card_destaque = document.querySelectorAll('.destaque-card');
+
+ // Oculta todos os card, exceto os 5 primeiros
+ for (let i = 4; i < card_destaque.length; i++) {
+  card_destaque[i].style.display = 'none';
+ }
+
+ // Adiciona um evento de clique ao botão de avançar
+ document.getElementById('btn-next').addEventListener('click', function() {
+   // Oculta os 4 primeiros card
+   for (let i = 0; i < 4; i++) {
+    card_destaque[i].style.display = 'none';
+   }
+   // Mostra os próximos 4 card
+   for (let i = 4; i < 8; i++) {
+    card_destaque[i].style.display = 'inline-block';
+ 
+   }
+   
+ });
+
+ // Adiciona um evento de clique ao botão de voltar
+ document.getElementById('btn-prev').addEventListener('click', function() {
+   // Oculta os últimos 4 card
+   for (let i = 4; i < 8; i++) {
+    card_destaque[i].style.display = 'none';
+   }
+   // Mostra os 4 card anteriores
+   for (let i = 0; i < 4; i++) {
+    card_destaque[i].style.display = 'inline-block';
+   }
+ });
+
