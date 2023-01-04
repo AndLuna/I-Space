@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&family=Clicker+Script&family=Kanit:wght@100&family=Poppins:wght@200;300;500;600;700&display=swap');
+
+/* <--------- header ----------->*/
+
+header {
+  height: 140px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  font-family: 'Chivo Mono', monospace;
+  /* display: none; */
+
+}
+
+.header.show {
+  /* estilos para exibir o menu quando o usuário rolar a página */
+  position: fixed;
+  top: -8px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: white;
+  display: block;
+}
+
+.h-titulo {
+  background-color: black;
+  height: 50px;
+  color: white;
+  display: block;
+  position: block;
+  justify-content: center;
+  border: 1px solid rgb(0, 0, 0);
+
+}
+
+.h-titulo p {
+  margin-left: 1.5%;
+  margin-top: 1.3%;
+  display: flex;
+  position: block;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+
+.h-medio {
+  display: flex;
+  justify-content: center;
+  margin-left: 30%;
+  gap: 20%;
+}
+
+/* -- -- -- -- -- -- -- -- -- -- -- menu ----------->*/
+/* <------ botoes ------->*/
+.nav-list {
+  display: flex;
+  position: block;
+  justify-content: center;
+  margin-left: auto;
+
+}
+
+.nav-item {
+  height: 35px;
+  width: 100px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.nav-item:hover {
+  border-bottom: 3px solid black;
+  margin-top: 10px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  position: relative;
+  margin: 10%;
+  font-size: 15px;
+}
+
+/* -- -- -- -- -- -- -- -- -- -- -- search ------->*/
+.right-side {
+  display: flex;
+  margin-left: -30px;
+}
+
+.search { margin: 15px 50px 0px -90px;}
+
+.search input {
+  width: 190px;
+  height: 26px;
+  background-color: #edeff1;
+  border: none;
+}
+
+/* -- -- -- -- -- -- -- -- -- -- -- cadastro ------->*/
+.h-cadastro {
+  background-color: #bc183cd3;
+  height: 30px;
+  display: flex;
+  position: block;
+  justify-content: center;
+  margin-top: -8px;
+}
+
+.h-cadastro a {
+  margin-left: 1.3%;
+  text-decoration: none;
+  color: white;
+  margin-top: 0.6%;
+}
+
+
+
+
+.icons-header {
+  display: flex;
+  margin-left: -50px;
+  margin-top: 21px;
+  width: 118px;
+  height: 35px;
+  color: black;
+}
+
+.icon-right-site {
+  width: 38px;
+  height: 35px;
+}
+
+.icon-right-site ion-icon {
+  margin-left: 9.5px;
+  margin-top: 0px;
+  color: black;
+
+}
+
+.icon-right-site ion-icon:hover { color: #F1F1FB;}
