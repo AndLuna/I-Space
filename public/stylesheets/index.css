@@ -459,9 +459,9 @@ margin-top: -40px;
 
 
 
-/* responsividade */
+/* responsividade  500px*/
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 450px){
   /* carrossel */
   .index-carrossel {
   height: 200px; 
@@ -497,6 +497,8 @@ margin-top: -40px;
           .destaque-card .preco {
             margin-left: auto;
           }
+          .btn-box{
+            margin-right: 420px;  }
 
           /* banner desconto */
           #bannerDesconto{
@@ -512,6 +514,9 @@ margin-top: -40px;
           .mainProdutosimg{
             display: none;
           }
+          .mainProdutosCards{
+            margin-left: 35px;
+          }
 
 
 
@@ -519,4 +524,184 @@ margin-top: -40px;
           
   }
 
+/* responsividade  500px*/
 
+@media screen and (max-width: 580px){
+  /* carrossel */
+  .index-carrossel {
+  height: 250px; 
+  }
+  .index-carrossel img {
+  height: 250px;
+  }
+  .dots {
+    display: none; /* oculta os dots em telas pequenas */
+    }
+
+      /* tendencias */
+  .card-trending{
+    width: 210px;
+    height: 320px;
+  }
+      /* banner */
+      section.banner { width: 420px; margin-left: 5px; 
+        border: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+      
+      }
+            .banner a{ width: 200px; }
+           .banner h2{ display: none; }
+          .banner img{ margin-left: -80px; }
+
+          /* destaque */
+          .produtos {
+            display: flex;
+            flex-wrap: wrap;
+          }
+          
+          .destaque-card {
+            width: 219.5px;
+            height: 80%;
+          }
+          .destaque-card .preco {
+            margin-left: auto;
+          }
+          .btn-box{
+            margin-right: 420px;  }
+
+          /* banner desconto */
+          #bannerDesconto{
+            width: 420px;
+            height: 150px;
+          
+          }
+          .bannerDesconto img{
+            width: 420px;
+            height: 280px;
+            margin-left: 20px;
+
+          }
+          .mainProdutosimg{  display: none;    }
+          .mainProdutosCards{  margin-left: 35px; }
+          
+  }
+
+  /* // ------------------ Responsividade  tela > 668px ------------------ // */
+  
+  
+  @media (min-width: 658px) {
+
+      /* carrossel */
+  .index-carrossel {
+    height: 250px; 
+    }
+    .index-carrossel img {
+    height: 300px;
+    }
+
+    .dots {
+      display: inline-block; /* oculta os dots em telas pequenas */
+      }
+        /* tendencias */
+    .card-trending{
+      width: 199px;
+      height: 320px;
+    }
+        /* banner */
+        section.banner { width: 100%; margin-left: 5px;}
+              .banner a{ width: 200px; margin-top: 16px;}
+             .banner h2{ width: 400px; margin-top: 16px;}
+            .banner img{ margin-left: -0px; }
+  
+            /* destaque */
+            .produtos {
+              display: flex;
+              flex-wrap: wrap;
+            }
+            
+            .destaque-card {
+              width: 219.5px;
+              height: 80%;
+            }
+            .destaque-card .preco {
+              margin-left: auto;
+            }
+            .btn-box{
+              margin-right: 420px;  }
+  
+            /* banner desconto */
+            #bannerDesconto{
+              width: 420px;
+              height: 150px;
+            }
+            .bannerDesconto img{
+              width: 420px;
+              height: 280px;
+              margin-left: 34%;
+  
+            }
+            .mainProdutosimg{  display: none;    }
+            .mainProdutosCards{  margin-left: 10px; }
+  }
+
+  /* // ------------------ Responsividade > tela 1024px ------------------ // */
+  
+  @media (min-width: 1024px) {
+      /* carrossel */
+      .index-carrossel {
+        height: 250px; 
+     
+        }
+        .index-carrossel img {
+        height: 350px;
+
+        }
+
+        .dots {
+          display: inline-block; /* oculta os dots em telas pequenas */
+          }
+            /* tendencias */
+        .card-trending{
+          width: 199px;
+          height: 320px;
+        }
+            /* banner */
+            section.banner { width: 100%; margin-left: 5px;}
+                  .banner a{ width: 200px; margin-top: 16px;}
+                 .banner h2{ width: 400px; margin-top: 16px;}
+                .banner img{ margin-left: -0px; }
+      
+                /* destaque */
+                .produtos {
+                  display: flex;
+                  flex-wrap: wrap;
+                }
+                
+                .destaque-card {
+                  width: 219.5px;
+                  height: 80%;
+                }
+                .destaque-card .preco {
+                  margin-left: auto;
+                }
+                .btn-box{
+                  margin-right: 120px;  }
+      
+                /* banner desconto */
+                #bannerDesconto{
+                  width: 420px;
+                  height: 150px;
+                }
+                .bannerDesconto img{
+                  width: 420px;
+                  height: 280px;
+                  margin-left: 78%;
+      
+                }
+                .mainProdutosimg{  display: inline-block;    }
+                .mainProdutosCards{  margin-left: 35px; 
+                }
+
+  }
