@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/reset.css">
+  <link rel="stylesheet" href="../style/footer.css">
+  <title>Document</title>
+  <style>
+    
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&family=Clicker+Script&family=Kanit:wght@100&family=Poppins:wght@200;300;500;600;700&display=swap');
+
+body{font-family: 'Chivo Mono', monospace;}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content:center;
+  background-color: rgb(29, 28, 28);
+  color: rgb(224, 220, 220);
+  padding: 20px;
+  height: 102px;
+  width: 97.0%;
+}
+
+footer div {
+  width: 15%;
+  margin-bottom: 20px;
+  /* border: 1px solid red; */
+}
+
+footer h3 {
+  margin-bottom: 15px;
+  font-weight:bold;
+  font-size: 18px;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+}
+
+footer li {
+  margin-bottom: 7px;
+  margin-left: 2px;
+}
+
+footer a {
+  color: rgb(219, 217, 217);
+  text-decoration: none;
+}
+hr{
+  display: none;
+}
+
+
+/* dividingo categorias */
+.categoria {
+    border-left: 1px solid rgb(253, 253, 253);
+    padding-left: 10px;
+    height: 100%;
+  }
+
+ 
+  /* ion icons */
+  ion-icon{ font-size: 14px; }
+  </style>
+</head>
+
+<body>
+  <footer>
+    <div class="categoria">
+      <h3>PRODUTOS</h3>
+      <ul>
+        <li><a href="../views/carrinho.html">Calçados</a></li>
+        <li><a href="../views/carrinho.html">Blusas</a></li>
+        <li><a href="../views/carrinho.html">Calças</a></li>
+      </ul>
+    </div>
+
+
+    <hr class="vertical-line">
+
+    <div class="categoria">
+      <h3>ESPORTES</h3>
+      <ul>
+        <li><a href="../views/desenvolvimento.html"  target="_blank">Futebol</a></li>
+        <li><a href="../views/desenvolvimento.html"  target="_blank">Futsal</a></li>
+        <li><a href="../views/desenvolvimento.html"  target="_blank">Futepraia</a></li>
+      </ul>
+    </div>
+
+    <hr class="vertical-line">
+
+    <div class="categoria">
+      <h3>INFORMAÇÕES</h3>
+      <ul>
+        <li><a href="../views/about.html">Sobre nos</a></li>
+        <li><a href="../views/desenvolvimento.html">Carreiras</a></li>
+        <li><a href="../views/desenvolvimento.html">Imprensa</a></li>
+      </ul>
+    </div>
+
+    <hr class="vertical-line">
+
+    <div class="categoria">
+      <h3>SIGA-NOS</h3>
+      <ul>
+        <li><a href="https://www.facebook.com/SoulCodeAcademy" target="_blank">
+            <ion-icon name="logo-facebook"></ion-icon>
+            Facebook
+          </a>
+
+        </li>
+        <li><a href="https://www.linkedin.com/company/soulcodebrasil/"  target="_blank">
+            <ion-icon name="logo-Linkedin"></ion-icon>
+            Linkedin
+          </a>
+
+          </ion-icon>
+        </li>
+        <li><a href="https://www.instagram.com/soulcodeacademy/" target="_blank">
+            <ion-icon name="logo-Instagram"></ion-icon>
+            Instagram
+          </a>
+
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

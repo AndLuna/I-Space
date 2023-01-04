@@ -116,7 +116,7 @@
       <!--                                      Paginacao destaque fim             -->
 
   <!--                                       Destaque start            -->
-  <a href="../views/carrinho.html" id="linkDestaque">
+  <!-- <a href="../views/carrinho.html" id="linkDestaque"> -->
     <section class="produtos">
   
       <div class="destaque-card">
@@ -175,7 +175,69 @@
      </div>
       </section>
 
+      <!-- secao produtos -->
+      <section class="mainProdutos">
+        <div class="mainProdutosimg">
+            <img src="./public/images/iphone-13-pink-select-2021.png" alt="">
+        </div>
+     
+        <div class="mainProdutosCards">
 
+            <div class="mainProduto">
+                <img src="./public/images/iphoneblack.jpg" alt="">
+                <div class="mainProdutText">
+                <h1 class="mainProdutoTitle">Produto1</h1>
+                <p class="mainProdutoPreco">333$</p>
+            </div>
+            </div>
+            <div class="mainProduto">
+                <img src="./public/images/iphoneblack.jpg" alt="">
+                <div class="mainProdutText">
+                    <h1 class="mainProdutoTitle">Produto1</h1>
+                    <p class="mainProdutoPreco">333$</p>
+                </div>
+            </div>
+            <div class="mainProduto">
+                <img src="./public/images/iphoneblack.jpg" alt="">
+                <div class="mainProdutText">
+                    <h1 class="mainProdutoTitle">Produto1</h1>
+                    <p class="mainProdutoPreco">333$</p>
+                </div>
+            </div>
+            <div class="mainProduto">
+                <img src="./public/images/iphoneblack.jpg" alt="">
+                <div class="mainProdutText">
+                    <h1 class="mainProdutoTitle">Produto1</h1>
+                    <p class="mainProdutoPreco">333$</p>
+                </div>
+            </div>
+            <div class="mainProduto">
+                <img src="./public/images/iphoneblack.jpg" alt="">
+                <div class="mainProdutText">
+                    <h1 class="mainProdutoTitle">Produto1</h1>
+                    <p class="mainProdutoPreco">333$</p>
+                </div>
+            </div>
+            <div class="mainProduto">
+                <img src="./public/images/iphoneblack.jpg" alt="">
+                <div class="mainProdutText">
+                    <h1 class="mainProdutoTitle">Produto1</h1>
+                    <p class="mainProdutoPreco">333$</p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+      </section>
+
+      <div id="footer"></div>
+      <script>
+        fetch('./public/partials/footer.html')
+          .then(response => response.text())
+          .then(html => document.getElementById('footer').innerHTML = html);
+      </script>
 
 
   <script src="./public/javascripts/index.js"></script>

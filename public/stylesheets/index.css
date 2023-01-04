@@ -389,7 +389,7 @@ button {
   color: white;
 }
 /* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- banner desconto */
-.bannerDesconto{
+#bannerDesconto{
   width: 100%;
   height: 150px;
 }
@@ -398,3 +398,65 @@ button {
   height: 330px;
   margin-left: 140px;
 }
+
+
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- main produto */
+.mainProdutos{
+  display: flex;
+  width: 100%;
+  height: 800px;
+  margin-top: 240px;
+  gap: 2%;
+}
+.mainProdutos img{
+  width: 500px;
+  height: 700px;
+  margin-bottom: 50px;
+}
+.mainProdutosimg img{
+  width: 550px;
+  height:610px;
+  margin-top: 0px;
+  padding-left: 10px;
+}
+
+
+.mainProdutosCards{
+  display: flex;
+  flex-wrap: wrap;
+  width: 900px;
+  height: 700px;
+  gap: 4%;
+
+
+}
+.mainProduto{
+  border: 1px solid lightgray;
+  background-color: white;
+  width: 200px;
+height: 245px;
+}
+.mainProduto img{
+width: 200px;
+height: 180px;
+}
+
+.mainProdutText{
+height: 50px;
+margin-top: -40px;
+}
+
+.mainProdutText h1{
+  margin-left:90px;
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+  font-size: 17px;
+}
+.mainProdutText p{
+  margin-left:130px;
+  font-size: 16px;
+  color: #000;
+
+}
+
