@@ -460,3 +460,37 @@ margin-top: -40px;
 
 }
 
+
+
+
+/* responsividade */
+
+@media screen and (max-width: 480px) {
+  /* carrossel */
+  .index-carrossel {
+  height: 200px; 
+  }
+  .index-carrossel img {
+  height: 200px;
+  }
+  .dots {
+    display: none; /* oculta os dots em telas pequenas */
+    }
+
+      /* tendencias */
+  .card-trending{
+    width: 196px;
+    height: 320px;
+  }
+      /* banner */
+      section.banner { width: 420px; margin-left: 5px;}
+            .banner a{ width: 200px; }
+           .banner h2{ display: none; }
+          .banner img{ margin-left: -80px; }
+
+          /* destaque */
+  
+
+  }
+
+
