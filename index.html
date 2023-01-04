@@ -9,6 +9,88 @@
     <link rel="stylesheet" href="./public/stylesheets/index.css">
 </head>
 <body>
-    <p>teste</p>
+<!-- Importa o HEADER IMPROVISADO -->
+<!-- <iframe src="./public/partials/header.html" frameborder="0" height="150px" width=100px></iframe> -->
+<div id="header"></div>
+<script>
+  fetch('./public/partials/header.html')
+    .then(response => response.text())
+    .then(html => document.getElementById('header').innerHTML = html);
+</script>
+
+
+    <div class="index-carrossel">
+        <a class="slick-slide" href="#">
+          <img src="./public/images/iphone1.jpg" alt="">
+        </a>
+        <a class="slick-slide" href="#">
+          <img src="./public/images/iphone2.jpg" alt="">
+        </a>
+        <a class="slick-slide" href="#">
+          <img src="./public/images/iphone3.jpg" alt="">
+        </a>
+      </div>
+      <div class="dots"></div>
+  <!--                                      Carrossel Fim            -->
+
+
+  <!--                                      Tendencias start            -->
+  <section id="trending-section">
+    <h2>Tendencias</h2>
+
+    <div class="card-container">
+
+      <a class="card-trending" href="#" onclick="showModal(event, 1)">
+        <img src="./public/images/iphoneAzul.jpg" alt="Trending 1" id="tendencia_imagem1">
+        <h3 id="title-tendencia1">Iphone 14 Blue</h3>
+        <p></p>
+      </a>
+
+      <a class="card-trending" href="#" onclick="showModal(event, 2)">
+        <img src="./public/images/iphoneRed.jpg" alt="Trending 2" id="tendencia_imagem2">
+        <h3 id="title-tendencia2">Iphone 14 Red
+        </h3>
+        <p></p>
+      </a>
+
+      <a class="card-trending " href="#" onclick="showModal(event, 3)">
+        <img src="./public/images/iphoneBranco.png" alt="Trending 3" id="tendencia_imagem3">
+        <h3 id="title-tendencia3">Iphone 14 Rosê
+        </h3>
+        <p></p>
+      </a>
+
+
+    </div>
+  </section>
+  <!--                                      Modal start            -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="hideModal()">&times;</span>
+      <img id="modal-image" src="trending-1.jpg" alt="Trending 1">
+      <div class="modal-text-separation">
+        <h3 id="modal-title"></h3>
+        <p id="modal-description"></p>
+        <!-- <p id="modal-valor"></p> -->
+        <a href=""><p id="modal-more"></p></a>
+
+      </div>
+
+    </div>
+  </div>
+  <!--                                      Modal Fim            -->
+
+
+
+  <script src="./public/javascripts/index.js"></script>
+      <!-- Incluindo o arquivo CSS da biblioteca Slick -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+      <script src="./public/javascripts/carrossel.js"></script>
+    
+
+  <!--                                      Tendencias Fim            -->
 </body>
 </html>
