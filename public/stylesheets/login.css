@@ -1,0 +1,88 @@
+header{
+    background-color: black;
+    
+    width: 100%;
+    height: 120px;
+}
+
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+
+}
+
+.user-header{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 200px;
+
+}
+
+.user-header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.icon-header {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+}
+
+.link-header {
+    background-color: #000;
+    width: 30%;
+    font-size: 10px;
+
+}
+
+textarea {
+    width: 600px;
+    height: 45px;
+    display: flex;
+    text-align: left;
+}
+
+.menu{
+    background-color: palevioletred;
+    display: flex;
+    height: 60px;
+
+}
+
+.menu   {
+    background-color: palevioletred;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+.menu  a {
+    text-decoration: none;
+}
+
+
+.painel-menu{
+    background-color: aqua;
+    justify-content: space-between;
+    display: flex;
+    width: 50%;
+    height: 30px;
+}
+
+.menu-itens{
+    background-color: yellow;
+    border: solid 2px black;
+    width: 20%;
+    text-align: center;
+    padding: 0.5%;
+}
