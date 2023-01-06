@@ -530,7 +530,7 @@ margin-top: -40px;
           
   } */
 
-  @media screen and (min-width: 273px){ 
+  @media screen and (min-width: 273px)  and (max-height: 639px) { 
     /* carrossel */
      .index-carrossel {
     height: 250px; 
@@ -541,18 +541,8 @@ margin-top: -40px;
     .dots {
       display: none;
       } 
-  
-        /* tendencias */
-        /* .card-container{
-          border: 1px solid blue;
-        }
-     .card-trending{
-   border: 1px solid red;
-      width: 300px;
-      height: 370px;
-    }  */
         /* banner */
-         section.banner { width: 420px; margin-left: 5px; 
+         section.banner { width: 273px; margin-left: 5px; 
           border: none;
           -webkit-box-shadow: none;
           -moz-box-shadow: none;
@@ -578,7 +568,7 @@ margin-top: -40px;
               margin-left: auto;
             }
             .btn-box{
-              margin-right: 420px;  } 
+              margin-right: 480px;  } 
   
             /* banner desconto */
            #bannerDesconto{
@@ -592,18 +582,40 @@ margin-top: -40px;
               margin-left: 20px;
   
             }
+/* main produto  */
+            .mainProduto{
+              border: 1px solid lightgray;
+              background-color: white;
+              width: 156px;
+            height: 245px;
+            
+            }
+
+            .mainProduto img{
+              width: 156px;
+              height: 180px;
+              }
+              
+              .mainProdutText{
+              height: 50px;
+              margin-top: -40px;
+              margin-left: -29px;
+              }
             .mainProdutosimg{  display: none;    }
             .mainProdutosCards{  
-              margin-left: 10%; 
-              border: 1px solid red;
+              margin-left: 1.4%; 
+              /* border: 1px solid red; */
               margin-top: 0px;
               
-            } 
-            .mainProduto{
               
+            } 
+            #footer{
+             margin-top: 130px;
             }
+            
+
     } 
-@media screen and (min-width: 473px){ 
+@media screen and (min-width: 473px)  and (min-height: 640px) { 
   /* carrossel */
    .index-carrossel {
   height: 250px; 
@@ -671,7 +683,7 @@ margin-top: -40px;
   } 
 /* responsividade  500px                          */
 
-@media screen and (min-width: 473px){ 
+@media screen and (min-width: 473px) and (min-height: 640px) { 
   /* carrossel */
    .index-carrossel {
   height: 250px; 
@@ -741,7 +753,7 @@ margin-top: -40px;
   /* // ------------------ Responsividade  tela > 568px ------------------ // */
   
   
-   @media (min-width: 558px) { 
+   @media (min-width: 558px)  and (min-height: 640px) { 
 
       /* carrossel */
    .index-carrossel {
@@ -804,7 +816,7 @@ margin-top: -40px;
 
   /* // ------------------ Responsividade > tela 724px ------------------ // */
   
-   @media (min-width: 700px) { 
+   @media (min-width: 700px)  and (min-height: 640px) { 
       /* carrossel */
        .index-carrossel {
         height: 250px; 
@@ -867,7 +879,7 @@ margin-top: -40px;
   } 
 /* // ------------------ Responsividade > tela 1024px ------------------ // */
   
- @media (min-width: 1100px) {
+ @media (min-width: 1100px) and (min-height: 640px)  {
   /* carrossel */
    .index-carrossel {
     height: 400px; 
