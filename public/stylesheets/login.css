@@ -1,26 +1,24 @@
 header{
-    background-color: black;
     
     width: 100%;
-    height: 120px;
+    height: 100px;
 }
-
+.painel-principal{
+    background-color: #000
+}
 .top-header{
+    height: 60%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    
-
+    padding: 10px 60px 10px 20px;
 }
 
 .user-header{
-    
     display: flex;
-    justify-content: center;
     align-items: center;
     height: 60px;
-    width: 200px;
+    width: 180px;
 
 }
 
@@ -30,7 +28,7 @@ header{
 }
 
 .icon-header {
-   
+   margin: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,28 +36,15 @@ header{
 }
 
 .link-header {
-    background-color: #000;
-    width: 30%;
-    font-size: 10px;
-
-}
-
-textarea {
-    width: 600px;
-    height: 45px;
-    display: flex;
-    text-align: left;
-}
-
-.menu{
-    background-color: palevioletred;
-    display: flex;
+    width: 50%;
     height: 60px;
+    font-size: 14px;
+   padding-top: 10px;
+   margin-left: 10px;
 
 }
-
 .menu   {
-    background-color: palevioletred;
+    
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -68,21 +53,61 @@ textarea {
 }
 .menu  a {
     text-decoration: none;
+    color: #fff;
 }
 
 
 .painel-menu{
-    background-color: aqua;
     justify-content: space-between;
     display: flex;
-    width: 50%;
+    width: 70%;
     height: 30px;
 }
 
 .menu-itens{
-    background-color: yellow;
-    border: solid 2px black;
+    background-color: #141313;
+    box-shadow: rgba(1, 1, 1, 0.194) 0px 30px 60px -12px inset, rgba(11, 10, 10, 0.264) 0px 18px 36px -18px inset;
     width: 20%;
     text-align: center;
     padding: 0.5%;
 }
+
+
+.search {
+    width: 50%;
+    height: 30px;
+    padding: 12px 24px;
+    transition: transform 250ms ease-in-out;
+    font-size: 14px;
+    line-height: 18px;
+    color: #575756;
+    background-color: transparent;
+/*         background-image: url(http://mihaeltomic.com/codepen/input-search/ic_search_black_24px.svg); */
+
+  background-image: url('https://api.iconify.design/ic/baseline-search.svg?color=white&width=180&height=60');
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 95% center;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    transition: all 250ms ease-in-out;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+ .search::placeholder {
+        color: color(#575756 a(0.8));
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+    }
+    
+    .search:hover,
+    .search:focus {
+        padding: 12px 0;
+        outline: 0;
+        border: 1px solid transparent;
+        border-bottom: 1px solid #575756;
+        border-radius: 0;
+        background-position: 100% center;
+    }
+
+
