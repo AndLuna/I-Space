@@ -145,10 +145,11 @@ a {
 }
 
 .close {
-  color: white;
+  color: #000000;
   float: right;
   font-size: 28px;
   font-weight: bold;
+  margin-left: 10px;
 }
 
 .close:hover,
