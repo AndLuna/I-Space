@@ -1,0 +1,43 @@
+main{
+    display: flex;
+    /* border: 1px solid red; */
+    gap: 2%;
+}
+aside{
+    /* border: 1px solid blue; */
+    width: 300px;
+}
+aside .title-aside{
+    margin: 20px 10px 50px 25px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+aside .item-aside{
+    margin: 15px 30px;
+}
+
+section{
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+section .products-container{
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+section .products-card{
+text-decoration: none;
+color: black;
+border: 1px solid rgba(212, 212, 212, 0.697);
+margin: 10px;
+}
+section .products-card img{
+    width: 310px;
+    height: 370px;
+}
+section .products-card p, section .products-card h3{
+    margin-left: 15%;
+    margin-bottom: 10px;
+}
