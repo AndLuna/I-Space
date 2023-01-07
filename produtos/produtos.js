@@ -38,3 +38,16 @@ function filterItems() {
 
 // cores
 
+
+const toggleButton = document.querySelector('#toggle-button');
+const aside = document.querySelector('aside');
+const itensList = document.querySelector('ul.itens-list');
+const itemAside = document.querySelectorAll('li.item-aside');
+
+toggleButton.addEventListener('click', () => {
+  itensList.classList.toggle('hidden');
+  itemAside.forEach(item => item.classList.toggle('hidden'));
+
+  aside.classList.toggle('collapsed');
+  aside.classList.toggle('expanded');
+});

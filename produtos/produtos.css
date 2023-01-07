@@ -1,7 +1,4 @@
-body{
- 
-}
-main{
+main {
     display: flex;
     /* border: 1px solid red; */
     gap: 2%;
@@ -10,7 +7,7 @@ main{
     max-width: 1400px;
 }
 
-aside{
+aside {
 
     width: 280px;
     height: 750px;
@@ -19,53 +16,135 @@ aside{
     margin-left: -17px;
     border-radius: 5px;
 
-    
+
 }
-aside .title-aside{
+
+aside #toggle-button {
+    display: none;
+}
+
+aside .title-aside {
     margin: 20px 10px 50px 25px;
     font-size: 18px;
     font-weight: bolder;
 }
-aside .item-aside{
+
+aside .item-aside {
     margin: 15px 30px;
 }
 
-section{
+section {
     /* border: 1px solid blue; */
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
-section .products-container{
+
+section .products-container {
     display: flex;
     flex-wrap: wrap;
     /* border: 1px solid blue; */
     max-width: 1000px;
-  
+
 }
-section .products-card{
-text-decoration: none;
-color: black;
-border: 1px solid rgba(212, 212, 212, 0.697);
-margin: 10px;
-background-color: white;
+
+section .products-card {
+    text-decoration: none;
+    color: black;
+    border: 1px solid rgba(212, 212, 212, 0.697);
+    margin: 10px;
+    background-color: white;
 }
-section .products-card img{
+
+section .products-card img {
     width: 310px;
     height: 370px;
 }
-section .products-card p, section .products-card h3{
+
+section .products-card p,
+section .products-card h3 {
     margin-left: 15%;
     margin-bottom: 10px;
 }
 
-aside.aside-watch {
-    position: fixed;
+/*aside.aside-watch {
+     position: fixed; 
 
   }
   
   section.watch-products {
-    margin-left: 20%; /* ou o tamanho do aside */
+    margin-left: 20%; /* ou o tamanho do aside 
     overflow-y: scroll;
-  }
-  
+  } */
+
+.select-container {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside.aside-mobile {
+        width: 100%;
+        display: block;
+    }
+
+    aside {
+        border: 1px solid rgba(212, 212, 212, 0.697);
+        width: 100%;
+        height: 276px;
+        background-color: white;
+        
+    }
+
+    aside .category-aside {
+        margin-top: -30px;
+    }
+
+    ul.checkboxes-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside.collapsed {
+        height: 80px;
+      }
+    
+      aside.expanded {
+        height: auto;
+        
+      }
+
+    ul.itens-list.hidden {
+        display: none;
+    }
+
+    li.item-aside.hidden {
+        display: none;
+    }
+
+    aside #toggle-button {
+        display: block;
+        margin: 12px 0px -10px 10px;
+        height: 30px;
+        color: black;
+    }
+
+    /* section{ margin-left: 20px;} */
+
+
+      button#toggle-button {
+        background-color: black;
+        color: white;
+        border-radius: 8px;
+        border: 2px solid rgb(242, 242, 242);
+    }
+    button#toggle-button:hover {
+        background: linear-gradient(to top right, #030304, rgb(2, 63, 107));
+        transition: var(0.25s ease);
+      }
+
+}
