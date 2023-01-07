@@ -32,3 +32,9 @@ function filterItems() {
   for (var i = 0; i < checkboxes.length; i++) {
     checkboxes[i].addEventListener('click', filterItems);
   }
+
+
+
+
+// cores
+
