@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/stylesheets/reset.css">
+    <link rel="stylesheet" href="./watch.css">
+    <title>Document</title>
+</head>
+<body>
+                        <!-- inicio header -->
+    <div id="header"></div>
+<script>
+  fetch('../public/partials/header.html')
+    .then(response => response.text())
+    .then(html => document.getElementById('header').innerHTML = html);
+</script> 
+                    <!-- fim header -->
+<main class="main-watch">
+
+    <aside class="aside-watch">
+        <div class="title-aside">
+            <h1>Apple Watch </h1>
+            
+        </div>
+        <div class="line"></div>
+        <div class="category-aside">
+            <ul class="itens-list">
+               <li class="item-aside">
+                  <input type="checkbox" id="item1" name="item1">
+                  <label for="item1">Modelo 1</label>
+               </li>
+               <li class="item-aside">
+                  <input type="checkbox" id="item2" name="item2">
+                  <label for="item1">Modelo 2</label>
+               </li>
+               <li class="item-aside">
+                  <input type="checkbox" id="item3" name="item3">
+                  <label for="item1">Modelo 3</label>
+               </li>
+               <li class="item-aside">
+                  <input type="checkbox" id="item4" name="item4">
+                  <label for="item1">Modelo 4</label>
+               </li>
+               <li class="item-aside">
+                  <input type="checkbox" id="item5" name="item5">
+                  <label for="item1">Modelo 5</label>
+               </li>
+            </ul>
+        </div>
+    </aside>
+
+    <section class="watch-products">
+        <!-- <h2>ordernar por:</h2> -->
+
+        <div class="products-container">
+            <a href="" class="modelo-1 products-card">
+                <img src="/public/images/iphoneAzul.jpg" alt="">
+                <h3>Apple Watch ultra GPS</h3>
+                <p>R$ 7.323,00</p>
+            </a>
+            <a href="#" class="modelo-1 products-card">
+                <img src="/public/images/iphoneAzul.jpg" alt="">
+                <h3>Apple Watch ultra GPS</h3>
+                <p>R$ 7.323,00</p>
+            </a>
+            <a href="#" class="modelo-1 products-card">
+                <img src="/public/images/iphoneAzul.jpg" alt="">
+                <h3>Apple Watch ultra GPS</h3>
+                <p>R$ 7.323,00</p>
+            </a>
+
+            <a href="#" class="modelo-2 products-card" >
+                <img src="/public/images/iphoneBranco.png"alt="">
+                <h3>2Apple Watch ultra GPS</h3>
+                <p>R$ 7.323,00</p>
+            </a>
+            <a href="#" class="modelo-2 products-card" >
+                <img src="/public/images/iphoneBranco.png" alt="">
+                <h3>2Apple Watch ultra GPS</h3>
+                <p>R$ 7.323,00</p>
+            </a>
+            <a href="#" class="modelo-2 products-card" >
+                <img src="/public/images/iphoneBranco.png" alt="">
+                <h3>2Apple Watch ultra GPS</h3>
+                <p>R$ 7.323,00</p>
+            </a>
+
+            <a href="#" class="modelo-3 products-card">
+                <img src="/public/images/iphoneblack.jpg" alt="">
+                <h3>3Apple Watch ultra GPS</h3>
+                <p>R$ 7.323,00</p>
+            </a>
+            <a href="#" class="modelo-3 products-card">
+                <img src="/public/images/iphoneblack.jpg" alt="">
+                <h3>3Apple Watch ultra GPS</h3>
+                <p>R$ 7.323,00</p>
+            </a>
+            <a href="#" class="modelo-3 products-card">
+                <img src="/public/images/iphoneblack.jpg" alt="">
+                <h3>3Apple Watch ultra GPS</h3>
+                <p>R$ 7.323,00</p>
+            </a>
+
+
+        </div>
+    </section>
+
+
+</main>
+                    <!-- inicio footer -->
+<div id="footer"></div>
+<script>
+  fetch('../public/partials/footer.html')
+    .then(response => response.text())
+    .then(html => document.getElementById('footer').innerHTML = html);
+</script> -->
+                    <!-- fim footer -->
+
+
+<script src="./watch.js"></script>
+</body>
+</html>
