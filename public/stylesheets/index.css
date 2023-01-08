@@ -778,7 +778,7 @@ button {
       }  
 /* tendencias */
  .card-trending{
-      width: 199px;
+      width: 219px;
       height: 320px;
     }  
 /* banner */
@@ -787,9 +787,16 @@ button {
    margin-left: 5px;
    
   }
-              .banner a{ width: 200px; margin-top: 16px;}
-             .banner h2{ width: 300px; margin-top: 16px;}
-            .banner img{ margin-left: -0px; }
+              .banner a{ 
+                width: 200px;
+                 margin-top: 16px;
+                }
+             .banner h2{ 
+              width: 300px; 
+              margin-top: 16px;
+              margin-left: 5px;
+            }
+            .banner img{ margin-left: -90px; }
     
 /* destaque */
  .produtos {
@@ -821,7 +828,7 @@ button {
             } */
             .mainProdutos{
               /* border: 1px solid blue; */
-              margin-left: 5px;
+              margin-left: 50px;
               width: 100%;
               margin-top: 50px;
               height: 1050px;
