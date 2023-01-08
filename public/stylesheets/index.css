@@ -817,7 +817,7 @@ button {
    
 
             .mainProdutos{
-              border: 1px solid blue;
+              /* border: 1px solid blue; */
               margin-left: 0px;
               width: 100%;
               margin-top: 50px;
@@ -831,9 +831,10 @@ button {
               }
             .mainProdutosCards{  
               /* margin-right: 40%;  */
-                  border: 1px solid red;    
+                 /* border: 1px solid red;  */
                margin-top: 20px;
                /* margin-left: 20px; */
+               gap: 2%;
 
               width: 100%;
    
@@ -841,11 +842,12 @@ button {
               
             }
             .mainProduto {
-              width: 130px;
+              width: 160px;
               margin-left: 40px;
+              /* border: 1px solid red;  */
             }
             .mainProduto img{
-              width: 130px;
+              width: 160px;
               height: 150px;
             }
             .mainProduto p {
