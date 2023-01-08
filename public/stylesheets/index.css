@@ -837,6 +837,21 @@ button {
               width: 100%;
               
             }
+            .mainProduto {
+              width: 130px;
+            }
+            .mainProduto img{
+              width: 130px;
+              height: 150px;
+            }
+            .mainProduto p {
+              margin-left: 45px;
+              
+            }
+            .mainProduto h1{
+              margin-left: 20px;
+              margin-top: 60px;
+            }
   }   
 
 /* // ------------------ Responsividade > tela 724px ------------------ // */
