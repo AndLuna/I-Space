@@ -297,7 +297,7 @@ section.banner {
 
 .destaque-card {
   display: inline-block;
-  width: 15%;
+  width: 18%;
   height: 400px;
   border: 1px solid lightgray;
   background-color: #F6F6F8;
@@ -404,12 +404,12 @@ button {
 .mainProdutos {
   display: flex;
   width: 80%;
-  height: 800px;
+  height: 660px;
   margin-top: 50px;
-  margin-bottom: -100px;
-  margin-left: 200px;
+  margin-bottom: -10px;
+  margin-left: 190px;
   gap: 2%;
-  /* border: 1px solid red; */
+   /* border: 1px solid red;  */
   margin-top: 10px;
 }
 
@@ -420,9 +420,10 @@ button {
 }
 
 .mainProdutosimg img {
-  width: 750px;
-  height: 610px;
+  width: 500px;
+  height: 510px;
   margin-left: -198px;
+  display: none;
 }
 
 
@@ -432,8 +433,9 @@ button {
   width: 100%;
   height: 700px;
   gap: 4%;
-  /* border: 1px solid red; */
-  margin-bottom: 80px;
+   /* border: 1px solid red;  */
+  /* margin-bottom: 80px; */
+  
 }
 
 .mainProduto {
@@ -441,6 +443,7 @@ button {
   background-color: white;
   width: 200px;
   height: 245px;
+
 }
 
 .mainProduto img {
@@ -821,7 +824,8 @@ button {
               margin-left: 5px;
               width: 100%;
               margin-top: 50px;
-              margin-bottom: 20px;
+              height: 1050px;
+              margin-bottom: 100px;
             }
 
 
@@ -830,15 +834,18 @@ button {
               }
             .mainProdutosCards{  
               /* margin-right: 40%;  */
-                /* border: 1px solid red;   */
+                 /* border: 1px solid red;    */
                margin-top: 20px;
                margin-left: 20px;
 
               width: 100%;
+   
+
               
             }
             .mainProduto {
               width: 130px;
+              
             }
             .mainProduto img{
               width: 130px;
