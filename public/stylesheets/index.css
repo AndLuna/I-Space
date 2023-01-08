@@ -760,10 +760,10 @@ button {
 /* // ------------------ Responsividade  tela > 568px ------------------ // */
 
 
-/* @media (min-width: 558px)  and (min-height: 640px) {  */
+@media only screen and (max-width: 600px) {
 
 /* carrossel */
-/* .index-carrossel {
+ .index-carrossel {
     height: 250px; 
     }
     .index-carrossel img {
@@ -772,20 +772,24 @@ button {
 
     .dots {
       display: inline-block;
-      }  */
+      }  
 /* tendencias */
-/* .card-trending{
+ .card-trending{
       width: 199px;
       height: 320px;
-    }  */
+    }  
 /* banner */
-/* section.banner { width: 100%; margin-left: 5px;}
+ section.banner { 
+  width: 100%;
+   margin-left: 5px;
+   
+  }
               .banner a{ width: 200px; margin-top: 16px;}
              .banner h2{ width: 300px; margin-top: 16px;}
             .banner img{ margin-left: -0px; }
-    */
+    
 /* destaque */
-/* .produtos {
+ .produtos {
               display: flex;
               flex-wrap: wrap;
             }
@@ -802,7 +806,7 @@ button {
               margin-right: 420px;  }
    
             /* banner desconto */
-/* #bannerDesconto{
+ /* #bannerDesconto{
               width: 420px;
               height: 150px;
             }
@@ -811,15 +815,29 @@ button {
               height: 280px;
               margin-left: 34%;
   
+            } */
+            .mainProdutos{
+              /* border: 1px solid blue; */
+              margin-left: 5px;
+              width: 100%;
+              margin-top: 50px;
+              margin-bottom: 20px;
             }
-            .mainProdutosimg{  display: none;    }
+
+
+            .mainProdutosimg{  
+              display: none;  
+              }
             .mainProdutosCards{  
-              margin-left: 10%; 
-              
-              margin-top: 0px;
+              /* margin-right: 40%;  */
+                /* border: 1px solid red;   */
+               margin-top: 20px;
+               margin-left: 20px;
+
+              width: 100%;
               
             }
-  }   */
+  }   
 
 /* // ------------------ Responsividade > tela 724px ------------------ // */
 
