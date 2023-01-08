@@ -43,7 +43,7 @@ section {
 section .products-container {
     display: flex;
     flex-wrap: wrap;
-    /* border: 1px solid blue; */
+     /* border: 1px solid blue;  */
     max-width: 1000px;
 
 }
@@ -55,10 +55,11 @@ section .products-card {
     margin: 10px;
     background-color: white;
     height: 500px;
+    width: 304px;
 }
 
 section .products-card img {
-    width: 310px;
+    width: 304px;
     height: 370px;
 }
 
