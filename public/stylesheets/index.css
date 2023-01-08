@@ -766,6 +766,10 @@ button {
 
 
 @media only screen and (max-width: 600px) {
+  body{
+    max-width: 600px;
+    /* border: 1px solid red; */
+  }
 
 /* carrossel */
  .index-carrossel {
@@ -814,8 +818,15 @@ button {
             .destaque-card .preco {
               margin-left: auto;
             }
+            /* botao  */
+            .destaque_section{
+              width: 100%;
+              /* border: 1px solid blue; */
+              margin-left: 0px;
+            }
             .btn-box{
-              margin-right: 470px;  }
+              margin-right: 70px;
+            margin-bottom: 10px;  }
    
 
             .mainProdutos{
@@ -844,12 +855,12 @@ button {
               
             }
             .mainProduto {
-              width: 160px;
+              width: 145px;
               margin-left: 40px;
               /* border: 1px solid red;  */
             }
             .mainProduto img{
-              width: 160px;
+              width: 145px;
               height: 150px;
             }
             .mainProduto p {
@@ -860,6 +871,8 @@ button {
               margin-left: 20px;
               margin-top: 60px;
             }
+         /* footer  */
+
   }   
 
 /* // ------------------ Responsividade > tela 724px ------------------ // */
