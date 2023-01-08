@@ -65,8 +65,26 @@ section .products-card img {
 
 section .products-card p,
 section .products-card h3 {
-    margin-left: 15%;
+    margin-left: 10px;
     margin-bottom: 10px;
+   
+}
+section .products-card h3{
+    margin-top: 20px;
+    font-weight: bolder;
+}
+section .products-container p{
+    background-color: rgb(100, 189, 100);
+    color: rgb(255, 255, 255);
+    width: 120px;
+    height: 14px;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bolder;
+
+}
+section .products-container p:hover{
+    background-color: rgb(113, 223, 113);
 }
 
 /*aside.aside-watch {
