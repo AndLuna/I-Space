@@ -820,11 +820,11 @@ button {
 
             .mainProdutos{
               /* border: 1px solid blue; */
-              margin-left: 0px;
+              margin-left: -14px;
               width: 100%;
-              margin-top: 50px;
+              margin-top: 220px;
               height: 1050px;
-              margin-bottom: 100px;
+              margin-bottom: -70px;
             }
 
 
