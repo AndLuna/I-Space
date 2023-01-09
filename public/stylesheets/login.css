@@ -83,6 +83,7 @@ input {
 }
 
 
+
 .search {
     width: 50%;
     height: 30px;
@@ -135,7 +136,9 @@ input {
     }
     .menu-itens a:hover{
         color: #46CAF2;
+     
     }
+   
     
     /* Começa o main*/
     main{
