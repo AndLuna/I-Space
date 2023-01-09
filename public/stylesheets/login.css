@@ -14,6 +14,15 @@ header{
     padding: 10px 60px 10px 20px;
 }
 
+input {
+    width: 80%;
+    height: 80%;
+    color: #FFF;
+    background-color: #000;
+    border: 0 none;
+    outline: 0;
+}
+
 .user-header{
     display: flex;
     align-items: center;
