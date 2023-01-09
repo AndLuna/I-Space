@@ -110,6 +110,24 @@ header{
         background-position: 100% center;
     }
 
+    /*Trabalhando com o icone do carrinho */
+    .bag-header a {
+        color: #ffffff;
+        transition: all 0.2s;
+    }
+    .bag-header a:hover{
+        color: #46CAF2;
+    }
+
+    .menu-itens a {
+        color: #ffffff;
+        transition: all 0.2s;
+    }
+    .menu-itens a:hover{
+        color: #46CAF2;
+    }
+    
+    /* Começa o main*/
     main{
         width: 100%;
         height: 200px;
