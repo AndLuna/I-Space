@@ -4,19 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=p, initial-scale=1.0">
-    <title>Document</title>
+    <title>Apple Space</title>
     <link rel="stylesheet" href="./public/stylesheets/reset.css">
     <link rel="stylesheet" href="./public/stylesheets/index.css">
+    <link rel="stylesheet" href="./public/partials/header.css">
+    <!-- <link rel="stylesheet" href="../public/stylesheets/header.css"> -->
+   
 </head>
 <body>
 <!-- Importa o HEADER IMPROVISADO -->
 <!-- <iframe src="./public/partials/header.html" frameborder="0" height="150px" width=100px></iframe> -->
-<div id="header"></div>
+<!-- <div id="header"></div>
 <script>
   fetch('./public/partials/header.html')
     .then(response => response.text())
     .then(html => document.getElementById('header').innerHTML = html);
-</script>
+</script>  -->
+   <!-- HEADER IMPROVISADO -->
+   <!-- HEADER IMPROVISADO -->
+   <header class="header">
+    <div class="h-titulo"><p></p></div>
+
+    <div class="h-medio">
+        <div class="h-navybar">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="./produtos/Watch.html">Watch</a></li>
+                <li class="nav-item"><a href="./produtos/iphone.html">Iphone</a></li>
+                <li class="nav-item"><a href="./produtos/ipad.html">Ipad</a></li>
+                <li class="nav-item"><a href="./produtos/mac.html">Mac</a></li>
+                <li class="nav-item"><a href="./produtos/airpods.html">Airpods</a></li>
+                <li class="nav-item"><a href="./produtos/acessorios.html">Acessorios</a></li>
+                <li class="nav-item"><a href="../produtos/ofertas.html">Ofertas</a></li>
+            </ul>
+        </div>
+        <div class="right-side">
+            <!-- <div class="search">
+                <input type="text" placeholder="Procurar">
+            </div> -->
+            <div class="icons-header">
+                <div class="icon-right-site"> 
+                    <a href="../views/desenvolvimento.html">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </a>
+                   
+                </div>
+            
+                <div class="icon-right-site">
+                    <a href="../views/desenvolvimento.html">
+                        <ion-icon name="star-outline"></ion-icon>
+                    </a>
+                   
+                </div>
+            
+                <div class="icon-right-site">
+                    <a href="../views/desenvolvimento.html">
+                        <ion-icon name="cart-outline"></ion-icon>
+                    </a>
+                    
+                </div>
+            </div>
+
+        </div>
+
+        
+        </div>
+
+
+    <div class="h-cadastro"><a href="../views/contact.html">
+        Entre para o clube
+
+    </a>
+    </div>
+
+
+</header>
 
 
     <div class="index-carrossel">
@@ -27,7 +89,7 @@
           <img src="./public/images/iphone2.jpg" alt="">
         </a>
         <a class="slick-slide" href="#">
-          <img src="./public/images/iphone3.jpg" alt="">
+          <img src="./public/images/banner01.png" alt="">
         </a>
       </div>
       <div class="dots"></div>
@@ -41,21 +103,21 @@
     <div class="card-container">
 
       <a class="card-trending" href="#" onclick="showModal(event, 1)">
-        <img src="./public/images/iphoneAzul.jpg" alt="Trending 1" id="tendencia_imagem1">
-        <h3 id="title-tendencia1">Iphone 14 Blue</h3>
+        <img src="./public/images/produtos/tendencia1.png" alt="Trending 1" id="tendencia_imagem1">
+        <h3 id="title-tendencia1">Iphone 16 Ronny</h3>
         <p></p>
       </a>
 
       <a class="card-trending" href="#" onclick="showModal(event, 2)">
-        <img src="./public/images/iphoneRed.jpg" alt="Trending 2" id="tendencia_imagem2">
-        <h3 id="title-tendencia2">Iphone 14 Red
+        <img src="./public/images/produtos/tendencia5.png" alt="Trending 2" id="tendencia_imagem2">
+        <h3 id="title-tendencia2">Iphone 16 Potter
         </h3>
         <p></p>
       </a>
 
       <a class="card-trending " href="#" onclick="showModal(event, 3)">
-        <img src="./public/images/iphoneBranco.png" alt="Trending 3" id="tendencia_imagem3">
-        <h3 id="title-tendencia3">Iphone 14 Rosê
+        <img src="./public/images/produtos/tendencia6.png" alt="Trending 3" id="tendencia_imagem3">
+        <h3 id="title-tendencia3">Iphone 16 Hermione
         </h3>
         <p></p>
       </a>
@@ -120,27 +182,27 @@
     <section class="produtos">
   
       <div class="destaque-card">
-        <img src="./public/images/iphoneRed.jpg" alt="Imagem do produto 1">
+        <img src="./public/images/produtos/tendencia8.png" alt="Imagem do produto 1">
         <div class="desconto">10% OFF</div>
-        <div class="preco">R$ 2289,90</div>
+        <div class="preco">R$ 2.289,90</div>
         <div class="descricao"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis quasi sit, consectetur.</div>
       </div>
       <div class="destaque-card">
-        <img src="./public/images/iphoneRed.jpg" alt="Imagem do produto 2">
+        <img src="./public/images/produtos/tendencia9.png" alt="Imagem do produto 2">
         <div class="desconto">20% OFF</div>
-        <div class="preco">R$ 3119,99</div>
+        <div class="preco">R$ 3.119,99</div>
         <div class="descricao"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis quasi sit, consectetur.  </div>
       </div>
       <div class="destaque-card">
-        <img src="./public/images/iphoneRed.jpg" alt="Imagem do produto 3">
+        <img src="./public/images/produtos/tendencia10.png" alt="Imagem do produto 3">
         <div class="desconto">10% OFF</div>
-        <div class="preco">R$ 4499,99</div>
+        <div class="preco">R$ 4.499,99</div>
         <div class="descricao"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis quasi sit, consectetur.  </div>
       </div>
       <div class="destaque-card">
-        <img src="./public/images/iphoneRed.jpg" alt="Imagem do produto 4">
+        <img src="./public/images/produtos/tendencia13.png" alt="Imagem do produto 4">
         <div class="desconto">20% OFF</div>
-        <div class="preco">R$ 3199,99</div>
+        <div class="preco">R$ 3.199,99</div>
         <div class="descricao"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis quasi sit, consectetur. </div>
       </div>
       <div class="destaque-card">
@@ -174,18 +236,18 @@
         <img src="./public/images/IspaceDesconto.jpg" alt="">
      </div>
       </section> -->
-      <section class="banner">
-        <div class="banner-text">
-            <h2>Entre para o Clube e ganhe 20% OFF!</h2>
-    
-            <a href="#">
-              Cadastre-se gratuiamente
-            </a>
-        </div>
-        <img src="./public/images/iphoneCadastro.jpg" alt="">
-    
-    
-      </section>
+      <div class="index-carrossel">
+        <a class="slick-slide" href="#">
+          <img src="./public/images/iphone1.jpg" alt="">
+        </a>
+        <a class="slick-slide" href="#">
+          <img src="./public/images/iphone1.jpg" alt="">
+        </a>
+        <a class="slick-slide" href="#">
+          <img src="./public/images/iphone1.jpg" alt="">
+        </a>
+      </div>
+      <!-- <div class="dots"></div> -->
 
       <!-- secao produtos -->
       <section class="mainProdutos">
@@ -203,12 +265,19 @@
             </div>
             </div>
             <div class="mainProduto">
-                <img src="./public/images/iphoneblack.jpg" alt="">
-                <div class="mainProdutText">
-                    <h1 class="mainProdutoTitle">Produto1</h1>
-                    <p class="mainProdutoPreco">333$</p>
-                </div>
-            </div>
+              <img src="./public/images/iphoneblack.jpg" alt="">
+              <div class="mainProdutText">
+              <h1 class="mainProdutoTitle">Produto1</h1>
+              <p class="mainProdutoPreco">333$</p>
+          </div>
+          </div>
+          <div class="mainProduto">
+            <img src="./public/images/iphoneblack.jpg" alt="">
+            <div class="mainProdutText">
+            <h1 class="mainProdutoTitle">Produto1</h1>
+            <p class="mainProdutoPreco">333$</p>
+        </div>
+        </div>
             <div class="mainProduto">
                 <img src="./public/images/iphoneblack.jpg" alt="">
                 <div class="mainProdutText">
@@ -237,6 +306,14 @@
                     <p class="mainProdutoPreco">333$</p>
                 </div>
             </div>
+            <div class="mainProduto">
+                <img src="./public/images/iphoneblack.jpg" alt="">
+                <div class="mainProdutText">
+                    <h1 class="mainProdutoTitle">Produto1</h1>
+                    <p class="mainProdutoPreco">333$</p>
+                </div>
+            </div>
+            
 
 
 

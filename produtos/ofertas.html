@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/stylesheets/reset.css">
+    <link rel="stylesheet" href="../public/stylesheets/produtos.css">
+    <link rel="stylesheet" href="../public/stylesheets/header.css">
+    <title>Apple Space</title>
+</head>
+<body>
+                        <!-- inicio header -->
+    <div id="header"></div>
+<script>
+  fetch('../public/partials/header.html')
+    .then(response => response.text())
+    .then(html => document.getElementById('header').innerHTML = html);
+</script> 
+                    <!-- fim header -->
+<main class="main-watch">
+
+    <aside class="aside-watch">
+
+        <div class="title-aside">
+            <h1>Apple Iphone </h1>
+            <button id="toggle-button"> Filtros</button>            
+        </div>
+        <div class="line"></div>
+
+        <div class="category-aside">
+            <ul class="itens-list">
+               <li class="item-aside">
+                  <input type="checkbox" id="item1" name="item1">
+                  <label for="item1">Iphones</label>
+               </li>
+               <li class="item-aside">
+                  <input type="checkbox" id="item2" name="item2">
+                  <label for="item1">Airpods</label>
+               </li>
+               <li class="item-aside">
+                  <input type="checkbox" id="item3" name="item3">
+                  <label for="item1">Caixa de som</label>
+               </li>
+               <li class="item-aside">
+                  <input type="checkbox" id="item4" name="item4">
+                  <label for="item1">Capas Iphone</label>
+               </li>
+               <li class="item-aside">
+                  <input type="checkbox" id="item5" name="item5">
+                  <label for="item1">Watch</label>
+               </li>
+            </ul>
+
+            
+        </div>
+    </aside>
+
+    <section class="watch-products">
+        <!-- <h2>ordernar por:</h2> -->
+
+        <div class="products-container">
+            <a href="" class="modelo-1 products-card ">
+                <img src="/public/images/produtos/ofertas1.png" alt="">
+                <h3>Iphone Katoon</h3>
+                <p>R$ 4.599,00</p>
+                <p class="corzinha">Red</p>
+            </a>
+            <a href="#" class="modelo-1 products-card ">
+                <img src="/public/images/produtos/ofertas2.png" alt="">
+                <h3>Iphone Yugi</h3>
+                <p>R$ 3.789,00</p>
+            </a>
+            <a href="#" class="modelo-1 products-card ">
+                <img src="/public/images/produtos/ofertas3.png" alt="">
+                <h3>Iphone Naomi</h3>
+                <p>R$ 4.159,00</p>
+            </a>
+
+            <a href="#" class="modelo-2 products-card " >
+                <img src="/public/images/produtos/ofertas4.png"alt="">
+                <h3>AirPods Hyuga</h3>
+                <p>R$ 258,00</p>
+            </a>
+            <a href="#" class="modelo-2 products-card " >
+                <img src="/public/images/produtos/airpods5.png" alt="">
+                <h3>AirPods Nara</h3>
+                <p>R$ 429,00</p>
+            </a>
+            <a href="#" class="modelo-2 products-card " >
+                <img src="/public/images/produtos/airpods6.png" alt="">
+                <h3>Airpeds Yamanaka</h3>
+                <p>R$ 519,00</p>
+            </a>
+
+            <a href="#" class="modelo-3 products-card ">
+                <img src="/public/images/produtos/ofertas7.png" alt="">
+                <h3>JBL Wano </h3>
+                <p>R$ 859,00</p>
+            </a>
+            <a href="#" class="modelo-3 products-card ">
+                <img src="/public/images/produtos/ofertas8.png" alt="">
+                <h3>JBL DressRosa</h3>
+                <p>R$ 1.099,00</p>
+            </a>
+            <a href="#" class="modelo-3 products-card ">
+                <img src="/public/images/produtos/ofertas9.png" alt="">
+                <h3>JBL Alabasta</h3>
+                <p>R$ 1.459,00</p>
+            </a>
+
+            <a href="#" class="modelo-4 products-card ">
+                <img src="/public/images/produtos/ofertas10.png" alt="">
+                <h3>Apple Watch Kaisen</h3>
+                <p>R$ 2.149,00</p>
+            </a>
+            <a href="#" class="modelo-4 products-card ">
+                <img src="/public/images/produtos/ofertas11.png" alt="">
+                <h3>Apple Watch Kyojin</h3>
+                <p>R$ 1.179,00</p>
+            </a>
+            <a href="#" class="modelo-4 products-card ">
+                <img src="/public/images/produtos/ofertas12.png" alt="">
+                <h3>Apple Watch Anatae</h3>
+                <p>R$ 1.209,00</p>
+                <p class="corzinha">Red</p>
+            </a>
+
+            <a href="#" class="modelo-5 products-card ">
+                <img src="/public/images/produtos/ofertas13.png" alt="">
+                <h3>Capa Iphone Kaido </h3>
+                <p>R$ 199,00</p>
+            </a>
+            <a href="#" class="modelo-5 products-card ">
+                <img src="/public/images/produtos/ofertas14.png" alt="">
+                <h3>Capa Iphone Shanks</h3>
+                <p>R$ 229,00</p>
+            </a>
+            <a href="#" class="modelo-5 products-card ">
+                <img src="/public/images/produtos/ofertas15.png" alt="">
+                <h3>Capa Iphone Linlin</h3>
+                <p>R$ 119,00</p>
+                <p>Red</p>
+            </a>
+
+        </div>
+    </section>
+
+
+</main>
+                    <!-- inicio footer -->
+<div id="footer"></div>
+<script>
+  fetch('../public/partials/footer.html')
+    .then(response => response.text())
+    .then(html => document.getElementById('footer').innerHTML = html);
+</script> -->
+                    <!-- fim footer -->
+
+
+                    <script src="../public/javascripts/produtos.js"></script>
+                </body>
+</html>

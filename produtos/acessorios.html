@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/stylesheets/reset.css">
+    <link rel="stylesheet" href="../public/stylesheets/produtos.css">
+    <link rel="stylesheet" href="../public/stylesheets/header.css">
+    <title>Apple Space</title>
+</head>
+<body>
+                        <!-- inicio header -->
+    <div id="header"></div>
+<script>
+  fetch('../public/partials/header.html')
+    .then(response => response.text())
+    .then(html => document.getElementById('header').innerHTML = html);
+</script> 
+                    <!-- fim header -->
+<main class="main-watch">
+
+    <aside class="aside-watch">
+
+        <div class="title-aside">
+            <h1>Apple Iphone </h1>
+            <button id="toggle-button"> Filtros</button>  
+                </div>
+        <div class="line"></div>
+
+        <div class="category-aside">
+            <ul class="itens-list">
+               <li class="item-aside">
+                  <input type="checkbox" id="item1" name="item1">
+                  <label for="item1">Capas</label>
+               </li>
+               <li class="item-aside">
+                  <input type="checkbox" id="item2" name="item2">
+                  <label for="item1">Mochilas</label>
+               </li>
+               <li class="item-aside">
+                  <input type="checkbox" id="item3" name="item3">
+                  <label for="item1">Gamer</label>
+               </li>
+               <li class="item-aside">
+                  <input type="checkbox" id="item4" name="item4">
+                  <label for="item1">Apple TV</label>
+               </li>
+               <li class="item-aside">
+                  <input type="checkbox" id="item5" name="item5">
+                  <label for="item1">Acessórios Apple Whatch</label>
+               </li>
+            </ul>
+
+            
+        </div>
+    </aside>
+
+    <section class="watch-products">
+        <!-- <h2>ordernar por:</h2> -->
+
+        <div class="products-container">
+            <a href="" class="modelo-1 products-card ">
+                <img src="/public/images/produtos/capasnow1.png" alt="">
+                <h3>Capa Hatake</h3>
+                <p>R$ 235,00</p>
+               
+            </a>
+            <a href="#" class="modelo-1 products-card ">
+                <img src="/public/images/produtos/capablack.png" alt="">
+                <h3>Capa Uchiha</h3>
+                <p>R$ 399,00</p>
+            </a>
+            <a href="#" class="modelo-1 products-card ">
+                <img src="/public/images/produtos/Capayellow.png" alt="">
+                <h3>Capa Uzumaki</h3>
+                <p>R$ 209,00</p>
+            </a>
+
+            <a href="#" class="modelo-2 products-card " >
+                <img src="/public/images/produtos/mochilasakura.png"alt="">
+                <h3>Mochila Sakura</h3>
+                <p>R$ 499,00</p>
+            </a>
+            <a href="#" class="modelo-2 products-card " >
+                <img src="/public/images/produtos/mochilautakata.png" alt="">
+                <h3>Mochila Utakata</h3>
+                <p>R$ 649,00</p>
+            </a>
+            <a href="#" class="modelo-2 products-card " >
+                <img src="/public/images/produtos/Mochilakillerbee.png" alt="">
+                <h3>Mochila Killer Bee</h3>
+                <p>R$ 579,00</p>
+            </a>
+
+            <a href="#" class="modelo-3 products-card ">
+                <img src="/public/images/produtos/fonedeouvido.png" alt="">
+                <h3>Fones Amateratsu</h3>
+                <p>R$ 299,00</p>
+            </a>
+            <a href="#" class="modelo-3 products-card ">
+                <img src="/public/images/produtos/tecladochidori.png" alt="">
+                <h3>Teclado Chidori</h3>
+                <p>R$ 2.299,00</p>
+            </a>
+            <a href="#" class="modelo-3 products-card ">
+                <img src="/public/images/produtos/mouserosa.png" alt="">
+                <h3>Mouse Haruno</h3>
+                <p>R$ 1.159,00</p>
+            </a>
+
+            <a href="#" class="modelo-4 products-card ">
+                <img src="/public/images/produtos/appletvitachi.png" alt="">
+                <h3>Apple TV Itachi</h3>
+                <p>R$ 1.299,00</p>
+            </a>
+            <a href="#" class="modelo-4 products-card ">
+                <img src="/public/images/produtos/Appletvtobi.png" alt="">
+                <h3>Apple TV Tobi</h3>
+                <p>R$ 799,00</p>
+            </a>
+            <a href="#" class="modelo-4 products-card ">
+                <img src="/public/images/produtos/appletvshisui.png" alt="">
+                <h3>Apple Remote Shisui</h3>
+                <p>R$ 529,00</p>
+          
+            </a>
+
+            <a href="#" class="modelo-5 products-card ">
+                <img src="/public/images/produtos/pulseiraverde.png" alt="">
+                <h3>Pulseira Lee</h3>
+                <p>R$ 639,00</p>
+            </a>
+            <a href="#" class="modelo-5 products-card ">
+                <img src="/public/images/produtos/pulseiravermelha.png" alt="">
+                <h3>Pulseira Kushina</h3>
+                <p>R$ 199,00</p>
+            </a>
+            <a href="#" class="modelo-5 products-card ">
+                <img src="/public/images/produtos/pulseirabranca.png" alt="">
+                <h3>Pulseira Killua</h3>
+                <p>R$ 949,00</p>
+              
+            </a>
+
+        </div>
+    </section>
+
+
+</main>
+                    <!-- inicio footer -->
+<div id="footer"></div>
+<script>
+  fetch('../public/partials/footer.html')
+    .then(response => response.text())
+    .then(html => document.getElementById('footer').innerHTML = html);
+</script> -->
+                    <!-- fim footer -->
+
+
+<script src="../public/javascripts/produtos.js"></script>
+</body>
+</html>
