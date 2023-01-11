@@ -25,6 +25,7 @@ input {
 }
 
 .user-header{
+
     display: flex;
     align-items: center;
     height: 60px;
@@ -38,11 +39,17 @@ input {
 }
 
 .icon-header {
+    color: #FFF;
    margin: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40px;
+    transition: all 0.2s;
+}
+
+.icon-header a:hover{
+    color: #46CAF2;
 }
 
 .link-header {
@@ -51,10 +58,14 @@ input {
     font-size: 14px;
    padding-top: 10px;
    margin-left: 10px;
-
+    color: #FFF;
+    transition: all 0.2s;
+}
+.link-header a:hover{
+    color: #46CAF2;
 }
 .menu   {
-    
+    background-color: #000;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -68,6 +79,7 @@ input {
 
 
 .painel-menu{
+    background-color: #000;
     justify-content: space-between;
     display: flex;
     width: 70%;
@@ -75,8 +87,7 @@ input {
 }
 
 .menu-itens{
-    background-color: #141313;
-    box-shadow: rgba(1, 1, 1, 0.194) 0px 30px 60px -12px inset, rgba(11, 10, 10, 0.264) 0px 18px 36px -18px inset;
+    font-size: 20px;
     width: 20%;
     text-align: center;
     padding: 0.5%;
@@ -190,15 +201,36 @@ ul {
     color: #46CAF2;
 }
 
-.cardx button{
+.button-footer {
+    font-size: 20px;
+    margin-top: 20px;
     width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border-color: rgba(0, 110, 255, 0.623);
+    color: #fff;
+    box-shadow: 0 0 40px 40px  rgba(0, 110, 255, 0.623) inset, 0 0 0 0 rgb(54, 117, 233);
+    transition: all 150ms ease-in-out;
+
+      }
+
+      .button-footer :hover{
+        box-shadow: 0 0 50px 0  rgba(0, 110, 255, 0.623) inset, 0 0 10px 4px rgb(54, 117, 233);
+
+      }
+
+
+/* width: 100%;
     height: 40px;
     border-radius: 30px;
     font-size: 20px;
     margin-top: 20px;
     background-color: #46CAF2;
     color: #FFF;
-}
+    */
+
+
+
 
 .card2 h3{
     margin-bottom: 20px;
@@ -226,10 +258,10 @@ ul {
 .redes {
     display: flex;
     justify-content: space-between;
-    width: 80px;
+    width: 60px;
 }
 
-.redes a  i{
+.redes a {
     width: 20px;
     height: 20px;
     color: #ffffff;
