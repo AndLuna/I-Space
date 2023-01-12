@@ -1,5 +1,16 @@
+.painel-principal{
+    margin-bottom: 200px;
+    background-color: red;
+}
+main{
+    height: 1000px;
+}
+
+
 .containner{
     width: 80%;
+    margin-bottom: 30px;
+    margin-top: 40px;
 }
 
 
@@ -41,7 +52,6 @@
     padding: 10px;
 }
 .text-login a{
-    text-decoration: none;
     color: #000;
 }
 
