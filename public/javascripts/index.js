@@ -17,7 +17,7 @@ function showModal(event, cardId) {
     modalImage.src = img.src;
     modalTitle.textContent = h3.textContent;
     modalDescription.textContent =
-    'O Apple iPhone 14 é um smartphone iOS com características inovadoras que o tornam uma excelente opção para qualquer tipo de utilização. A tela de 6.1 polegadas coloca esse Apple no topo de sua categoria. A resolução também é alta: 2532x1170 pixel. As funcionalidades oferecidas pelo Apple iPhone 14 são muitas e top de linha. ';
+    'O Apple iPhone 16 Ronny conta com tela Super Retina XDR de 6,1 polegadas, sistema de câmara dupla avançado de 12 MP com modo Noite, Deep Fusion, HDR inteligente 3, gravação em HDR 4K Dolby Vision. Resistente a água e pó, ele oferece uma experiência de vídeo de alto nível, reproduzindo em 4K a 60 fps. ';
     // modalValor.textContent  = '299,99R$';
     modalMore.innerHTML = '<a href="#">Saiba mais</a>';
  
@@ -30,7 +30,7 @@ function showModal(event, cardId) {
     modalImage.src = img.src;
     modalTitle.textContent = h3.textContent;
     modalDescription.textContent = 
-    'O Apple iPhone 14 é um smartphone iOS com características inovadoras que o tornam uma excelente opção para qualquer tipo de utilização. A tela de 6.1 polegadas coloca esse Apple no topo de sua categoria. A resolução também é alta: 2532x1170 pixel. As funcionalidades oferecidas pelo Apple iPhone 14 são muitas e top de linha. ';
+    'O Iphone 16 Potter tem muitas vantagens, entre elas, uma abertura mais rápida, possibilitando mais captação de luz e também o modo noturno que agora está 2x mais rápido. O Deep Fusion também foi melhorado e consegue reter mais detalhes e cores. Por fim, ele chega com o novo iOS 16. ';
     // modalValor.textContent  = '199,99R$'
     modalMore.innerHTML = '<a href="#">Saiba mais</a>';
 
@@ -43,7 +43,7 @@ function showModal(event, cardId) {
     modalImage.src = img.src;
     modalTitle.textContent = h3.textContent;
     modalDescription.textContent = 
-    'O Apple iPhone 14 é um smartphone iOS com características inovadoras que o tornam uma excelente opção para qualquer tipo de utilização. A tela de 6.1 polegadas coloca esse Apple no topo de sua categoria. A resolução também é alta: 2532x1170 pixel. As funcionalidades oferecidas pelo Apple iPhone 14 são muitas e top de linha. ';
+    'O iPhone 16 Hermione tem um excelente conjunto de hardware, com tela de qualidade, boas câmeras e desempenho veloz. Mesmo sendo um aparelho de 2019, se mantém atualizado e vale a pena, apesar de não ser o melhor aparelho com custo-benefício da marca. ';
     // modalValor.textContent  = '99,99R$'
     modalMore.innerHTML = '<a href="#l">Saiba mais</a>';
 
