@@ -5,186 +5,227 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../style/reset.css">
   <!-- <link rel="stylesheet" href="../partials/footer.css"> -->
   <title>Document</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&family=Clicker+Script&family=Kanit:wght@100&family=Poppins:wght@200;300;500;600;700&display=swap');
 
-body{font-family: 'Chivo Mono', monospace;}
+
 
 footer {
-    background-color: black;
-    display: flex;
-    width: 98%;
-    padding: 10px;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    
+  background-color: black;
+  display: flex;
+  width: 100%;
+
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  
 }
 ul {
-    padding-inline-start: 0;
-    
+  padding-inline-start: 0;
+  
 }
 
 .painel {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    padding: 16px 24px;
-}
-
-.cardx {
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+  width: 80%;
+  padding: 30px 10px ;
  
-    color: white;
-    width: 200px;
-    padding: 5px;
-    justify-content: center;
-    align-items: center;
-   
+}
+.painel p strong{
+  color: #46CAF2;
+}
+.cardx {
+
+  color: white;
+  width: 200px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+ 
 }
 
+.cardx h3{
+  margin-bottom: 20px;
+  color: #46CAF2;
+}
+
+.button-footer {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 1px;
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  border-color: rgba(0, 110, 255, 0.623);
+  color: #fff;
+  box-shadow: 0 0 40px 40px  rgba(0, 110, 255, 0.623) inset, 0 0 0 0 rgb(54, 117, 233);
+  transition: all 150ms ease-in-out;
+
+    }
+
+    .button-footer :hover{
+      box-shadow: 0 0 50px 0  rgba(0, 110, 255, 0.623) inset, 0 0 10px 4px rgb(54, 117, 233);
+
+    }
+
+
+/* width: 100%;
+  height: 40px;
+  border-radius: 30px;
+  font-size: 20px;
+  margin-top: 20px;
+  background-color: #46CAF2;
+  color: #FFF;
+  */
+
+
+
+
+.card2 h3{
+  margin-bottom: 20px;
+  color: #46CAF2;
+}
 /* .cardx h3, .cardx h5 {
 
-  
+
 
 
 } */
 
 .logo2 {
-    margin-top: 1px;
+  margin-top: 1px;
 }
 
 
 .textosomos {
-    width: 80px;
-    font-size: 2px;
-    text-align: justify;
-    margin-top: 1px;
+  width: 80px;
+  font-size: 2px;
+  text-align: justify;
+  margin-top: 1px;
 }
 
 .redes {
-    display: flex;
-    justify-content: space-between;
-    width: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 60px;
 }
 
-.redes i {
-    width: 20px;
-    height: 20px;
-    color: #ffffff;
-    transition: all 0.2s;
+.redes a {
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+  transition: all 0.2s;
 }
 
-.redes i:hover{
-   color: #46CAF2;
+.redes a:hover{
+ color: #46CAF2;
 
 }
 
 .lista {
-    flex-direction: row;
+  flex-direction: row;
 
 }
 
 .lista li{
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .lista a{
-    color: #ffffff;
-    margin-bottom: 8px;
-    text-decoration: none;
-    
+  color: #ffffff;
+  margin-bottom: 8px;
+  text-decoration: none;
+  
 }
 
 .lista li :hover {
-    text-decoration: none;
-    cursor: pointer;
-    transition: 0.2s;
-    color: #46CAF2;
-  }
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s;
+  color: #46CAF2;
+}
 
 
 .card2 {
-    color: #ffffff;
-    width: 320px;
-    height: 200px;
-    padding: 10px;
-    margin-bottom: 40px;
-    justify-content: center;
-    align-items: center;
+  color: #ffffff;
+  width: 320px;
+  height: 200px;
+  padding: 10px;
+  margin-bottom: 40px;
+  justify-content: center;
+  align-items: center;
 }
 .listaContato li {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #ffffff;
-    line-height: 25px;
-    margin-bottom: 5px;
-    padding-bottom: 5px;
-}
-h3 {
-    color: #46CAF2;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ffffff;
+  line-height: 25px;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
 }
 
-button {
-    border-radius: 10px;
-    color: #46CAF2
-}
+
+
 
 
 ul {
-    text-align: left;
-    justify-content: flex-start;
-    line-height: 20px;
+  text-align: left;
+  justify-content: flex-start;
+  line-height: 20px;
 }
 
 
 .trio {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 80%;
-    height: 500px;
-    margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
 
 }
 
 .cartao {
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    height: 220px;
-    width: 320px;
-    border: solid 1px rgba(180, 8 , 94,0.3);
-    font-size: 30px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 220px;
+  width: 320px;
+  border: solid 1px rgba(180, 8 , 94,0.3);
+  font-size: 30px;
 }
 
 
 
 .cardsmarcas {
-    width: 90%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    overflow: hidden;
-    -webkit-transition: -webkit-transform .5s ease;
-    transition: transform .5s ease;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
 }
 
 hr{
-    border: solid 1px  rgba(180, 8 , 94,0.3);
-    width: 30%;
+  border: solid 1px  rgba(180, 8 , 94,0.3);
+  width: 30%;
 }
+
 
 
 @media only screen and (max-width: 600px) {
   footer{
-    width: 92%;
+    width: 100%;
     margin-left: 1px;
   }
   p{
@@ -204,56 +245,63 @@ hr{
 <body>
   <footer>
     <div class="painel">
-
-      <div class="cardx card-icon">
-        <img class="logo2" src="../public/images/Logo Iplace.jpg" alt="logo" width="80px">
-        <div class="iconredes">
-          <p class=" textsomos"> Somos a COPCLUB e trazemos para vocês os principais lançamentos com ampla
-            disponibilidade
-            e garantia de autenticidade.</p>
+      /images/I-SPACE.jpg
+        <div class="cardx">
+          <img class="logo2" src="../public/images/logoIsPace.jpeg" alt="logo" width="140px">
+          <div class="iconredes">
+            <p class=" textsomos"> Somos a <strong> I-SPACE </strong>  e trazemos para vocês os principais lançamentos com ampla
+              disponibilidade
+              e garantia de autenticidade.</p>
+          </div>
+          <div class="redes">
+            <a href=""><iconify-icon icon="ant-design:facebook-filled"  width="20"></iconify-icon></a>
+            
+            <a href=""><iconify-icon icon="ant-design:instagram-outlined"  width="20"></iconify-icon></a>
+            
+          </div>
         </div>
-        <div class="redes">
-          <a><i class="fa-brands fa-facebook-square"></i></a>
-          <a><i class="fa-brands fa-instagram"></i></a>
+    
+        <div class="cardx">
+          <h3>INSTITUCIONAL</h3>
+          <ul class="lista" style="list-style: none;">
+            <li> <a href="">Quem Somos</a></li>
+            <li> <a href="">Nossas Lojas</a></li>
+            <li> <a href="">Política de Privacidade</a></li>
+            <li><a href="">Política de reembolso</a></li>
+            <li><a href="">Termos de serviço</a></li>
+            <li><a href=""> Politica de Envio</a></li>
+          </ul>
         </div>
-      </div>
-  
-      <div class="cardx">
-        <h3>INSTITUCIONAL</h3>
-        <ul class="lista" style="list-style: none;">
-          <li> <a href="">Quem Somos</a></li>
-          <li> <a href="">Nossas Lojas</a></li>
-          <li> <a href="">Política de Privacidade</a></li>
-          <li><a href="">Política de reembolso</a></li>
-          <li><a href="">Termos de serviço</a></li>
-          <li><a href=""> Politica de Envio</a></li>
-        </ul>
-      </div>
-  
-   <div class="card2">
-        <h3>CONTATO</h3>
-        <ul class="listaContato" style="list-style: none;">
-          <li> <div class="wpp">Whatsapp
-            </div><div class="number">+55 11 95454 5560</div></li>
-          <li><div class="email">E-mail:</div>
-            <div class="enderecoemail">copclub.br@gmail.com</div></li>
-          <li><div class="dias">Segunda - Sexta</div><div class="horarios">08:00 - 20:00</div>
-            </li>
+    
+     <div class="card2">
+          <h3>CONTATO</h3>
+          <ul class="listaContato" style="list-style: none;">
+            <li> <div class="wpp">Whatsapp
+              </div><div class="number">+55 11 95454 5560</div></li>
+            <li><div class="email">E-mail:</div>
+              <div class="enderecoemail">copclub.br@gmail.com</div></li>
             <li><div class="dias">Segunda - Sexta</div><div class="horarios">08:00 - 20:00</div>
-            </li>
-        </ul>
+              </li>
+              <li><div class="dias">Segunda - Sexta</div><div class="horarios">08:00 - 20:00</div>
+              </li>
+          </ul>
+        </div>
+    
+        <div class="cardx">
+          <h3> FIQUE POR DENTRO </h3>
+          
+          <h5>Receba as novas promoções e produtos.</h5>
+          
+          <button class="button-footer"> Se inscreva </button>
+        </div>
       </div>
-  
-      <div class="cardx regist">
-        <h3> FIQUE POR DENTRO </h3>
-        
-        <h5>Receba as novas promoções e produtos.</h5>
-        
-        <button> Se inscrva </button>
-      </div>
-    </div>
+      
+</footer>
 
-  </footer>
+
+
+<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 
 </body>
 
