@@ -35,7 +35,7 @@ main{
 }
 
 .top-cadastro{
-    background-color: palegreen;
+    
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -121,7 +121,7 @@ input{
 }
 
 .user-header{
-    background-color: palegreen;
+   
     
 }
 
