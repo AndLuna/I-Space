@@ -155,7 +155,7 @@ header{
     main{
         background-color: palegoldenrod;
         width: 40%;
-        height: 600px;
+        height: 1200px;
         padding: 20px;
         justify-content: center;
         align-items: center;
@@ -206,8 +206,7 @@ header{
         align-items: center;
     }
     .texto-cadastro a{
-       
-        
+       color: #000;
     }
 
     .label{
@@ -215,7 +214,14 @@ header{
         height: 40px;
         display: flex;
         align-items: center;
-        font-size: 25px;
+        font-size: 20px;
+    }
+
+    .input-cadastro input{
+        height: 40px;
+        border: 0 none;
+        outline: 0;
+       width: 100%;
     }
 /*Footer começa aqui.*/
 
