@@ -225,14 +225,18 @@ header{
     }
     .termo{
         background-color: rgb(88, 52, 217);
-        width: 55%;
-        height: 30px;
+        width: 60%;
+        height: 40px;
         display: flex;
-        justify-content: space-around;
+        justify-content:start;
         align-items: center;
+        margin: 0;
     }
     .termo input{
-      
+      margin-right: 5px;
+    }
+    .text-termo{
+        background-color: rgb(244, 255, 127);
     }
 /*Footer começa aqui.*/
 
