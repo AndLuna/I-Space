@@ -152,8 +152,71 @@ header{
    
     
     /* Começa o main*/
-   
+    main{
+        background-color: palegoldenrod;
+        width: 40%;
+        height: 600px;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+   .ontainner{
+    align-items: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+   }
+  .header-cadastro{
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
 
+      .right-header-cadastro{
+        background-color: #000000;
+        color: #FFF;
+        width: 120px;
+        padding-right: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .texto-cadastro{
+        background-color: #ffffff;
+        height: 40px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .texto-cadastro h1{
+       font-size: 40px;
+     
+    }
+    .link-fazerLogin{
+        height: 40px;
+        width: 120px;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .texto-cadastro a{
+       
+        
+    }
+
+    .label{
+        background-color: #46f2aa;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+    }
 /*Footer começa aqui.*/
 
 footer {
@@ -214,7 +277,7 @@ ul {
         box-shadow: 0 0 50px 0  rgba(0, 110, 255, 0.623) inset, 0 0 10px 4px rgb(54, 117, 233);
 
       }
-
+    
 
 /* width: 100%;
     height: 40px;
