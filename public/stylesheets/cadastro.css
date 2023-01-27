@@ -223,6 +223,17 @@ header{
         outline: 0;
        width: 100%;
     }
+    .termo{
+        background-color: rgb(88, 52, 217);
+        width: 55%;
+        height: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .termo input{
+      
+    }
 /*Footer começa aqui.*/
 
 footer {
