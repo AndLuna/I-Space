@@ -1,0 +1,26 @@
+@media(max-width: 1024px){
+    .mainProdutos .mainProdutosCards{
+        width: 90%;
+        gap: .3rem;
+    }
+}
+
+@media(max-width: 1000px){
+    .card-trending {
+        width: 200px;
+        height: 350px;
+      }
+      
+      .card-trending img {
+
+      }
+      
+      .card-trending h3 {
+        font-size: 1rem;
+      }
+      
+      .card-trending p {
+
+      }
+
+}
