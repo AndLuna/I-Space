@@ -61,6 +61,12 @@
 height: 650px;
 width: 100%;
   }
+
+  .btn-box {
+    display: flex;
+    margin-right: 30px;
+  }
+
 }
 
 @media only screen and (min-width: 1000px) {
