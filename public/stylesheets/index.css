@@ -292,22 +292,24 @@ section.banner {
 
 .produtos {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.destaque-card-wrap {
+  display: flex;
   justify-content: center;
-  gap: 1rem;
-  margin-bottom: 2rem;
+  width: 100%;
 }
 
 .destaque-card {
-  width: 18%;
-  height: 22rem;
-  border: 1px solid lightgray;
-  background-color: #F6F6F8;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
+  width: calc(33.33% - 20px);
+  margin: 20px 10px 40px 10px;
   text-align: center;
+  border: 1px solid lightgray;
+  max-width: 300px;
+
 }
+
 
 .destaque-card > div *{
   margin-bottom: .5rem;
@@ -401,6 +403,7 @@ button {
   width: 100%;
   margin-top: 2rem;
   margin-bottom: 2rem;
+ 
 }
 
 
@@ -412,6 +415,7 @@ button {
   justify-content: center;
   width: 75%;
   gap: 1rem;
+  
 }
 
 .mainProduto {

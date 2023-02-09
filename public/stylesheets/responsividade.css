@@ -6,10 +6,10 @@
 }
 
 @media(max-width: 1000px){
-    .card-trending {
+    /* .card-trending {
         width: 200px;
         height: 350px;
-      }
+      } */
       
       .card-trending img {
 
@@ -22,5 +22,40 @@
       .card-trending p {
 
       }
+      .destaque-card-wrap {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      /* .destaque-card {
+        width: 46%;
+        margin-top: 10px;
+      } */
+      /* .destaque-card:nth-child(odd) {
+        margin-left: 30px;
+      } */
 
+}
+
+
+@media only screen and (max-width: 700px) {
+  .destaque-card-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .destaque-card {
+    width: 44%;
+  }
+
+  .mainProdutosCards{
+    width: 14%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .destaque-card {
+    width: calc(25% - 20px);
+  }
 }
