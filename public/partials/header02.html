@@ -4,229 +4,345 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../stylesheets/reset.css">
-    <!-- <link rel="stylesheet" href="../partials/header.html"> -->
-
-    <!-- <link rel="stylesheet" href="./header.css"> -->
-    <title>Document</title>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css'>
+    <!-- Google Fonts -->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&amp;display=swap'>
+    <!-- Font Awesome CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
+    <link rel="stylesheet" href="./public/stylesheets/reset.css">
+    <link rel="stylesheet" href="./public/stylesheets/responsividade.css">
+    <link rel="stylesheet" href="../public/stylesheets/header.css"> 
     <link rel="shortcut icon" href="../images/smartphone.png" type="image/x-icon">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&family=Clicker+Script&family=Kanit:wght@100&family=Poppins:wght@200;300;500;600;700&display=swap');
-
-/* <--------- header ----------->*/
-
-header {
-    height: 140px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* font-family: 'Chivo Mono', monospace;
-     display: none; */
-  
-  }
-  
-  .header.show {
-    /* estilos para exibir o menu quando o usuário rolar a página */
-    position: fixed;
-    top: -8px;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    background-color: white;
-    display: block;
-  }
-  
-  .h-titulo {
-    background-color: black;
-    height: 50px;
-    color: white;
-    display: block;
-    position: block;
-    justify-content: center;
-    border: 1px solid rgb(0, 0, 0);
-  
-  }
-  
-  .h-titulo p {
-    margin-left: 1.5%;
-    margin-top: 1.3%;
-    display: flex;
-    position: block;
-    justify-content: center;
-    /* border: 1px solid red; */
-  }
-  
-  .h-medio {
-    display: flex;
-    justify-content: center;
-    margin-left: 30%;
-    gap: 20%;
-  }
-  
-  /* -- -- -- -- -- -- -- -- -- -- -- menu ----------->*/
-  /* <------ botoes ------->*/
-  .nav-list {
-    display: flex;
-    position: block;
-    justify-content: center;
-    margin-left: auto;
-    margin-left: -130px;
-  
-  }
-  
-  .nav-item {
-    height: 35px;
-    width: 71px;
-    margin-top: 10px;
-    margin-left: 30px;
-  }
-  
-  .nav-item:hover {
-    border-bottom: 3px solid black;
-    margin-top: 10px;
-  }
-  
-  .nav-item a {
-    text-decoration: none;
-    color: black;
-    display: inline-block;
-    position: relative;
-    margin: 10%;
-    font-size: 15px;
-  }
-  
-  /* -- -- -- -- -- -- -- -- -- -- -- search ------->*/
-  .right-side {
-    display: flex;
-    margin-left: -30px;
-  }
-  
-  .search { margin: 15px 50px 0px -90px;
-  display: none;}
-  
-  .search input {
-    width: 190px;
-    height: 26px;
-    background-color: #edeff1;
-    border: none;
-
-  }
-  
-  /* -- -- -- -- -- -- -- -- -- -- -- cadastro ------->*/
-  .h-cadastro {
-    background-color: #3b3b3bd3;
-    height: 30px;
-    display: flex;
-    position: block;
-    justify-content: center;
-    margin-top: -8px;
-  }
-  
-  .h-cadastro a {
-    margin-left: 1.3%;
-    text-decoration: none;
-    color: white;
-    margin-top: 0.6%;
-  }
-  
-  
-  
-  
-  .icons-header {
-    display: flex;
-    margin-left: -50px;
-    margin-top: 21px;
-    width: 118px;
-    height: 35px;
-    color: black;
-  }
-  
-  .icon-right-site {
-    width: 38px;
-    height: 35px;
-  }
-  
-  .icon-right-site ion-icon {
-    margin-left: 9.5px;
-    margin-top: 0px;
-    color: black;
-  
-  }
-
-.icon-right-site ion-icon:hover { color: #F1F1FB;}
-
-@media only screen and (max-width: 600px) {
-    header{
+      * {
+        font-family: "Source Sans Pro", "Roboto", Arial, sans-serif;
+      }
+      
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .dropdown-menu.show {
+        -webkit-animation: fadeIn 0.3s alternate;
+        /* Safari 4.0 - 8.0 */
+        animation: fadeIn 0.3s alternate;
+      }
+      
+      .nav-item.dropdown.dropdown-mega {
+        position: static;
+      }
+      .nav-item.dropdown.dropdown-mega .dropdown-menu {
+        width: 90%;
+        top: auto;
+        left: 5%;
+      }
+      
+      .navbar-toggler {
+        border: none;
+        padding: 0;
+        outline: none;
+      }
+      .navbar-toggler:focus {
+        box-shadow: none;
+      }
+      .navbar-toggler .hamburger-toggle {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        z-index: 11;
+        float: right;
+      }
+      .navbar-toggler .hamburger-toggle .hamburger {
+        position: absolute;
+        transform: translate(-50%, -50%) rotate(0deg);
+        left: 50%;
+        top: 50%;
+        width: 50%;
+        height: 50%;
+        pointer-events: none;
+      }
+      .navbar-toggler .hamburger-toggle .hamburger span {
         width: 100%;
-    }
-    .nav-list{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-}
+        height: 4px;
+        position: absolute;
+        background: #333;
+        border-radius: 2px;
+        z-index: 1;
+        transition: transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.2s cubic-bezier(0.77, 0.2, 0.05, 1), all 0.2s ease-in-out;
+        left: 0px;
+      }
+      .navbar-toggler .hamburger-toggle .hamburger span:first-child {
+        top: 10%;
+        transform-origin: 50% 50%;
+        transform: translate(0% -50%) !important;
+      }
+      .navbar-toggler .hamburger-toggle .hamburger span:nth-child(2) {
+        top: 50%;
+        transform: translate(0, -50%);
+      }
+      .navbar-toggler .hamburger-toggle .hamburger span:last-child {
+        left: 0px;
+        top: auto;
+        bottom: 10%;
+        transform-origin: 50% 50%;
+      }
+      .navbar-toggler .hamburger-toggle .hamburger.active span {
+        position: absolute;
+        margin: 0;
+      }
+      .navbar-toggler .hamburger-toggle .hamburger.active span:first-child {
+        top: 45%;
+        transform: rotate(45deg);
+      }
+      .navbar-toggler .hamburger-toggle .hamburger.active span:nth-child(2) {
+        left: 50%;
+        width: 0px;
+      }
+      .navbar-toggler .hamburger-toggle .hamburger.active span:last-child {
+        top: 45%;
+        transform: rotate(-45deg);
+      }
+      
+      .icons {
+        display: inline-flex;
+        margin-left: auto;
+      }
+      .icons a {
+        transition: all 0.2s ease-in-out;
+        padding: 0.2rem 0.4rem;
+        color: #ccc !important;
+        text-decoration: none;
+      }
+      .icons a:hover {
+        color: white;
+        text-shadow: 0 0 30px white;
+      }
+      
+      
+      /* /////////////////////////////// */
+      
+      /* 
+      body.offcanvas-active{
+      overflow:hidden;
+      }
+      
+      .offcanvas-header{ display:none; }
+      
+      .screen-darken{
+      height: 100%; width:0%;
+      z-index: 30;
+      position: fixed; top: 0; right: 0; 
+      opacity:0; visibility:hidden;
+      background-color: rgba(34, 34, 34, 0.6);
+      transition:opacity .2s linear, visibility 0.2s, width 2s ease-in;
+      }
+      
+      .screen-darken.active{
+      z-index:10; 
+      transition:opacity .3s ease, width 0s;
+      opacity:1;
+      width:100%;
+      visibility:visible;
+      }
+      
+      /* ============ mobile view ============ */
+      @media all and (max-width: 991px) {
+      
+      .offcanvas-header{ display:block; }
+      
+      .mobile-offcanvas{
+        visibility: hidden;
+        transform:translateX(-100%);
+        border-radius:0; 
+        display:block;
+        position: fixed;  top: 0; left:0;
+        height: 100%; width:80%;
+        z-index: 1200; 
+        overflow-y: scroll;
+        overflow-x: hidden;
+        transition: visibility .3s ease-in-out, transform .3s ease-in-out;
+      }
+      
+      .mobile-offcanvas.show{
+        visibility: visible; 	transform: translateX(0);
+      }
+      .mobile-offcanvas .container, .mobile-offcanvas .container-fluid{
+        display: block;
+      }
+      
+      }	
+      
+      
+      .header{
+        height: 150px;
+        background-color: black;
+      border: 1px solid transparent;
+      display: flex;
+      justify-content: center;
+      }
+      .header img {
+        width: 210px;
+        max-width: 100%;
+        min-width: 10%;
+        margin: auto;
+        }
+      
+      
+      
+      
+      .navbar-collapse{
+      
+      }
+      .navbar-nav{
+        gap: 20%;
+      
+      }
+      .navbar-brand{
+        margin-left: 1%;
+        
+      }
+      .input-group{
+       width: 400px;
+       margin-right: 10%;
+       margin-bottom: 7px;
+      
+      }
+      header{
+        background-color: black;
+      
+      }
+      
+      .nav-link, .nav-item{
+        color: white;
+        list-style-type: none;
+        }
+      .nav-item:hover, .nav-link:hover{
+        color: lightskyblue;
+      }
+        
+      .nav-link {
+        color: white;
+      }
     </style>
 </head>
 <body>
     <!-- HEADER IMPROVISADO -->
-<header class="header">
-    <div class="h-titulo"><p></p></div>
-
-    <div class="h-medio">
-        <div class="h-navybar">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="index.html">Home</a></li>
-                <li class="nav-item"><a href="./produtos/Watch.html">Watch</a></li>
-                <li class="nav-item"><a href="./produtos/iphone.html">Iphone</a></li>
-                <li class="nav-item"><a href="./produtos/ipad.html">Ipad</a></li>
-                <li class="nav-item"><a href="./produtos/mac.html">Mac</a></li>
-                <li class="nav-item"><a href="./produtos/airpods.html">Airpods</a></li>
-                <li class="nav-item"><a href="./produtos/acessorios.html">Acessorios</a></li>
-                <li class="nav-item"><a href="../produtos/ofertas.html">Ofertas</a></li>
-            </ul>
-        </div>
-
-        <div class="right-side">
-            <!-- <div class="search">
-                <input type="text" placeholder="Procurar">
-            </div> -->
-            <div class="icons-header">
-                <div class="icon-right-site"> 
-                    <a href="../views/desenvolvimento.html">
-                        <ion-icon name="person-outline"></ion-icon>
-                    </a>
-                   
+    <header class="intro">
+      <div class="header">
+        <a href="../index.html"></a>
+        <img src="../public/images/I-SPACE logo oficial.jpg" alt="">
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-black navbar-dark shadow">
+                <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Apple Space <span class="badge bg-primary">
+              <!-- <img src="./public/images/I-SPACE logo oficial.jpg" style="width: 80px; background-color:transparent;" alt=""> -->
+            </span></a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+              <div class="hamburger-toggle">
+                <div class="hamburger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
                 </div>
-            
-                <div class="icon-right-site">
-                    <a href="../views/desenvolvimento.html">
-                        <ion-icon name="star-outline"></ion-icon>
-                    </a>
-                   
-                </div>
-            
-                <div class="icon-right-site">
-                    <a href="../views/desenvolvimento.html">
-                        <ion-icon name="cart-outline"></ion-icon>
-                    </a> 
-                </div>
-
+              </div>
+            </button>
+            <div class="collapse navbar-collapse " id="navbar-content">
+              <ul class="navbar-nav mr-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+  
+                <li class="nav-item dropdown dropdown-mega position-static">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Produtos</a>
+                  <div class="dropdown-menu shadow">
+                    <div class="mega-content px-4">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-12 col-sm-4 col-md-3 py-4">
+                            <h5>O melhor conceito para voce</h5>
+                            <div class="list-group">
+                              <a class="list-group-item" href="../produtos/iphone.html">Iphone</a>
+                              <a class="list-group-item" href="../produtos/mac.html">Mac</a>
+                              <a class="list-group-item" href="../produtos/ipad.html">Ipad</a>
+                              <a class="list-group-item" href="../produtos/Watch.html">Watch</a>
+                              <a class="list-group-item" href="../produtos/airpods.html">Airpods</a>
+                              <a class="list-group-item" href="../produtos/acessorios.html">Acessorios</a>
+                            </div>
+                          </div>
+                          <div class="col-12 col-sm-4 col-md-3 py-4">
+                            <h5>Design</h5>
+                            <div class="card">
+                        <img src="../public/images/iphoneRed.jpg" style="width: 63%;"
+                         class="img-fluid" alt="image">
+                        <div class="card-body">
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                      </div>
+                          </div>
+                          <div class="col-12 col-sm-4 col-md-3 py-4">
+                            <h5>Lider de mercado</h5>
+                              <p><b>Apple Space</b> é um dos maiores parceiros da Apple e 
+                                contamos com o melhor atendimento e custo beneficio do pais.
+                                Os produtos com a melhor qualidade passam primeiro por aqui, então
+                                aproveite com tranquilidade e segurança.
+                             </p>
+                          </div>
+                          <div class="col-12 col-sm-12 col-md-3 py-4">
+                            <h5>Informaçoes e garantias</h5>
+                            <div class="list-group">
+                              <a class="list-group-item" href="#">Informaçoes</a>
+                              <a class="list-group-item" href="#">Termsos & Condicoes</a>
+                              <a class="list-group-item" href="#">Privacidade</a>
+                              <a class="list-group-item" href="#">Garantia</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../views/cadastro.html">Sobre</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../views/login.html">Contato</a>
+                </li>
+              </ul>
+              <form class="d-flex ms-auto">
+                  <div class="input-group">
+                      <input class="form-control border-0 mr-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-primary border-0" type="submit">Buscar</button>
+                  </div>
+   
+              </form>
+                             <li class="nav-item">
+                    <a class="nav-link" href="../views/cadastro.html">Cadastro</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../views/login.html">Login</a>
+                  </li>
             </div>
+          </div>
+        </nav>
+     
+  
+   </header>
+<script>
+   //////// header
 
-        </div>
-
-        
-        </div>
-
-
-    <div class="h-cadastro"><a href="../views/contact.html">
-        Entre para o clube
-
-    </a>
-    </div>
-
-
-</header>
+ document.addEventListener('click',function(e){
+  // Hamburger menu
+  if(e.target.classList.contains('hamburger-toggle')){
+    e.target.children[0].classList.toggle('active');
+  }
+})   
+</script>
+   <!-- Bootstrap 5 JS -->
+ <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js'></script>
 </body>
 </html>

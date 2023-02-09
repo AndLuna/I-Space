@@ -13,10 +13,22 @@
                         <!-- inicio header -->
     <div id="header"></div>
 <script>
-  fetch('../public/partials/header.html')
+  fetch('../public/partials/header02.html')
     .then(response => response.text())
     .then(html => document.getElementById('header').innerHTML = html);
 </script> 
+<script>
+    //////// header
+ 
+  document.addEventListener('click',function(e){
+   // Hamburger menu
+   if(e.target.classList.contains('hamburger-toggle')){
+     e.target.children[0].classList.toggle('active');
+   }
+ })   
+ </script>
+    <!-- Bootstrap 5 JS -->
+  <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js'></script>
                     <!-- fim header -->
 <main class="main-watch">
 
@@ -64,7 +76,7 @@
                 <img src="../public/images/produtos/iphonerasenganultra.png" alt="">
                 <h3>iphone Sharingan</h3>
                 <p>R$ 10.199,00</p>
-                <p class="corzinha">Blue</p>
+             
             </a>
             <a href="#" class="modelo-1 products-card ">
                 <img src="../public/images/produtos/iphoneraengan1.png" alt="">
@@ -123,7 +135,7 @@
                 <img src="../public/images/produtos/iphonerobin.png" alt="">
                 <h3>Iphone Robin</h3>
                 <p>R$ 3.989,00</p>
-                <p class="corzinha">purple</p>
+            
             </a>
 
             <a href="#" class="modelo-5 products-card ">
@@ -140,7 +152,7 @@
                 <img src="../public/images/produtos/iphonekamo.png" alt="">
                 <h3>Iphone Kamo</h3>
                 <p>R$ 8.799,00</p>
-                <p>Red</p>
+          
             </a>
 
         </div>
@@ -148,6 +160,7 @@
 
 
 </main>
+
                     <!-- inicio footer -->
 <div id="footer"></div>
 <script>

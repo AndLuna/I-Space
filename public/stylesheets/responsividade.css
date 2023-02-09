@@ -45,12 +45,21 @@
 
   .destaque-card {
     width: 44%;
+
   }
 
   .mainProdutosCards{
     width: 14%;
     display: flex;
     flex-wrap: wrap;
+  }
+  .index-carrossel, .index-carrossel img{
+    height: 700px;
+  }
+
+  .card-trending, .card-trending img{
+height: 650px;
+width: 100%;
   }
 }
 
@@ -60,3 +69,5 @@
   }
 
 }
+
+
