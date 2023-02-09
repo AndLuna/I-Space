@@ -5,82 +5,128 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=p, initial-scale=1.0">
     <title>Apple Space</title>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css'>
+    <!-- Google Fonts -->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&amp;display=swap'>
+    <!-- Font Awesome CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
     <link rel="stylesheet" href="./public/stylesheets/reset.css">
     <link rel="stylesheet" href="./public/stylesheets/index.css">
     <link rel="stylesheet" href="./public/partials/header.css">
     <link rel="stylesheet" href="./public/stylesheets/responsividade.css">
-    <!-- <link rel="stylesheet" href="../public/stylesheets/header.css"> -->
+    <link rel="stylesheet" href="../public/stylesheets/header.css"> 
    
 </head>
 <body>
 <!-- Importa o HEADER IMPROVISADO -->
 <!-- <iframe src="./public/partials/header.html" frameborder="0" height="150px" width=100px></iframe> -->
-<!-- <div id="header"></div>
-<script>
-  fetch('./public/partials/header.html')
+<!-- <div id="header"></div> -->
+<!-- <script>
+  fetch("./public/partials/header02.html")
     .then(response => response.text())
     .then(html => document.getElementById('header').innerHTML = html);
 </script>  -->
    <!-- HEADER IMPROVISADO -->
    <!-- HEADER IMPROVISADO -->
-   <header class="header">
-    <div class="h-titulo"><p></p></div>
-
-    <div class="h-medio">
-        <div class="h-navybar">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="index.html">Home</a></li>
-                <li class="nav-item"><a href="./produtos/Watch.html">Watch</a></li>
-                <li class="nav-item"><a href="./produtos/iphone.html">Iphone</a></li>
-                <li class="nav-item"><a href="./produtos/ipad.html">Ipad</a></li>
-                <li class="nav-item"><a href="./produtos/mac.html">Mac</a></li>
-                <li class="nav-item"><a href="./produtos/airpods.html">Airpods</a></li>
-                <li class="nav-item"><a href="./produtos/acessorios.html">Acessorios</a></li>
-                <li class="nav-item"><a href="../produtos/ofertas.html">Ofertas</a></li>
-            </ul>
-        </div>
-
-        <div class="right-side">
-            <!-- <div class="search">
-                <input type="text" placeholder="Procurar">
-            </div> -->
-            <div class="icons-header">
-                <div class="icon-right-site"> 
-                    <a href="../views/desenvolvimento.html">
-                        <ion-icon name="person-outline"></ion-icon>
-                    </a>
-                   
-                </div>
-            
-                <div class="icon-right-site">
-                    <a href="../views/desenvolvimento.html">
-                        <ion-icon name="star-outline"></ion-icon>
-                    </a>
-                   
-                </div>
-            
-                <div class="icon-right-site">
-                    <a href="../views/desenvolvimento.html">
-                        <ion-icon name="cart-outline"></ion-icon>
-                    </a> 
-                </div>
-
-            </div>
-
-        </div>
-
-        
-        </div>
-
-
-    <div class="h-cadastro"><a href="../views/contact.html">
-        Entre para o clube
-
-    </a>
+   <header class="intro">
+    <div class="header">
+      <img src="./public/images/I-SPACE logo oficial.jpg" alt="">
     </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark navbar-dark shadow">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Apple Space <span class="badge bg-primary">
+            <!-- <img src="./public/images/I-SPACE logo oficial.jpg" style="width: 80px; background-color:transparent;" alt=""> -->
+          </span></a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+            <div class="hamburger-toggle">
+              <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </button>
+          <div class="collapse navbar-collapse " id="navbar-content">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
 
+              <li class="nav-item dropdown dropdown-mega position-static">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Produtos</a>
+                <div class="dropdown-menu shadow">
+                  <div class="mega-content px-4">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-12 col-sm-4 col-md-3 py-4">
+                          <h5>O melhor conceito para voce</h5>
+                          <div class="list-group">
+                            <a class="list-group-item" href="./produtos/iphone.html">Iphone</a>
+                            <a class="list-group-item" href="./produtos/mac.html">Mac</a>
+                            <a class="list-group-item" href="./produtos/ipad.html">Ipad</a>
+                            <a class="list-group-item" href="./produtos/Watch.html">Watch</a>
+                            <a class="list-group-item" href="./produtos/airpods.html">Airpods</a>
+                            <a class="list-group-item" href="./produtos/acessorios.html">Acessorios</a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-3 py-4">
+                          <h5>Design</h5>
+                          <div class="card">
+                      <img src="./public/images/iphoneRed.jpg" style="width: 63%;"
+                       class="img-fluid" alt="image">
+                      <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                      </div>
+                    </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-3 py-4">
+                          <h5>Lider de mercado</h5>
+                            <p><b>Apple Space</b> é um dos maiores parceiros da Apple e 
+                              contamos com o melhor atendimento e custo beneficio do pais.
+                              Os produtos com a melhor qualidade passam primeiro por aqui, então
+                              aproveite com tranquilidade e segurança.
+                           </p>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-3 py-4">
+                          <h5>Informaçoes e garantias</h5>
+                          <div class="list-group">
+                            <a class="list-group-item" href="#">Informaçoes</a>
+                            <a class="list-group-item" href="#">Termsos & Condicoes</a>
+                            <a class="list-group-item" href="#">Privacidade</a>
+                            <a class="list-group-item" href="#">Garantia</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./views/cadastro.html">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./views/login.html">Contato</a>
+              </li>
+            </ul>
+            <form class="d-flex ms-auto">
+                <div class="input-group">
+                    <input class="form-control border-0 mr-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary border-0" type="submit">Buscar</button>
+                </div>
+                <li class="nav-item">
+                  <a class="nav-link" href="./views/cadastro.html">Cadastro</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./views/login.html">Login</a>
+                </li>
+            </form>
+          </div>
+        </div>
+      </nav>
+   
 
-</header>
+ </header>
+
 
 
     <div class="index-carrossel">
@@ -348,6 +394,10 @@
     
       <script src="./public/javascripts/carrossel.js"></script>
     
+ <!-- Bootstrap 5 JS -->
+ <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js'></script>
+
+      
       <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
       <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
       
