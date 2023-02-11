@@ -178,6 +178,10 @@
        margin-left: 10%;
       
       }	
+
+      .buscarbtn p{
+        display: none;
+      }
     }
       
       
@@ -250,9 +254,15 @@ height: 5vh;
 width: 54%;
   margin: 0 auto;
   padding: 30px 0px;
+  
 }
 .input-group{
   width: 100%;
+
+}
+
+.buscarbtn{
+  width: 10%;
 }
 
     </style>
@@ -269,8 +279,10 @@ width: 54%;
         </div>
         <form class="d-flex ms-auto">
           <div class="input-group putput">
-              <input class="form-control border-0 mr-2" type="search" placeholder="Pesquise aqui" aria-label="Search">
-              <button class="btn btn-primary border-0" type="submit">Buscar</button>
+              <input class="form-control border-0 mr-2" type="search" placeholder="Pesquise" aria-label="Search">
+              <button class="btn btn-primary buscarbtn border-0" type="submit">
+                <p>Buscar</p>
+                </button>
           </div>
   
       </form>

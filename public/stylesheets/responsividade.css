@@ -67,6 +67,14 @@ width: 100%;
     margin-right: 30px;
   }
 
+  section.banner{
+    display: flex;
+    flex-direction: column;
+    height: 36vh;
+  }
+.banner img{
+display: none;
+}
 }
 
 @media only screen and (min-width: 1000px) {

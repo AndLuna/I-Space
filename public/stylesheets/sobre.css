@@ -9,10 +9,10 @@ section{
 }
 
 .card{
-    width: 350px;
+    width: 300px;
     float: left;
     margin: 5px;
-    min-width:  350px;
+    min-width:  250px;
 
 }
 .imgso img{
@@ -65,4 +65,8 @@ height: 600px;
     display: none;
   }
 
+  .card{
+    width: 290px;
+    float: left;
+}
  }
