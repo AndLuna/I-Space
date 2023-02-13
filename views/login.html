@@ -6,48 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../public/stylesheets/cadastro.css">
     <link rel="stylesheet" href="../public/stylesheets/reset.css">
-    
+    <link rel="stylesheet" href="../public/stylesheets/login.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <div class="painel-principal">
-        <div class="top-header">
-            <div class="logo-header">
-                <img src="../public/images/I-SPACE.jpg" alt="" width="120px">
-            </div>
-            <div class="search">
-               <input type="text">
-            </div>
-            <div class="user-header">
-              <div class="icon-header"><a href=""><iconify-icon icon="mdi:account-circle"  width="180" height="50"></iconify-icon></a>  
-              </div>  
-              <div class="link-header">
-              <a href="">Bem vindo!
-                    Entre ou cadastre-se</a>
-               </div>
-               <div class="bag-header"><a href="">
-                <iconify-icon icon="ic:round-shopping-bag"  width="40"></iconify-icon></a>
-               </div>
-            </div>  
-        </div>
-
-        <div class="menu">
-            <div class="painel-menu">
-
-                  <div class="menu-itens"> <a href="">Watch</a></div>
-                  <div class="menu-itens"> <a href=""> Iphone</a></div>
-                  <div class="menu-itens"> <a href=""> Ipad</a></div>
-                  <div class="menu-itens"> <a href=""> Mac</a></div>
-                  <div class="menu-itens"> <a href=""> Airpods</a></div>
-                  <div class="menu-itens"> <a href=""> Acessórios</a></div>
-                  <div class="menu-itens"> <a href=""> Ofertas</a></div>
-                  <div class="menu-itens"> <a href=""> Serviços</a></div>
-                  <div class="menu-itens"> <a href=""> Suporte</a></div>
-            </div>
-            </div>
-        </div>
-    </header>
+                        <!-- inicio header -->
+                        <div id="header"></div>
+                        <script>
+                          fetch('../public/partials/header02.html')
+                            .then(response => response.text())
+                            .then(html => document.getElementById('header').innerHTML = html);
+                        </script> 
+                        <script>
+                            //////// header
+                         
+                          document.addEventListener('click',function(e){
+                           // Hamburger menu
+                           if(e.target.classList.contains('hamburger-toggle')){
+                             e.target.children[0].classList.toggle('active');
+                           }
+                         })   
+                         </script>
+                            <!-- Bootstrap 5 JS -->
+                          <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js'></script>
+                                            <!-- fim header -->
     <div class="containner-main">
     <main>
    <div class="containner">

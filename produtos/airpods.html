@@ -7,17 +7,31 @@
     <link rel="stylesheet" href="../public/stylesheets/reset.css">
     <link rel="stylesheet" href="../public/stylesheets/produtos.css">
     <link rel="stylesheet" href="../public/stylesheets/header.css">
+    <link rel="shortcut icon" type="image/png" href="https://img.freepik.com/icones-gratis/maca_318-631468.jpg">
+
     <title>Apple Space</title>
 </head>
 <body>
-                        <!-- inicio header -->
-    <div id="header"></div>
-<script>
-  fetch('../public/partials/header.html')
-    .then(response => response.text())
-    .then(html => document.getElementById('header').innerHTML = html);
-</script> 
-                    <!-- fim header -->
+                         <!-- inicio header -->
+                         <div id="header"></div>
+                         <script>
+                           fetch('../public/partials/header02.html')
+                             .then(response => response.text())
+                             .then(html => document.getElementById('header').innerHTML = html);
+                         </script> 
+                         <script>
+                             //////// header
+                          
+                           document.addEventListener('click',function(e){
+                            // Hamburger menu
+                            if(e.target.classList.contains('hamburger-toggle')){
+                              e.target.children[0].classList.toggle('active');
+                            }
+                          })   
+                          </script>
+                             <!-- Bootstrap 5 JS -->
+                           <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js'></script>
+                                             <!-- fim header -->
 <main class="main-watch">
 
     <aside class="aside-watch">
@@ -64,7 +78,7 @@
                 <img src="../public/images/produtos/airpods1.png" alt="">
                 <h3>Airpods Kakashi</h3>
                 <p>R$ 2.329,00</p>
-                <p class="corzinha">Red</p>
+               
             </a>
             <a href="#" class="modelo-1 products-card ">
                 <img src="../public/images/produtos/airpods2.png" alt="">
@@ -123,7 +137,7 @@
                 <img src="../public/images/produtos/airpods6.png" alt="">
                 <h3>AirPods Yagami</h3>
                 <p>R$ 6.189,00</p>
-                <p class="corzinha">Red</p>
+               
             </a>
 
             <a href="#" class="modelo-5 products-card ">
@@ -140,7 +154,7 @@
                 <img src="../public/images/produtos/airpods9.png" alt="">
                 <h3>AirPods Nagato</h3>
                 <p>R$ 1.429,00</p>
-                <p>Red</p>
+            
             </a>
 
         </div>

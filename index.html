@@ -5,91 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=p, initial-scale=1.0">
     <title>Apple Space</title>
+    
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css'>
+    <!-- Google Fonts -->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&amp;display=swap'>
+    <!-- Font Awesome CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
     <link rel="stylesheet" href="./public/stylesheets/reset.css">
     <link rel="stylesheet" href="./public/stylesheets/index.css">
-    <link rel="stylesheet" href="./public/partials/header.css">
-    <!-- <link rel="stylesheet" href="../public/stylesheets/header.css"> -->
+    <!-- <link rel="stylesheet" href="./public/partials/header.css"> -->
+    <link rel="stylesheet" href="./public/stylesheets/responsividade.css">
+    <!-- <link rel="stylesheet" href="../public/stylesheets/header.css">  -->
+    <link rel="shortcut icon" type="image/png" href="https://img.freepik.com/icones-gratis/maca_318-631468.jpg">
+
    
 </head>
 <body>
 <!-- Importa o HEADER IMPROVISADO -->
 <!-- <iframe src="./public/partials/header.html" frameborder="0" height="150px" width=100px></iframe> -->
-<!-- <div id="header"></div>
-<script>
-  fetch('./public/partials/header.html')
+<!-- <div id="header"></div> -->
+<!-- <script>
+  fetch("./public/partials/header02.html")
     .then(response => response.text())
     .then(html => document.getElementById('header').innerHTML = html);
 </script>  -->
    <!-- HEADER IMPROVISADO -->
    <!-- HEADER IMPROVISADO -->
-   <header class="header">
-    <div class="h-titulo"><p></p></div>
+                        <!-- inicio header -->
+                        <div id="header"></div>
+                        <script>
+                          fetch('../public/partials/header02.html')
+                            .then(response => response.text())
+                            .then(html => document.getElementById('header').innerHTML = html);
+                        </script> 
+                        <script>
+                            //////// header
+                         
+                          document.addEventListener('click',function(e){
+                           // Hamburger menu
+                           if(e.target.classList.contains('hamburger-toggle')){
+                             e.target.children[0].classList.toggle('active');
+                           }
+                         })   
+                         </script>
+                            <!-- Bootstrap 5 JS -->
+                          <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js'></script>
+                                            <!-- fim header -->
 
-    <div class="h-medio">
-        <div class="h-navybar">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="index.html">Home</a></li>
-                <li class="nav-item"><a href="./produtos/Watch.html">Watch</a></li>
-                <li class="nav-item"><a href="./produtos/iphone.html">Iphone</a></li>
-                <li class="nav-item"><a href="./produtos/ipad.html">Ipad</a></li>
-                <li class="nav-item"><a href="./produtos/mac.html">Mac</a></li>
-                <li class="nav-item"><a href="./produtos/airpods.html">Airpods</a></li>
-                <li class="nav-item"><a href="./produtos/acessorios.html">Acessorios</a></li>
-                <li class="nav-item"><a href="../produtos/ofertas.html">Ofertas</a></li>
-            </ul>
-        </div>
-        <div class="right-side">
-            <!-- <div class="search">
-                <input type="text" placeholder="Procurar">
-            </div> -->
-            <div class="icons-header">
-                <div class="icon-right-site"> 
-                    <a href="../views/desenvolvimento.html">
-                        <ion-icon name="person-outline"></ion-icon>
-                    </a>
-                   
-                </div>
-            
-                <div class="icon-right-site">
-                    <a href="../views/desenvolvimento.html">
-                        <ion-icon name="star-outline"></ion-icon>
-                    </a>
-                   
-                </div>
-            
-                <div class="icon-right-site">
-                    <a href="../views/desenvolvimento.html">
-                        <ion-icon name="cart-outline"></ion-icon>
-                    </a>
-                    
-                </div>
-            </div>
-
-        </div>
-
-        
-        </div>
-
-
-    <div class="h-cadastro"><a href="../views/contact.html">
-        Entre para o clube
-
-    </a>
-    </div>
-
-
-</header>
 
 
     <div class="index-carrossel">
         <a class="slick-slide" href="#">
-          <img src="./public/images/produtos/banner11.png" alt="">
+          <img src="./public/images/pexels-jess-bailey-designs-788946.jpg" alt="">
         </a>
         <a class="slick-slide" href="#">
           <img src="./public/images/produtos/banner2.png" alt="">
         </a>
         <a class="slick-slide" href="#">
-          <img src="./public/images/produtos/banner4.png" alt="">
+          <img src="./public/images/pexels-pixabay-4158.jpg" alt="">
         </a>
       </div>
       <div class="dots"></div>
@@ -148,11 +121,11 @@
     <div class="banner-text">
         <h2>Entre para o Clube e ganhe 20% OFF!</h2>
 
-        <a href="#">
+        <a href="./views/cadastro.html">
           Cadastre-se gratuiamente
         </a>
     </div>
-    <img src="./public/images/iphoneCadastro.jpg" alt="">
+    <img src="./public/images/tech-iphone-bateria-27jun22-Apple.png" alt="">
 
 
   </section>
@@ -160,15 +133,14 @@
 
     <!--                                      Paginacao destaque start            -->
     <div class="destaque_section">
-        <div class="destaque_title">
-          <p></p>
-        </div>
-    
-        <div class="btn-box">
-          <button class="botnn" id="btn-prev">
-            <p>
-              < </p>
-          </button>
+      
+      <div class="destaque_title">
+        <p>Destaque</p>
+      </div>
+      <div class="btn-box">
+        <button class="botnn" id="btn-prev">
+          <p> < </p>
+        </button>
           <button class="botnn" id="btn-next">
             <p> > </p>
           </button>
@@ -181,54 +153,89 @@
   <!-- <a href="../views/carrinho.html" id="linkDestaque"> -->
     <section class="produtos">
   
+      <div class="destaque-card-wrap">
       <div class="destaque-card">
         <img src="./public/images/produtos/tendencia8.png" alt="Imagem do produto 1">
+        <div class="left-aligned ">
         <div class="desconto">10% OFF</div>
+        <p class="originalPrice">De R$ 5.000</p>
         <div class="preco">R$ 2.289,90</div>
-        <div class="descricao"> Tela Super Retina XDR brilhante de 6,1 polegadas*. Ceramic Shield, que é quatro vezes mais resistente a quedas.</div>
+        <p>ou 10x de R$ 500,99</p>
+        <div class="descricao"> 
+          
+          Tela Super Retina XDR brilhante de 6,1 polegadas*. Ceramic Shield, que é quatro vezes mais resistente a quedas.</div>
       </div>
+      </div>
+
       <div class="destaque-card">
         <img src="./public/images/produtos/tendencia9.png" alt="Imagem do produto 2">
+        <div class="left-aligned ">
         <div class="desconto">20% OFF</div>
+       <p class="originalPrice">De R$ 5.000</p>
         <div class="preco">R$ 3.119,99</div>
+        <p>ou 10x de R$ 500,99</p>
         <div class="descricao"> Grave vídeos 4K, faça belos retratos e capture paisagens inteiras com o novo sistema de câmera dupla. Tire fotos incríveis com pouca luz usando o modo Noite.  </div>
+      </div>
+      
       </div>
       <div class="destaque-card">
         <img src="./public/images/produtos/tendencia10.png" alt="Imagem do produto 3">
+        <div class="left-aligned ">
         <div class="desconto">10% OFF</div>
+       <p class="originalPrice">De R$ 5.000</p>
         <div class="preco">R$ 4.499,99</div>
+        <p>ou 10x de R$ 500,99</p>
         <div class="descricao"> O sistema de câmera dupla mais avançado em um iPhone. Chip A15 Bionic com velocidade impressionante. Um grande salto em bateria. Projetado para durar. 5G ultrarrápido.  </div>
+      </div>
       </div>
       <div class="destaque-card">
         <img src="./public/images/produtos/tendencia13.png" alt="Imagem do produto 4">
+        <div class="left-aligned ">
         <div class="desconto">20% OFF</div>
+       <p class="originalPrice">De R$ 5.000</p>
         <div class="preco">R$ 3.199,99</div>
+        <p>ou 10x de R$ 500,99</p>
+     
         <div class="descricao"> Leve o desempenho sem precedentes do chip A13 Bionic para seus games, realidade aumentada e fotografia.  </div>
+      </div>
       </div>
       <div class="destaque-card">
         <img src="./public/images/produtos/iphonezenin.png" alt="Imagem do produto 5">
+        <div class="left-aligned ">
         <div class="desconto">20% OFF</div>
+       <p class="originalPrice">De R$ 5.000</p>
         <div class="preco">R$ 3299,99</div>
+        <p>ou 10x de R$ 500,99</p>
         <div class="descricao"> O iPhone 14 tem o sistema de câmera dupla mais impressionante em um iPhone, para fazer fotos espetaculares em pouca e muita luz. </div>
+      </div>
       </div>
       <div class="destaque-card">
         <img src="./public/images/produtos/iphonerasenganplus.png" alt="Imagem do produto 6">
+        <div class="left-aligned ">
         <div class="desconto">20% OFF</div>
+       <p class="originalPrice">De R$ 5.000</p>
         <div class="preco">R$ 3199,99</div>
+        <p>ou 10x de R$ 500,99</p>
         <div class="descricao"> Com Detecção de Acidente, a maior duração de bateria até hoje e fotos em pouca luz ainda mais espetaculares. Em cinco cores lindas.</div>
       </div>
-      <div class="destaque-card">
+      </div>
+      <div class="destaque-card left-aligned ">
         <img src="./public/images/produtos/iphonegojo.png" alt="Imagem do produto 7">
         <div class="desconto">20% OFF</div>
+       <p class="originalPrice">De R$ 5.000</p>
         <div class="preco">R$ 3149,99</div>
+        <p>ou 10x de R$ 500,99</p>
         <div class="descricao"> A tela tem bordas arredondadas que se ajustam ao design curvo do aparelho dentro da sua forma retangular. </div>
       </div>
-      <div class="destaque-card">
+      <div class="destaque-card left-aligned ">
         <img src="./public/images/produtos/iphonerobin.png" alt="Imagem do produto 8">
         <div class="desconto">20% OFF</div>
+       <p class="originalPrice">De R$ 5.000</p>
         <div class="preco">R$  3249,99</div>
+        <p>ou 10x de R$ 500,99</p>
         <div class="descricao"> Resistência a respingos, água e poeira. </div>
       </div>
+    </div>
     </section>
 
       <!-- <section id="bannerDesconto">
@@ -236,81 +243,103 @@
         <img src="./public/images/IspaceDesconto.jpg" alt="">
      </div>
       </section> -->
-      <div class="index-carrossel">
+      <div class="index-carrossel carrossel2">
         <a class="slick-slide" href="#">
-          <img src="./public/images/produtos/banner333.png" alt="">
+          <img src="./public/images/pexels-mathias-reding-14942224.jpg" alt="">
         </a>
         <a class="slick-slide" href="#">
-          <img src="./public/images/produtos/banner444.png" alt="">
+          <img src="./public/images/pexels-sonya-livshits-9821307.jpg" alt="">
         </a>
         <a class="slick-slide" href="#">
-          <img src="./public/images/produtos/banner666.png" alt="">
+          <img src="https://images.pexels.com/photos/14557601/pexels-photo-14557601.jpeg" alt="">
         </a>
       </div>
       <!-- <div class="dots"></div> -->
 
       <!-- secao produtos -->
       <section class="mainProdutos">
-        <div class="mainProdutosimg">
-            <img src="./public/images/iphone-13-pink-select-2021.png" alt="">
-        </div>
-     
         <div class="mainProdutosCards">
 
             <div class="mainProduto">
-                <img src="./public/images/produtos/ipad111.png" alt="">
+                <img src="./public/images/produtos/ipad111.png" class="img1" alt="">
                 <div class="mainProdutText">
                 <h1 class="mainProdutoTitle">Ipad Zeus</h1>
-                <p class="mainProdutoPreco">6.329,00</p>
+                <p class="originalPrice">De R$ 5.000</p>
+                
+                <p class="mainProdutoPreco">4.699,00</p>
+                <p>ou 10x de R$ 500,99</p>
             </div>
             </div>
             <div class="mainProduto">
-              <img src="./public/images/produtos/home4.png" alt="">
+              <img src="./public/images/produtos/home4.png" class="img2" alt="">
               <div class="mainProdutText">
               <h1 class="mainProdutoTitle">Watch Apollo</h1>
-              <p class="mainProdutoPreco">2.569,00</p>
+              <p class="originalPrice">de R$ 5.000</p>
+              
+              <p class="mainProdutoPreco"> 3.699,00</p>
+              <p>ou 10x de R$ 500,99</p>
           </div>
           </div>
           <div class="mainProduto">
-            <img src="./public/images/produtos/home1.png" alt="">
+            <img src="./public/images/produtos/home1.png" class="img3" alt="">
             <div class="mainProdutText">
             <h1 class="mainProdutoTitle">Iphone Diana</h1>
-            <p class="mainProdutoPreco">5.479,00</p>
+            <p class="originalPrice">De R$ 5.000</p>
+            
+            <p class="mainProdutoPreco"> 5.699,00</p>
+            <p>ou 10x de R$ 500,99</p>
         </div>
         </div>
             <div class="mainProduto">
-                <img src="./public/images/produtos/mac111.png" alt="">
+                <img src="./public/images/produtos/mac111.png" class="img4" alt="">
                 <div class="mainProdutText">
                     <h1 class="mainProdutoTitle">MacBook Afrodite</h1>
-                    <p class="mainProdutoPreco">10.589,00</p>
+                    <p class="originalPrice">De R$ 5.000</p>
+                    
+                    <p class="mainProdutoPreco"> 6.699,00</p>
+                    <p>ou 10x de R$ 500,99</p>
                 </div>
             </div>
             <div class="mainProduto">
-                <img src="./public/images/produtos/home3.png" alt="">
+                <img src="./public/images/produtos/home3.png" class="img5" alt="">
                 <div class="mainProdutText">
                     <h1 class="mainProdutoTitle">Iphone Poseidon</h1>
-                    <p class="mainProdutoPreco">6.789,00</p>
+                    <p class="originalPrice">De R$ 5.000</p>
+                    
+                    <p class="mainProdutoPreco"> 5.699,00</p>
+                    <p>ou 10x de R$ 500,99</p>
                 </div>
             </div>
             <div class="mainProduto">
-                <img src="./public/images/produtos/ipad222.png" alt="">
+                <img src="./public/images/produtos/ipad222.png" class="img6" alt="">
                 <div class="mainProdutText">
                     <h1 class="mainProdutoTitle">Ipad Atena</h1>
-                    <p class="mainProdutoPreco">9.579,00</p>
+                    <p class="originalPrice">De R$ 5.000</p>
+                    
+                    <p class="mainProdutoPreco"> 4.299,00</p>
+                    <p>ou 10x de R$ 500,99</p>
                 </div>
             </div>
             <div class="mainProduto">
-                <img src="./public/images/produtos/home5.png" alt="">
+                <img src="./public/images/produtos/home5.png" class="img7" alt="">
                 <div class="mainProdutText">
                     <h1 class="mainProdutoTitle">Watch Hera</h1>
-                    <p class="mainProdutoPreco">2.699,00</p>
+                    <p class="originalPrice">De R$ 5.000</p>
+                    
+                    <p class="mainProdutoPreco"> 5.639,00</p>
+                    <p>ou 10x de R$ 500,99</p>
                 </div>
             </div>
-            <div class="mainProduto">
-                <img src="./public/images/produtos/mac444.png" alt="">
+            <div class="mainProduto left-aligned ">
+                <img src="./public/images/produtos/mac444.png"class="img8" alt="">
                 <div class="mainProdutText">
                     <h1 class="mainProdutoTitle">MacBook Demeter</h1>
+                    <p class="originalPrice">De R$ 5.000</p>
                     <p class="mainProdutoPreco">9.569,00</p>
+                   
+                    <p>ou 10x de R$ 500,99</p>
+               
+                  </div>
                 </div>
             </div>
             
@@ -337,6 +366,8 @@
     
       <script src="./public/javascripts/carrossel.js"></script>
     
+
+      
       <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
       <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
       

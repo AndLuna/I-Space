@@ -59,8 +59,8 @@ section .products-card {
 }
 
 section .products-card img {
-    width: 280px;
-    height: 300px;
+    width: 220px;
+    height: 250px;
 }
 
 section .products-card p,
@@ -74,17 +74,17 @@ section .products-card h3{
     font-weight: bolder;
 }
 section .products-container p{
-    background-color: rgb(100, 189, 100);
+    background-color: #38B6F9;
     color: rgb(255, 255, 255);
     width: 120px;
-    height: 14px;
+    height: 2rem;
     padding: 5px;
     border-radius: 5px;
     font-weight: bolder;
 
 }
 section .products-container p:hover{
-    background-color: rgb(113, 223, 113);
+    background-color:#1196de;
 }
 
 /*aside.aside-watch {

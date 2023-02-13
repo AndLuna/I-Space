@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/stylesheets/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../public/stylesheets/sobre.css">
+    <link rel="shortcut icon" type="image/png" href="https://img.freepik.com/icones-gratis/maca_318-631468.jpg">
+
+</head>
+
+<body cz-shortcut-listen="true">
+
+
+
+
+
+
+    <!-- inicio header -->
+    <div id="header"></div>
+    <script>
+        fetch('../public/partials/header02.html')
+            .then(response => response.text())
+            .then(html => document.getElementById('header').innerHTML = html);
+    </script>
+    <script>
+        //////// header
+
+        document.addEventListener('click', function (e) {
+            // Hamburger menu
+            if (e.target.classList.contains('hamburger-toggle')) {
+                e.target.children[0].classList.toggle('active');
+            }
+        })   
+    </script>
+    <!-- Bootstrap 5 JS -->
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js'></script>
+    <!-- fim header -->
+    </header>
+    <br><br>
+
+    <section id="sobre">
+        <div class="container container-fluid">
+
+            <div class="row container-fluid">
+                <div class="col-md-8 col-sm-12 divsobre">
+                    <h2 class="mg30">Sobre nós</h2>
+                    <p>Bem-vindo à Apple Space, sua loja online especializada em produtos da Apple. Desde o nosso
+                        início, temos como objetivo fornecer aos nossos clientes os melhores e mais recentes produtos da
+                        marca.
+
+                        Tudo começou com um grupo de apaixonados por tecnologia e design, que buscavam uma loja online
+                        especializada em produtos Apple. Assim, a Apple Store nasceu com o propósito de trazer aos
+                        nossos clientes a mais alta qualidade e tecnologia em dispositivos da marca.
+                    </p>
+                    <p>Hoje, somos uma empresa de médio porte, com uma equipe dedicada e apaixonada por tecnologia,
+                        sempre atenta às novidades e lançamentos da Apple. Nós nos orgulhamos de oferecer aos nossos
+                        clientes um amplo catálogo de produtos, incluindo iPhones, iPads, MacBooks, Apple Watches, entre
+                        outros.
+
+                        Nossos produtos são selecionados com muito cuidado, para garantir a qualidade e a tecnologia de
+                        ponta. Todos eles são originais e possuem garantia da Apple, oferecendo aos nossos clientes a
+                        tranquilidade e segurança que eles merecem.
+                    </p>
+                    <p>A Apple Space é muito mais do que uma loja online, é uma comunidade de pessoas apaixonadas por
+                        tecnologia e design. Nós acreditamos que a tecnologia é capaz de transformar vidas e, por isso,
+                        queremos tornar os produtos da Apple acessíveis a todos.
+
+                        Seja você um usuário iniciante ou um profissional de tecnologia, a Apple Store é o lugar certo
+                        para você encontrar os melhores produtos da marca. Nós estamos sempre à disposição para ajudá-lo
+                        a escolher o melhor produto para atender às suas necessidades.</p>
+
+
+                </div>
+                <div class="col-md-4 col-sm-12 imgso">
+                    <img src="../public/images/pexels-danique-veldhuis-12613019.jpg" alt=""
+                        style="height: 500px; width: 450px;" class="img-fluid">
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <br><br>
+
+    <section id="produtos">
+        <div class="container container-fluid">
+            <div class="row container-fluid">
+                <h2 class="mg30">Nossos serviços</h2>
+                <div class="col produtos-container container-fluid">
+
+
+                    <div class="card">
+                        <img src="https://images.pexels.com/photos/6633048/pexels-photo-6633048.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1"
+                            alt="" class="img-fluid imgservice">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Produtos</h5>
+                            <p class="card-text">
+                                Na Apple Space, oferecemos uma ampla gama de produtos da Apple, desde iPhones, iPads,
+                                MacBooks, Apple Watches e acessórios. Nós nos esforçamos para oferecer aos nossos
+                                clientes a mais recente tecnologia e design da marca.
+                                Além disso, nós oferecemos suporte técnico.
+                            </p>
+                            <a class="btn btn-primary" href="#produto-1">Ver serviço</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://images.pexels.com/photos/1826060/pexels-photo-1826060.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1"
+                            alt="" class="img-fluid imgservice">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Revenda</h5>
+                            <p class="card-text">
+                                Se você está procurando revender produtos da Apple, a Apple Space é o lugar certo para
+                                você. Nós oferecemos aos nossos parceiros revendedores uma ampla gama de produtos da
+                                marca, com preços competitivos e condições de pagamento flexíveis.
+                            </p>
+                            <a class="btn btn-primary" href="#produto-2">Ver serviço</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://images.pexels.com/photos/1290515/pexels-photo-1290515.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1"
+                            alt="" class="img-fluid imgservice">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Seguros</h5>
+                            <p class="card-text">
+                                Na Apple Space, entendemos que os dispositivos da Apple são investimentos valiosos e que
+                                é importante protegê-los contra danos acidentais ou roubo. Por isso, nós oferecemos aos
+                                nossos clientes um serviço de seguro para os seus dispositivos da Apple.
+                            </p>
+                            <a class="btn btn-primary" href="#produto-3">Ver serviço</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bestplace">
+     
+        <div class="container container-fluid">
+            <img src="../public/images/I-SPACE logo oficial.jpg" style="width:200px;" alt="" class="img-fluid">
+
+            <div class="row container-fluid">
+                <div class="col-md-6 col-sm-12">
+                    <h2 class="mg30">A campeã nacional em produtos e serviços Apple</h2>
+                    <p>A Apple Space é reconhecida como a maior especialista em Apple para empresas no Brasil por vários motivos. Desde a sua fundação, a empresa tem se esforçado para oferecer aos seus clientes os melhores produtos da Apple, com preços competitivos e condições de pagamento flexíveis.
+                    </p>
+                    <p>Além disso, a Apple Space possui uma equipe de especialistas altamente capacitada e treinada para atender às necessidades das empresas. Nós entendemos que as empresas têm necessidades específicas em relação a tecnologia e, por isso, oferecemos soluções personalizadas para atender às suas demandas.
+                    </p>
+                  
+
+                </div>
+                <div class="col-md-6 col-sm-12 imgsobre">
+                    <img src="../public/images/pexels-fauxels-3184423.jpg" alt=""
+                      class="img-fluid">
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="contato">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h2 class="mg30">Contato</h2>
+                    <p>Ficou interessado? Preencha os campos abaixo
+                        para receber uma cotação.
+                    </p>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="form">
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="nome" placeholder="Digite seu nome">
+                        </div>
+                        <div class="input-group">
+                            <input class="form-control" type="email" name="email" placeholder="Digite seu email">
+                        </div>
+                        <div class="input-group">
+                            <textarea class="form-control" name="" cols="30" rows="5"></textarea>
+                        </div>
+
+
+                        <button type="submit" class="btn btn-lg btn-success">Solicitar Cotação</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+    <script>
+      fetch('../public/partials/footer.html')
+        .then(response => response.text())
+        .then(html => document.getElementById('footer').innerHTML = html);
+    </script>
+
+
+    <script>
+
+    </script>
+
+
+
+    <script src="./java.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
