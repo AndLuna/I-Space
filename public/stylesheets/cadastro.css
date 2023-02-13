@@ -187,8 +187,7 @@ header{
       }
 
       .texto-cadastro{
-        background-color: #ffffff;
-        height: 40px;
+        height: 60px;
         margin-bottom: 20px;
         display: flex;
         justify-content: space-between;
@@ -200,9 +199,8 @@ header{
      
     }
     .link-fazerLogin{
-        height: 40px;
+        height: 60px;
         width: 120px;
-        background-color: #ffffff;
         display: flex;
         justify-content: center;
         align-items: center;
