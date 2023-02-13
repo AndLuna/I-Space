@@ -161,7 +161,9 @@ header{
         flex-wrap: wrap;
         margin: 0 auto;
     }
-   .ontainner{
+   .containner{
+    border: 4px solid black;
+
     background-color: #f24646;
     margin-bottom: 20px;
    }
@@ -205,6 +207,7 @@ header{
     }
     .texto-cadastro a{
        color: #000;
+       
     }
 
     .label{
@@ -215,12 +218,19 @@ header{
         font-size: 20px;
     }
 
-    .input-cadastro input{
-        height: 40px;
-        border: 1px solid #d6dbd2;
-        outline: 0;
-       width: 100%;
-    }
+   
+
+    .input-cadastro,
+.input-min {
+   height: 40px;
+   border: 1px solid #d6dbd2;
+   outline: 0;
+   width: 100%;
+}
+
+.input-min {
+   width: 20rem;
+}
     .termo{
        
         width: 60%;
@@ -234,13 +244,12 @@ header{
         
       margin-right: 5px;
     }
-    .text-termo{
-       
-    }
+  
     .button-cadastro{
         width: 100%;
         height: 40px;
         margin-top: 30px;
+        margin-bottom: 20px;
       
     }
     .button-cadastro button{
@@ -254,17 +263,26 @@ header{
     }
 /*Footer começa aqui.*/
 
+
 footer {
     background-color: black;
     display: flex;
     width: 100%;
-    padding: 10px;
+    /* padding: 10px; */
     margin: 0 auto;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
     
+}
+
+.painel {
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+    width: 100%;
+    /* padding: 16px 24px; */
 }
 ul {
     padding-inline-start: 0;

@@ -1,127 +1,154 @@
 header{
-    background-color: #46CAF2;
-}
-main{
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
-}
-
-
-
-
-.containner{
-    width: 80%;
-    height: 90%;
-    margin-bottom: 30px;
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
-}
-
-
-.painel-cadastro{
-    width: 40%;
-    height: 400px;
-    border: 2px solid black;
-   
-    
-}
-
-.top-cadastro{
-    
-    display: flex;
-    justify-content: space-between;
     width: 100%;
-    height: 60px;
-    background-color: #000;
-
+    
+    
 }
-
-.logo{
-    width: 20%;
+.painel-principal{
+    background-color: #000
 }
-.seguro{
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
-    color: #fff;
-    align-items: center ;
-    padding: 10px;
-}
-.seguro a{
-    color:#fff;
-    width: 20px;
-}
-
-.text-login{
-    background-color:#fff;
+.top-header{
+    height: 60%;
     display: flex;
     justify-content: space-between;
-    text-align: center;
-    margin-bottom: 10px;
-    padding: 10px;
-}
-.text-login a{
-    color: #000;
+    align-items: center;
+    padding: 10px 60px 10px 20px;
 }
 
-.login{
-    font-size: 30px;
-    text-align: center;
-}
-
-.link-cadastro{
-    padding-top: 10px;
-}
-.containner-input{
-    margin: 10px;
-    padding: 5px;
-}
-.text-input{
-    color: #C5C0BE;
-    padding: 5px;
-}
-input{
-    height: 40px;
+.search input {
+    width: 80%;
+    height: 80%;
+    font-size: 16px;
+    color: #FFF;
+    background-color: #000;
     border: 0 none;
     outline: 0;
-   width: 100%;
-   
-}
-
-.input input{
-   border: 1px solid #d6dbd2;
-  
-}
-
-.link{
-   margin-top: 20px;
-   margin-bottom: 20px;
-   
-}
-
-.link a{
-    color: #000;
-}
-
-.button-login input{
-    background-color: #46CAF2;
-    color: #000;
-    width: 100%;
-    height: 50px;
-    font-size: 20px;
-    
 }
 
 .user-header{
-   
-    
+
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 180px;
+
 }
 
+.user-header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.icon-header {
+    color: #FFF;
+   margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    transition: all 0.2s;
+}
+
+.icon-header a:hover{
+    color: #46CAF2;
+}
+
+.link-header {
+    width: 50%;
+    height: 60px;
+    font-size: 14px;
+   padding-top: 10px;
+   margin-left: 10px;
+    color: #FFF;
+    transition: all 0.2s;
+}
+.link-header a:hover{
+    color: #46CAF2;
+}
+.menu   {
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+.menu  a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.painel-menu{
+    background-color: #000;
+    justify-content: space-between;
+    display: flex;
+    width: 70%;
+    height: 30px;
+}
+
+.menu-itens{
+    font-size: 20px;
+    width: 20%;
+    text-align: center;
+    padding: 0.5%;
+}
+
+
+
+.search {
+    width: 50%;
+    height: 30px;
+    padding: 12px 24px;
+    transition: transform 250ms ease-in-out;
+    font-size: 14px;
+    line-height: 18px;
+    color: #575756;
+    background-color: transparent;
+/*         background-image: url(http://mihaeltomic.com/codepen/input-search/ic_search_black_24px.svg); */
+
+  background-image: url('https://api.iconify.design/ic/baseline-search.svg?color=white&width=180&height=60');
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 95% center;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    transition: all 250ms ease-in-out;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+ .search::placeholder {
+        color: color(#575756 a(0.8));
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+    }
+    
+    .search:hover,
+    .search:focus {
+        padding: 12px 0;
+        outline: 0;
+        border: 1px solid transparent;
+        border-bottom: 1px solid #575756;
+        border-radius: 0;
+        background-position: 100% center;
+    }
+
+    /*Trabalhando com o icone do carrinho */
+    .bag-header a {
+        color: #ffffff;
+        transition: all 0.2s;
+    }
+    .bag-header a:hover{
+        color: #46CAF2;
+    }
+
+    .menu-itens a {
+        color: #ffffff;
+        transition: all 0.2s;
+    }
+    .menu-itens a:hover{
+        color: #46CAF2;
+     
+    }
+   /* MAIN */
+
+   
