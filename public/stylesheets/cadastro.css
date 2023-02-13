@@ -162,6 +162,7 @@ header{
         margin: 0 auto;
     }
    .containner{
+    width: 88%;
     border: 1px solid black;
     margin-bottom: 20px;
    
