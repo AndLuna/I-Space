@@ -176,9 +176,9 @@ header{
         justify-content: space-between;
         width: 100%;
       }
-
+   
       .right-header-cadastro{
-        color: #FFF;
+        color: rgb(255, 255, 255);
         width: 140px;
         padding-right: 10px;
         display: flex;
@@ -483,7 +483,7 @@ hr{
 
 /* NOVA PAGINA DE LOGIN*/
 .top-cadastro{
-    background-color: #000000;
+    background-color: #d62525;
     height: 60px;
     padding-left: 5px;
     padding-right: 5px;
@@ -504,6 +504,7 @@ hr{
 }
 .text-login{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     height: 60px;
     padding-left: 5px;
@@ -542,4 +543,21 @@ hr{
 }
 
 
+.containner-login{
+    background-color: #f3eb18;
+    width: 90%;
+}
+.top-cadastro{
+    
+    padding: 10px;
+    background-color: #03310d;
+}
 
+.text-login{
+    background-color: #46f26e;
+}
+
+.containner-input{
+    padding: 10px;
+    background-color: #4646f2;
+}
