@@ -153,8 +153,7 @@ header{
     
     /* Começa o main*/
     main{
-        background-color: brown;
-        width: 55%;
+        width: 40%;
         height: 1300px;
         display: flex;
         justify-content: center;
@@ -163,9 +162,8 @@ header{
         margin: 0 auto;
     }
    .containne-cadastre{
-    background-color: rgb(159, 159, 74);
     height: 80%;
-    width: 90%;
+    width: 100%;
     border-radius: 10px;
     border: 1px solid rgb(202, 202, 202);
    }
@@ -226,7 +224,6 @@ header{
    .inputs-form-cadastro{
     width: 100%;
     height: 70%;
-    background-color: rgb(178, 112, 216);
    }
 
     .input-cadastro,
@@ -241,21 +238,19 @@ header{
    width: 20rem;
 }
     .termo{
-       background-color: royalblue;
         width: 100%;
-        height: 40px;
+        height: 60px;
         display: flex;
         justify-content:start;
         align-items: center;
         margin: 0;
     }
     .termo input{
-        
+      height: 100%;  
       margin-right: 5px;
     }
   
     .button-cadastro{
-        background-color: rgb(241, 241, 104);
         width: 100%;
         height: 90px;
         display: flex;
@@ -269,6 +264,7 @@ header{
         width: 100%;
         height: 50px;
         border: 0 none;
+        border-radius: 3PX;
         outline: 0;
         text-align: center;
         font-size: 30px;
