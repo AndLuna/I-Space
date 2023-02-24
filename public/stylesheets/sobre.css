@@ -1,3 +1,4 @@
+
 section{
     padding-bottom: 4rem;
     padding-top: 4rem;
@@ -9,27 +10,50 @@ section{
 }
 
 .card{
-    width: 300px;
+    width: 350px;
     float: left;
     margin: 5px;
     min-width:  250px;
-
 }
-.imgso img{
-    min-width: 350px;
+.divsobre p, .divcampanha p{
+   font-size: 16px;
+}
+.card-text{
+    font-size: 16px;
 }
 
-.produtos-container{
-    display: flex;
-    flex-wrap: wrap;
 
+.imgcampanha img{
+    width: 350px;
 }
+
 
 .bestplace{
     background-color: black;
     height: 600px;
     color: #898989;
 }
+
+@media only screen and (max-width: 770px){
+    .imgcampanha img{
+        width: 250px;
+    }
+    .bestplace{
+        height: 114vh;
+        margin-bottom: 110px;
+    }
+}
+
+
+
+/* 
+.produtos-container{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
 
 .imgsobre{
 height: 600px;
@@ -44,9 +68,9 @@ height: 600px;
     margin: -20px 0px 0px 120px;
     border-radius: 10px;
     width: 390px;
-}
+} */
 
-@media only screen and (max-width: 1000px) {
+/* @media only screen and (max-width: 1000px) {
 .bestplace{
     height: 1000px;
     display: flex;
@@ -75,4 +99,4 @@ div p{
 }
 
 
- }
+ } */
