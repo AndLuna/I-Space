@@ -75,6 +75,26 @@ width: 100%;
 .banner img{
 display: none;
 }
+
+
+.modaltest{
+  flex-direction: column;
+}
+
+.modal-content{
+  top:50%;
+  height: 75vh;
+}
+#modal-image {
+  padding: 10px;
+  width: 300px;
+margin: 0 auto;
+
+}
+#modal-description, #modal-more{
+  margin-top: 5px;
+  font-size: 14px;
+}
 }
 
 @media only screen and (min-width: 1000px) {
