@@ -8,7 +8,7 @@ main{
 
 .containner-one{
     background-color: palegreen;
-    width: 50%;
+    width: 70%;
     height: 500px;
     display: block;
     justify-content: center;
@@ -59,12 +59,44 @@ main{
     font-size: 20px;
 }
 
-.first-installment{
+.installment{
     background-color: #F4F6CF;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.link-installment{
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    width: 55%;
+    height: 20px;
+    margin-bottom: 10px;
+}
+.link-installment a{
+    color: #000000;
 }
 
-.second-installment{
-    background-color: #F4F6CF;
-    width: 100%;
+.label-cep{
+    font-size: 20px;
+}
+
+.cep{
+    background-color: orange;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.cep input{
+    outline: 0;
+    border: none;
+    height: 100%;
+}
+
+.cep button{
+    background-color: #000000;
+    color: #ffffff;
+    height: 100%;
+    width: 15%;
 }
