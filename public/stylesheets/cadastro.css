@@ -193,6 +193,7 @@ header{
         margin-bottom: 20px;
         display: flex;
         justify-content: space-between;
+        padding: 10px;
         
     }
 
@@ -201,17 +202,14 @@ header{
     }
 
     .link-fazerLogin{
-      
-        height: 60px;
-        width: 120px;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items:last baseline;
     }
-    .texto-cadastro a{
-       color: #000;
-       
+    .link-fazerLogin a{
+        color: #000000;
     }
+   
 
     .label{
        
