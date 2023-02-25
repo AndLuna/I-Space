@@ -49,8 +49,11 @@ main{
     width: 20%;
 }
 .ref{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-size: 20px;
-    width: 70%;
+    width: 35%;
 }
 
 .installment{
@@ -74,7 +77,7 @@ main{
 }
 
 .label-cep{
-    font-size: 20px;
+    
 }
 
 .cep{
