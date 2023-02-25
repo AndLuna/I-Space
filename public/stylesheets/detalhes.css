@@ -97,6 +97,7 @@ main{
 .cep button{
     background-color: #000000;
     color: #ffffff;
+    font-size: 20px;
     height: 100%;
     width: 15%;
 }
