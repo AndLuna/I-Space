@@ -55,6 +55,12 @@ main{
     font-size: 20px;
     width: 35%;
 }
+.price{
+background-color: #e730ce;
+height: 60px;
+width: 100%;
+margin-bottom:10px ;
+}
 
 .installment{
     background-color: #F4F6CF;
