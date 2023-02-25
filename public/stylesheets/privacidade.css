@@ -1,0 +1,32 @@
+.links {
+    font-family: "Source Sans Pro", "Roboto", Arial, sans-serif;
+    margin-top: 15px;
+    margin-left: 15px;
+    color: grey;
+}
+
+.politica-geral {
+    font-family: "Source Sans Pro", "Roboto", Arial, sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    color: #383838;
+    
+
+}
+
+.politica-geral h1 {
+    font-weight: bold;
+    padding-top: 50px;
+}
+
+.politica-geral p {
+    text-align: justify;
+    padding: 5px;
+}
+
+.politica-geral hr {
+    width: 100%;
+    margin-top: 50px;
+}
