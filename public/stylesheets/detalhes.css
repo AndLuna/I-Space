@@ -6,7 +6,7 @@ main{
 
 .containner-one{
     width: 70%;
-    height: 500px;
+    height: 520px;
     display: block;
     justify-content: center;
     align-items: center;
@@ -15,6 +15,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
 }
 .img-min{
     width: 50%;
@@ -29,7 +30,7 @@ main{
 
 .containner-two{
     width: 50%;
-    height: 600px;
+    height: 620px;
 }
 
 .description{
@@ -164,4 +165,10 @@ border: transparent;
 font-size: 20px;
 color: #000000;
 
+}
+
+.grid-product{
+    background-color: #e730ce;
+    height: 300px;
+    width: 100%;
 }
