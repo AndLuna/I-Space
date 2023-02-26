@@ -1,10 +1,16 @@
 
 main { /* campo universal do carrinho*/
+    display: flex;
+    justify-content: center;
     padding-top: 1%;
     padding-bottom: 1%;
     height: 500px;
 }
 
-.caixaMaior{
+.caixaMaior{ /* espaço que vai conter os itens adicionados ao carrinho*/
+   
     background-color: grey;
+    width: 80%;
+    height: 100%;
+
 }
