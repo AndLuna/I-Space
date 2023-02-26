@@ -1,5 +1,10 @@
-main {
+
+main { /* campo universal do carrinho*/
     padding-top: 1%;
     padding-bottom: 1%;
     height: 500px;
+}
+
+.caixaMaior{
+    background-color: grey;
 }
