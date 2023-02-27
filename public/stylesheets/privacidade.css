@@ -2,7 +2,6 @@
     font-family: "Source Sans Pro", "Roboto", Arial, sans-serif;
     margin-top: 15px;
     margin-left: 15px;
-    color: grey;
 }
 
 .politica-geral {
@@ -12,8 +11,6 @@
     padding-bottom: 50px;
     padding-top: 20px;
     color: #383838;
-    
-
 }
 
 .politica-geral h1 {
@@ -29,4 +26,10 @@
 .politica-geral hr {
     width: 100%;
     margin-top: 50px;
+}
+
+img {
+    float: left;
+    width: 25%;
+    border-radius: 50px;
 }
