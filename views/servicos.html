@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/stylesheets/login.css">
+    <link rel="stylesheet" href="../public/stylesheets/reset.css">
+  
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- inicio header -->
+    <div id="header"></div>
+    <script>
+      fetch('../public/partials/header02.html')
+        .then(response => response.text())
+        .then(html => document.getElementById('header').innerHTML = html);
+    </script> 
+    <script>
+        //////// header
+     
+      document.addEventListener('click',function(e){
+       // Hamburger menu
+       if(e.target.classList.contains('hamburger-toggle')){
+         e.target.children[0].classList.toggle('active');
+       }
+     })   
+     </script>
+        <!-- Bootstrap 5 JS -->
+      <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js'></script>
+                        <!-- fim header -->
+
+     
+
+    <main>
+    <section class="servicos">
+        <div class="servicos-cabecalho">
+            <h1><strong>Serviços que você só encontra na iPlace.</strong></h1>
+            <h2>Além de toda a linha de produtos Apple e acessórios premium, na iPlace você também encontra serviços especiais que vão trazer mais segurança e comodidade para o seu dia a dia.</h2>
+        </div>
+        <div class="container-imagem-servicos-box1">
+            <img scr="hotsite-servicos-iplace-2023-hoje-icon.svg">
+            <h3>A forma mais inovadora de você ter sempre o iPhone mais recente.</h3>
+            <button box1>Saiba mais</button>
+    </div>
+        <div class="container-imagem-servicos-box2">
+            <img scr="hotsite-servicos-iplace-2022-iplacecare-logo.svg">
+            <h3>Proteção, serviço e suporte para seu iPhone em qualquer lugar do mundo.</h3>
+            <img scr="hotsite-servicos-iplace-2022-iplace-care-image1-min.jpg">
+            <button box2>Saiba mais</button>
+        </div>
+        <div class="container-imagem-servicos-box3">
+            <img scr="hotsite-servicos-iplace-2022-buyback-logo.svg">
+            <p>Utilize seu smartphone ou tablet usado como parte do pagamento de um iPhone ou iPad novo.</p>
+            <img scr="hotsite-servicos-iplace-2022-iplace-care-image1-min.jpg">
+            <button>Saiba mais</button>
+        </div>
+        <div class="container-imagem-servicos-box4">
+            <h5>Garantia</h5>
+            <img scr="hotsite-servicos-iplace-2022-garantia-icon.svg">
+            <h6>Amplie ainda mais a vida útil do seu aparelho, protegendo de eventuais problemas técnicos e mecânicos por até 2 anos.</h6>
+            <button>Saiba mais</button>
+        </div>
+        <div class="container-imagem-servicos-box5">
+            <img scr="hotsite-servicos-iplace-2022-seguro-icon.svg">
+            <p>Seguro</p>
+            <p>Proteja seu Apple contra roubo, furto e quebras acidentais.</p>
+            <button>Saiba mais</button>
+        </div>
+        <div class="container-imagem-servicos-box6">
+            <img scr="hotsite-servicos-iplace-2022-buyback-logo.svg">
+            <h4>Utilize seu smartphone ou tablet usado como parte do pagamento de um iPhone ou iPad novo.</h4>
+            <img scr="hotsite-servicos-iplace-2022-iplace-care-image1-min.jpg">
+            <button box2>Saiba mais</button>
+        </div>
+        <div class="container-imagem-servicos-box7">
+            <img scr="hotsite-servicos-iplace-2022-buyback-logo.svg">
+            <h4>Utilize seu smartphone ou tablet usado como parte do pagamento de um iPhone ou iPad novo.</h4>
+            <img scr="hotsite-servicos-iplace-2022-iplace-care-image1-min.jpg">
+            <button box2>Saiba mais</button>
+        </div>
+        <div class="container-imagem-servicos-box8">
+            <img scr="hotsite-servicos-iplace-2022-buyback-logo.svg">
+            <h4>Utilize seu smartphone ou tablet usado como parte do pagamento de um iPhone ou iPad novo.</h4>
+            <img scr="hotsite-servicos-iplace-2022-iplace-care-image1-min.jpg">
+            <button box2>Saiba mais</button>
+        </div>
+        <div class="container-imagem-servicos-box9">
+            <img scr="hotsite-servicos-iplace-2022-buyback-logo.svg">
+            <h4>Utilize seu smartphone ou tablet usado como parte do pagamento de um iPhone ou iPad novo.</h4>
+            <img scr="hotsite-servicos-iplace-2022-iplace-care-image1-min.jpg">
+            <button box2>Saiba mais</button>
+        </div>
+        <div class="container-imagem-servicos-box10">
+            <img scr="hotsite-servicos-iplace-2022-buyback-logo.svg">
+            <h4>Utilize seu smartphone ou tablet usado como parte do pagamento de um iPhone ou iPad novo.</h4>
+            <img scr="hotsite-servicos-iplace-2022-iplace-care-image1-min.jpg">
+            <button box2>Saiba mais</button>
+        </div>
+        </section>
+        <section>
+            <div class="preco">
+                <h2 class="valor">R$ 2.274,00</h2>
+                <h3 class="parcelamento">Em até 12x de R$ 189,50</h3>
+                <h4 class="vista+desconto">R$ 2.046,60 à vista / (10% 
+            </div>
+        </section>
+        <section class="botao">
+            <div class="conteudo-botao">
+                <img class="conteudo-botao-imagem" src="botao_comprar.
+            </div>
+        </section>
+    </main>
+    <main class="especificações">
+        <section>
+            <div class="especificacoes">
+                <p class="especificacoes-caixa">
+                <strong>Conteúdo da Caixa</strong>
+                Fone de ouvido supra-auricular Beats Pro
+                Cabo de áudio de 3,5 mm
+                Adaptador de áudio
+                Cabo com microfone em linha e 
+                controle remoto para os dispositivos com iOS
+                Estojo para transporte</p>
+
+                <p class="especificacoes-especificacao">
+                <strong>Especificações</strong>
+                Altura: 9,2 cm.
+                Comprimento: 19,2 cm.
+                Largura: 16,4 cm.
+                Peso: 405g
+                Outros recursos: Microfone no cabo com controle de fai
+                Formato: over ear (em cima do ouvido)
+                Comprimento do cabo: 150 cm.</p>
+            </div>
+        </section>
+
+
+</body>
+</html>
