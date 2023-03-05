@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../public/stylesheets/reset.css">
     <link rel="stylesheet" href="../public/stylesheets/cadastro.css">
     <link rel="shortcut icon" type="image/png" href="https://img.freepik.com/icones-gratis/maca_318-631468.jpg">
-
+    <script src="../public/javascripts/form.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -55,30 +55,38 @@
 
           <div class="inputs-form-cadastro">
            
-          <form action="">
+          <form action="" id="form">
             <label class="label" for="email">E-mail*</label>
             <input class="input-cadastro" id="email" type="email">
+            <div class="paragrafo-error"></div>
 
             <label class="label" for="pass">Senha</label>
             <input class="input-cadastro" id="pass" type="password">
+            <div class="paragrafo-error"></div>
 
             <label class="label" for="confirmPass">Confirmar senha</label>
             <input class="input-cadastro" id="confirmPass" type="password">
+            <div class="paragrafo-error"></div>
 
             <label class="label" for="cpf">CPF*</label>
             <input class="input-cadastro" id="cpf" type="number">
+            <div class="paragrafo-error"></div>
 
             <label class="label" for="name">Nome*</label>
             <input class="input-cadastro" id="name" type="text">
+            <div class="paragrafo-error"></div>
 
             <label class="label" for="lastName">Sobrenome*</label>
-            <input class="input-cadastro" id="lastName" type="text">
+            <input class="input-cadastro" id="lastName" type="text" placeholder="Digite">
+            <div class="paragrafo-error"></div>
 
             <label class="label" for="bornDate">Data de Nascimento</label>
-            <input class="input-min" id="bornDate" type="date">
+            <input class="input-cadastro" id="bornDate" type="date">
+            <div class="paragrafo-error"></div>
 
             <label class="label" for="cel">Celular</label>
-            <input class="input-min" id="cel" type="tel">
+            <input class="input-cadastro" id="cel" type="tel">
+            <div class="paragrafo-error"></div>
 
             <div class="termo">
               <input type="checkbox">
