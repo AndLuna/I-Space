@@ -15,16 +15,20 @@ main { /* campo universal do carrinho*/
     border-radius: 1%;
     padding: 1%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+   
 
 }
 
 .caixaLista{
-   
+   background-color: rgb(120, 120, 123);
 }
 
 .itemDestaque{
-    display: block;
-    background-color: black;
+   
+    background-color: rgb(98, 96, 96);
 }
 
 .item1{
