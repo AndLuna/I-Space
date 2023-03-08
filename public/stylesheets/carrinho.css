@@ -14,20 +14,17 @@ main { /* campo universal do carrinho*/
     height: 100%;
     border-radius: 1%;
     padding: 1%;
+    display: flex;
 
 }
 
 .caixaLista{
-    display: block;
-    background-color: rgb(177, 177, 177);
-    height: 100%;
-    padding-left: 200px;
-    margin-left: 50%;
-    border-radius: 1%;
+   
 }
 
 .itemDestaque{
-
+    display: block;
+    background-color: black;
 }
 
 .item1{
