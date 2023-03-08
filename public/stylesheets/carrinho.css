@@ -9,18 +9,26 @@ main { /* campo universal do carrinho*/
 
 .caixaMaior{ /* espaço que vai conter os itens adicionados ao carrinho*/
    
-    background-color: grey;
+    background-color: rgb(211, 211, 211);
     width: 80%;
     height: 100%;
+    border-radius: 1%;
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+   
 
 }
 
 .caixaLista{
-    
+   background-color: rgb(120, 120, 123);
 }
 
 .itemDestaque{
-
+   
+    background-color: rgb(98, 96, 96);
 }
 
 .item1{
