@@ -1,0 +1,62 @@
+
+main { /* campo universal do carrinho*/
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    height: 1500px;
+    width: 70%;
+    margin: 0 auto;
+ 
+}
+.grade-garantia{
+    margin: 0 auto;
+    display: block;
+    align-items: center;
+
+}
+.card-garantia{
+    text-align: justify;
+    border: 1px solid #d6dbd2;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.titulo-card{;
+text-align: center;
+}
+
+.caixaMaior{ /* espaço que vai conter os itens adicionados ao carrinho*/
+   
+    background-color: rgb(211, 211, 211);
+    width: 80%;
+    height: 100%;
+    border-radius: 1%;
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+   
+
+}
+
+.caixaLista{
+   background-color: rgb(120, 120, 123);
+}
+
+.itemDestaque{
+   
+    background-color: rgb(98, 96, 96);
+}
+
+.item1{
+
+}
+
+.intem2{
+
+}
+
+.item3{
+
+}

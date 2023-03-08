@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../public/stylesheets/reset.css">
-    <link rel="stylesheet" href="../public/stylesheets/carrinho.css">
+    <link rel="stylesheet" href="../public/stylesheets/garantia.css">
     <link rel="shortcut icon" type="image/png" href="https://img.freepik.com/icones-gratis/maca_318-631468.jpg">
 
     <title>Serviços</title>
@@ -33,16 +33,19 @@
                                             <!-- fim header -->
     <main>
         <!-- //codigo da pagina aqui  -->
-        <div class="garantia1">
-          <h1><strong>Garantia Estendida I-Space</strong></h1>
+        <div class="grade-garantia">
+        <div class="card-garantia">
+          <div class="titulo-card"><h1><strong>Garantia Estendida I-Space</strong></h1>
+          </div>
+          
         <p><h3>Com o <strong>Seguro da Garantia Estendida Original</strong>, seu Apple continuará protegido de eventuais problemas funcionais mecânicos, elétricos e eletrônicos.</h3></p>
-        <p><h4>- Prolongue sua segurança por mais tempo. Estenda a garantia por mais 12 ou até 24 meses.</h4></p>
-        <p><h4>- O seguro da garantia Estendida Original entra em vigor automaticamente após a finalização da garantia do fabricante e contempla as mesmas coberturas.</h4></p>
-        <p><h4>- Amplie a vida útil do aparelho: Com esse serviço seu produto continua protegido após o término da Garantia do Fabricante.</h4></p>
+        <p><h4><iconify-icon icon="material-symbols:lock" width="40"></iconify-icon> Prolongue sua segurança por mais tempo. Estenda a garantia por mais 12 ou até 24 meses.</h4></p>
+        <p><h4><span class="iconify" data-icon="mdi:shield-half-full" data-width="40"></span> O seguro da garantia Estendida Original entra em vigor automaticamente após a finalização da garantia do fabricante e contempla as mesmas coberturas.</h4></p>
+        <p><h4><span class="iconify" data-icon="fluent-mdl2:circle-addition-solid" data-width="40"></span> Amplie a vida útil do aparelho: Com esse serviço seu produto continua protegido após o término da Garantia do Fabricante.</h4></p>
       
         </div>
           
-        <div class="beneficios">
+        <div class="card-garantia">
           <h1><strong>Benefícios</strong></h1>
           <p><h4>Seu Apple protegido por mais 12 ou 24 meses contra danos ou defeitos mecânicos, elétricos ou eletrônicos</h4></p>
           <p><h4>Todos os reparos são realizados por assistência técnica autorizada Apple.</h4></p>
@@ -51,7 +54,7 @@
 
         </div>
 
-        <div class="cobertura">
+        <div class="card-garantia">
           <h1><strong>Cobertura:</strong></h1>
           <p><h3>O que cobre?</h3></p>
           <p><h5> Mão de obras e peças originais</h5></p>
@@ -66,7 +69,7 @@
 
         </div>
         
-        
+        </div>
         
 
         
@@ -83,6 +86,8 @@
         .then(response => response.text())
         .then(html => document.getElementById('footer').innerHTML = html);
     </script>
-
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
     </body>
 
