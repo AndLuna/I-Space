@@ -25,12 +25,17 @@ main { /* campo universal do carrinho*/
 text-align: center;
 }
 
+
 .titulo-beneficios{
     text-align: center;
 }
 
 .titulo-cobertura{
     text-align: center;
+}
+
+.cobertura-nao{
+    fl;
 }
 
 .imagem{
