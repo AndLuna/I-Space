@@ -12,5 +12,17 @@
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "morgan": "~1.9.1"
-  }
+  },
+  "description": "https://jolly-tanuki-c72a93.netlify.app/",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndLuna/I-Space.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndLuna/I-Space/issues"
+  },
+  "homepage": "https://github.com/AndLuna/I-Space#readme"
 }
