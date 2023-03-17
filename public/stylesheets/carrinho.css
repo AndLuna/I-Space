@@ -24,11 +24,13 @@ main { /* campo universal do carrinho*/
 
 .caixaLista{
    background-color: rgb(120, 120, 123);
+   flex-grow: 1;
 }
 
 .itemDestaque{
    
     background-color: rgb(98, 96, 96);
+    flex-grow: 1;
 }
 
 .item1{
