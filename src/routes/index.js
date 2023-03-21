@@ -12,6 +12,9 @@ router.get('/', MainController.index);
 
 // # rota dos produtos
 router.get('/iphone', PagesController.iphone);
+router.get('/mac', PagesController.mac);
+router.get('/ipad', PagesController.ipad);
+router.get('/watch', PagesController.watch);
 
 
 // # rota de paginas
