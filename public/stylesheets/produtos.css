@@ -168,3 +168,8 @@ section .products-container p:hover{
       }
 
 }
+
+.hidden {
+    display: none;
+  }
+  

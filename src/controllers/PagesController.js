@@ -1,3 +1,6 @@
+const iphone = require('../database/iphone.json')
+const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")
+
 //const {createMenuObject} = require('../helper/createMenuObject');
 const PagesController = {
     sobre: (req, res) => {
@@ -5,7 +8,10 @@ const PagesController = {
     },
 
     iphone: (req, res) => {
-        res.render('productsPage/iphone', {});
+        res.render('productsPage/iphone', {
+            iphone,
+            toThousand
+        });
     },
 
     mac: (req, res) => {

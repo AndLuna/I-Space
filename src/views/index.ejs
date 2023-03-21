@@ -211,101 +211,46 @@
       <!-- <div class="dots"></div> -->
 
       <!-- secao produtos -->
+      <div class="container products-wrapper">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="products-title">Ofertas</h2>
+          </div>
+          <% products.forEach((product) => { let finalPrice = (product.price * ((100 - product.discount) / 100)).toFixed(0) %>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <section class="product-box">
+                <a href="#<%= product.id %>">
+                  <figure class="product-box_image">
+                    <img src="/images/products/<%= product.image %>" alt="imagen do produto">
+                  </figure>
+                  <article class="product-box_data">
+                    <div class="priceOff">
+                      <h3>
+                        De R$ <%= product.price %> 
+                     </h3>
+ 
+                     <span>
+                       <%= product.discount %> %OFF
+                     </span>
 
+                    </div>
+
+                    <h2>
+                      R$ <%= toThousand(finalPrice) %>,00
+                    </h2>
+                    <p>
+                      <%= product.name %>
+                    </p>
+                    
+                  </article>
+                </a>
+              </section>
+            </div>
+          <% }) %>
+        </div>
+      </div>
     
-      <section class="mainProdutos">
-        <div class="mainProdutosCards">
-
-            <div class="mainProduto">
-                <img src="./images/produtos/ipad111.png" class="img1" alt="">
-                <div class="mainProdutText">
-                <h1 class="mainProdutoTitle">Ipad Zeus</h1>
-                <p class="originalPrice">De R$ 5.000</p>
-                
-                <p class="mainProdutoPreco">4.699,00</p>
-                <p>ou 10x de R$ 500,99</p>
-            </div>
-            </div>
-            
-            <div class="mainProduto">
-              <img src="./images/produtos/home4.png" class="img2" alt="">
-              <div class="mainProdutText">
-              <h1 class="mainProdutoTitle">Watch Apollo</h1>
-              <p class="originalPrice">de R$ 5.000</p>
-              
-              <p class="mainProdutoPreco"> 3.699,00</p>
-              <p>ou 10x de R$ 500,99</p>
-          </div>
-          </div>
-          <div class="mainProduto">
-            <img src="./images/produtos/home1.png" class="img3" alt="">
-            <div class="mainProdutText">
-            <h1 class="mainProdutoTitle">Iphone Diana</h1>
-            <p class="originalPrice">De R$ 5.000</p>
-            
-            <p class="mainProdutoPreco"> 5.699,00</p>
-            <p>ou 10x de R$ 500,99</p>
-        </div>
-        </div>
-            <div class="mainProduto">
-                <img src="./images/produtos/mac111.png" class="img4" alt="">
-                <div class="mainProdutText">
-                    <h1 class="mainProdutoTitle">MacBook Afrodite</h1>
-                    <p class="originalPrice">De R$ 5.000</p>
-                    
-                    <p class="mainProdutoPreco"> 6.699,00</p>
-                    <p>ou 10x de R$ 500,99</p>
-                </div>
-            </div>
-            <div class="mainProduto">
-                <img src="./images/produtos/home3.png" class="img5" alt="">
-                <div class="mainProdutText">
-                    <h1 class="mainProdutoTitle">Iphone Poseidon</h1>
-                    <p class="originalPrice">De R$ 5.000</p>
-                    
-                    <p class="mainProdutoPreco"> 5.699,00</p>
-                    <p>ou 10x de R$ 500,99</p>
-                </div>
-            </div>
-            <div class="mainProduto">
-                <img src="./images/produtos/ipad222.png" class="img6" alt="">
-                <div class="mainProdutText">
-                    <h1 class="mainProdutoTitle">Ipad Atena</h1>
-                    <p class="originalPrice">De R$ 5.000</p>
-                    
-                    <p class="mainProdutoPreco"> 4.299,00</p>
-                    <p>ou 10x de R$ 500,99</p>
-                </div>
-            </div>
-            <div class="mainProduto">
-                <img src="./images/produtos/home5.png" class="img7" alt="">
-                <div class="mainProdutText">
-                    <h1 class="mainProdutoTitle">Watch Hera</h1>
-                    <p class="originalPrice">De R$ 5.000</p>
-                    
-                    <p class="mainProdutoPreco"> 5.639,00</p>
-                    <p>ou 10x de R$ 500,99</p>
-                </div>
-            </div>
-            <div class="mainProduto left-aligned ">
-                <img src="./images/produtos/mac444.png"class="img8" alt="">
-                <div class="mainProdutText">
-                    <h1 class="mainProdutoTitle">MacBook Demeter</h1>
-                    <p class="originalPrice">De R$ 5.000</p>
-                    <p class="mainProdutoPreco">9.569,00</p>
-                   
-                    <p>ou 10x de R$ 500,99</p>
-               
-                  </div>
-                </div>
-            </div>
-            
-
-
-
-        </div>
-
-      </section>
+     
 
       <%- include('partials/footer') %>
 

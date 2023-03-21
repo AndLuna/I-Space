@@ -1,0 +1,66 @@
+[
+    {
+      "id": "1",
+      "name": "Iphone Robin",
+      "description": "",
+      "price": 8000,
+      "discount": 15,
+      "image": "iphonerobin.png"
+    },
+    {
+      "id": "2",
+      "name": "Macbook Enma",
+      "description": "",
+      "price": 11399,
+      "discount": 10,
+      "image": "macenma.png"
+    },
+    {
+      "id": "3",
+      "name": "Ipad Eren",
+      "description": "",
+      "price": 1200,
+      "discount": 10,
+      "image": "ipaderen.png"
+    },
+    {
+      "id": "4",
+      "name": "Iphone Zenin",
+      "description": "",
+      "price": 5000,
+      "discount": 15,
+      "image": "iphonezenin.png"
+    },
+    {
+      "id": "5",
+      "name": "Samsung Galaxy S10",
+      "description": "Samsung Galaxy S10",
+      "price": 72999,
+      "discount": 25,
+      "image": "img-samsung-galaxy-s10.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Notebook Lenovo I3 Intel 8gb RAM",
+      "description": "Notebook Lenovo I3 Intel 8gb RAM",
+      "price": 36700,
+      "discount": 5,
+      "image": "img-laptop-lenovo.jpg"
+    },
+    {
+        "id": "7",
+        "name": "Notebook Lenovo I3 Intel 8gb RAM",
+        "description": "Notebook Lenovo I3 Intel 8gb RAM",
+        "price": 36700,
+        "discount": 5,
+        "image": "img-laptop-lenovo.jpg"
+      },
+      {
+        "id": "8",
+        "name": "Notebook Lenovo I3 Intel 8gb RAM",
+        "description": "Notebook Lenovo I3 Intel 8gb RAM",
+        "price": 36700,
+        "discount": 5,
+        "image": "img-laptop-lenovo.jpg"
+      }
+  ]
