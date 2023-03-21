@@ -8,18 +8,15 @@ const PagesController = require('../controllers/PagesController');
 
 // # chamando a primeira pag (Main)
 router.get('/', MainController.index);
+
+
+// # rota dos produtos
+router.get('/iphone', PagesController.iphone);
+
+
+// # rota de paginas
 router.get('/sobre', PagesController.sobre);
 
-//router.get('sobre', MainController.sobre);
 
-
-
-//router.get('/', function(req, res, next) {
-//  res.render('index', { title: 'Express' });
-//});
-
-// router.get('sobre', function (req, res) {
-//     res.render('sobre', MainController.sobre);
-// })
 
 module.exports = router;

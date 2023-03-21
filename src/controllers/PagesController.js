@@ -1,22 +1,12 @@
 //const {createMenuObject} = require('../helper/createMenuObject');
 const PagesController = {
     sobre: (req, res) => {
-        res.render('sobre', {
-            
-        });
-    }
-
-}
-
-const iphone = {
+        res.render('sobre', {});
+    },
     iphone: (req, res) => {
-        res.render('iphone', {
-            
-        });
+        res.render('productsPage/iphone', {});
     }
-
-}
-
+};
 
 
 
