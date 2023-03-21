@@ -23,6 +23,30 @@ checkboxes.forEach((checkbox) => {
 });
 
 
+const tipoProduto = "iPad";
+
+const produtosFiltrados = produtos.filter((produto) => {
+  return produto.type === tipoProduto && produto.modeloValidoParaIpad;
+});
+
+
+// Agora você pode exibir os produtos filtrados na página
+produtosFiltrados.forEach((produto) => {
+  // Exibe o produto na página
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // function filterItems() {

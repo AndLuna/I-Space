@@ -1,7 +1,7 @@
 [
     {
       "id": "1",
-      "name": "Iphone Robin",
+      "name": "Ipad Robin",
       "description": "",
       "price": 8000,
       "image": "iphonerasenganultra.png",
@@ -9,7 +9,7 @@
     },
     {
       "id": "2",
-      "name": "Macbook Enma",
+      "name": "Ipad Enma",
       "description": "",
       "price": 11399, 
       "image": "macenma.png",
@@ -25,7 +25,7 @@
     },
     {
       "id": "4",
-      "name": "Iphone Zenin",
+      "name": "Ipad Zenin",
       "description": "",
       "price": 5000,
       "modelo": "modelo-2",
@@ -109,7 +109,8 @@
         "description": "Notebook Lenovo I3 Intel 8gb RAM",
         "price": 36700,
         "modelo": "modelo-5",
-        "image": "img-laptop-lenovo.jpg"
+        "image": "img-laptop-lenovo.jpg",
+        "type": "iphone"
       },
       {
         "id": "15",
@@ -117,6 +118,13 @@
         "description": "Notebook Lenovo I3 Intel 8gb RAM",
         "price": 36700,
         "modelo": "modelo-5",
-        "image": "img-laptop-lenovo.jpg"
+        "image": "img-laptop-lenovo.jpg",
+        "type": "iPad"
       }
   ]
+
+
+
+
+
+  

@@ -19,7 +19,7 @@
     <aside class="aside-watch">
 
         <div class="title-aside">
-            <h1>Apple Iphone </h1>
+            <h1>Apple DBiphone </h1>
             <button id="toggle-button"> Filtros </button>            
         </div>
         <div class="line"></div>
@@ -52,15 +52,15 @@
 
     <section class="watch-products">
         <div class="products-container">
-            <% iphone.forEach((iphone) => { 
-              let finalPrice = (iphone.price * ((100 - iphone.discount) / 100)).toFixed(0); 
+            <% DBiphone.forEach((DBiphone) => { 
+              let finalPrice = (DBiphone.price * ((100 - DBiphone.discount) / 100)).toFixed(0); 
             %>
-              <a href="#/<%= iphone.id %>" class="products-card <%= iphone.modelo %>">
+              <a href="#/<%= DBiphone.id %>" class="products-card <%= DBiphone.modelo %>">
                 <figure class="product-box_image">
-                  <img src="/images/produtos/<%= iphone.image %>" alt="imagem do produto">
+                  <img src="/images/produtos/<%= DBiphone.image %>" alt="imagem do produto">
                 </figure>
-                <h3><%= iphone.name %></h3>
-                <p><%= iphone.price %> </p>
+                <h3><%= DBiphone.name %></h3>
+                <p><%= DBiphone.price %> </p>
               </a>
             <% }) %>
           </div>

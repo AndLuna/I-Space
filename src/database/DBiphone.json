@@ -1,0 +1,130 @@
+[
+    {
+      "id": "1",
+      "name": "Iphone Robin",
+      "description": "",
+      "price": 8000,
+      "image": "iphonerasenganultra.png",
+      "modelo": "modelo-1"
+    },
+    {
+      "id": "2",
+      "name": "Macbook Enma",
+      "description": "",
+      "price": 11399, 
+      "image": "macenma.png",
+      "modelo": "modelo-1"
+    },
+    {
+      "id": "3",
+      "name": "Ipad Eren",
+      "description": "",
+      "price": 1200,
+      "image": "ipaderen.png",
+      "modelo": "modelo-1"
+    },
+    {
+      "id": "4",
+      "name": "Iphone Zenin",
+      "description": "",
+      "price": 5000,
+      "modelo": "modelo-2",
+      "image": "iphonezenin.png"
+    },
+    {
+      "id": "5",
+      "name": "Samsung Galaxy S10",
+      "description": "Samsung Galaxy S10",
+      "price": 72999,
+      "modelo": "modelo-2",
+      "image": "img-samsung-galaxy-s10.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Notebook Lenovo I3 Intel 8gb RAM",
+      "description": "Notebook Lenovo I3 Intel 8gb RAM",
+      "price": 36700,
+      "modelo": "modelo-2",
+      "image": "img-laptop-lenovo.jpg"
+    },
+    {
+        "id": "7",
+        "name": "Notebook Lenovo I3 Intel 8gb RAM",
+        "description": "Notebook Lenovo I3 Intel 8gb RAM",
+        "price": 36700,
+        "modelo": "modelo-3",
+        "image": "img-laptop-lenovo.jpg"
+      },
+      {
+        "id": "8",
+        "name": "Notebook Lenovo I3 Intel 8gb RAM",
+        "description": "Notebook Lenovo I3 Intel 8gb RAM",
+        "price": 36700,
+        "modelo": "modelo-3",
+        "image": "img-laptop-lenovo.jpg"
+      },
+      {
+        "id": "9",
+        "name": "Notebook Lenovo I3 Intel 8gb RAM",
+        "description": "Notebook Lenovo I3 Intel 8gb RAM",
+        "price": 36700,
+        "modelo": "modelo-3",
+        "image": "img-laptop-lenovo.jpg"
+      },
+      {
+          "id": "10",
+          "name": "Notebook Lenovo I3 Intel 8gb RAM",
+          "description": "Notebook Lenovo I3 Intel 8gb RAM",
+          "price": 36700,
+          "modelo": "modelo-4",
+          "image": "img-laptop-lenovo.jpg"
+        },
+        {
+          "id": "11",
+          "name": "Notebook Lenovo I3 Intel 8gb RAM",
+          "description": "Notebook Lenovo I3 Intel 8gb RAM",
+          "price": 36700,
+          "modelo": "modelo-4",
+          "image": "img-laptop-lenovo.jpg"
+        }, 
+   {
+      "id": "12",
+      "name": "Notebook Lenovo I3 Intel 8gb RAM",
+      "description": "Notebook Lenovo I3 Intel 8gb RAM",
+      "price": 36700,
+      "modelo": "modelo-4",
+      "image": "img-laptop-lenovo.jpg"
+    },
+    {
+        "id": "13",
+        "name": "Notebook Lenovo I3 Intel 8gb RAM",
+        "description": "Notebook Lenovo I3 Intel 8gb RAM",
+        "price": 36700,
+        "modelo": "modelo-5",
+        "image": "img-laptop-lenovo.jpg"
+      },
+      {
+        "id": "14",
+        "name": "Notebook Lenovo I3 Intel 8gb RAM",
+        "description": "Notebook Lenovo I3 Intel 8gb RAM",
+        "price": 36700,
+        "modelo": "modelo-5",
+        "image": "img-laptop-lenovo.jpg",
+        "type": "iphone"
+      },
+      {
+        "id": "15",
+        "name": "Notebook Lenovo I3 Intel 8gb RAM",
+        "description": "Notebook Lenovo I3 Intel 8gb RAM",
+        "price": 36700,
+        "modelo": "modelo-5",
+        "image": "img-laptop-lenovo.jpg",
+        "type": "iPad"
+      }
+  ]
+
+
+
+
+
+  
