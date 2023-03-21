@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/stylesheets/reset.css">
+    <link rel="stylesheet" href="../public/stylesheets/produtos.css">
+    <link rel="stylesheet" href="../public/stylesheets/header.css">
+    <link rel="shortcut icon" type="image/png" href="https://img.freepik.com/icones-gratis/maca_318-631468.jpg">
+
+    <title>Apple Space</title>
+</head>
+<body>
+                        <!-- inicio header -->
+                        <div id="header"></div>
+                        <script>
+                          fetch('../public/partials/header02.html')
+                            .then(response => response.text())
+                            .then(html => document.getElementById('header').innerHTML = html);
+                        </script> 
+                        <script>
+                            //////// header
+                         
+                          document.addEventListener('click',function(e){
+                           // Hamburger menu
+                           if(e.target.classList.contains('hamburger-toggle')){
+                             e.target.children[0].classList.toggle('active');
+                           }
+                         })   
+                         </script>
+                            <!-- Bootstrap 5 JS -->
+                          <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js'></script>
+                                            <!-- fim header -->
+<main class="main-watch">
+
+    <aside class="aside-watch">
+
+        <div class="title-aside">
+            <h1>Apple Iphone </h1>
+            <button id="toggle-button"> Filtros</button>  
+                </div>
+        <div class="line"></div>
+
+        <div class="category-aside">
+            <ul class="itens-list">
+               <li class="item-aside">
+                  <input type="checkbox" id="item1" name="item1">
+                  <label for="item1">Apple Mac legendary </label>
+               </li>
+               <li class="item-aside">
+                  <input type="checkbox" id="item2" name="item2">
+                  <label for="item1">Apple Mac Sennin</label>
+               </li>
+               <li class="item-aside">
+                  <input type="checkbox" id="item3" name="item3">
+                  <label for="item1">Apple Imac Akatsuki</label>
+               </li>
+               <li class="item-aside">
+                  <input type="checkbox" id="item4" name="item4">
+                  <label for="item1">Apple Mac Power</label>
+               </li>
+               <li class="item-aside">
+                  <input type="checkbox" id="item5" name="item5">
+                  <label for="item1">Apple Mac Person</label>
+               </li>
+            </ul>
+
+            
+        </div>
+    </aside>
+
+    <section class="watch-products">
+        <!-- <h2>ordernar por:</h2> -->
+
+        <div class="products-container">
+            <a href="" class="modelo-1 products-card ">
+                <img src="/public/images/produtos/macscalubur.png" alt="">
+                <h3>MacBook Excalibur </h3>
+                <p>R$ 11.349,00</p>
+               
+            </a>
+            <a href="#" class="modelo-1 products-card ">
+                <img src="/public/images/produtos/macenma.png" alt="">
+                <h3>MacBook Enma</h3>
+                <p>R$ 11.989,00</p>
+            </a>
+            <a href="#" class="modelo-1 products-card ">
+                <img src="/public/images/produtos/macregalias.png" alt="">
+                <h3>MacBook Regalias</h3>
+                <p>R$ 12.839,00</p>
+            </a>
+
+            <a href="#" class="modelo-2 products-card " >
+                <img src="/public/images/produtos/macgama.png"alt="">
+                <h3>MacBook Gama</h3>
+                <p>R$ 13.259,00</p>
+            </a>
+            <a href="#" class="modelo-2 products-card " >
+                <img src="/public/images/produtos/mackatsuiu.png" alt="">
+                <h3>MacBook Katsuiu</h3>
+                <p>R$ 13.879,00</p>
+            </a>
+            <a href="#" class="modelo-2 products-card " >
+                <img src="/public/images/produtos/macmanda.png" alt="">
+                <h3>MacBook Manda</h3>
+                <p>R$ 14.129,00</p>
+            </a>
+
+            <a href="#" class="modelo-3 products-card ">
+                <img src="/public/images/produtos/imackonan.png" alt="">
+                <h3>Apple Imac Konan</h3>
+                <p>R$ 15.749,00</p>
+            </a>
+            <a href="#" class="modelo-3 products-card ">
+                <img src="/public/images/produtos/imacpain.png" alt="">
+                <h3>Apple Imac Pain</h3>
+                <p>R$ 15.329,00</p>
+            </a>
+            <a href="#" class="modelo-3 products-card ">
+                <img src="/public/images/produtos/imacdeidara.png" alt="">
+                <h3>Apple Imac Deidara</h3>
+                <p>R$ 14.989,00</p>
+            </a>
+
+            <a href="#" class="modelo-4 products-card ">
+                <img src="/public/images/produtos/macrikudou.png" alt="">
+                <h3>MacBook Rikudou</h3>
+                <p>R$ 11.599,00</p>
+            </a>
+            <a href="#" class="modelo-4 products-card ">
+                <img src="/public/images/produtos/macnika.png" alt="">
+                <h3>MacBook Nika</h3>
+                <p>R$ 10.979,00</p>
+            </a>
+            <a href="#" class="modelo-4 products-card ">
+                <img src="/public/images/produtos/macsayajin.png" alt="">
+                <h3>MacBook Sayajin</h3>
+                <p>R$ 10.349,00</p>
+               
+            </a>
+
+            <a href="#" class="modelo-5 products-card ">
+                <img src="/public/images/produtos/macmadara.png" alt="">
+                <h3>Apple Mac Madara</h3>
+                <p>R$ 16.359,00</p>
+            </a>
+            <a href="#" class="modelo-5 products-card ">
+                <img src="/public/images/produtos/macroger.png" alt="">
+                <h3>Apple Mac Roger</h3>
+                <p>R$ 15.859,00</p>
+            </a>
+            <a href="#" class="modelo-5 products-card ">
+                <img src="/public/images/produtos/machashirama.png" alt="">
+                <h3>Apple Mac Hashirama</h3>
+                <p>R$ 15.989,00</p>
+                
+            </a>
+
+        </div>
+    </section>
+
+
+</main>
+                    <!-- inicio footer -->
+<div id="footer"></div>
+<script>
+  fetch('../public/partials/footer.html')
+    .then(response => response.text())
+    .then(html => document.getElementById('footer').innerHTML = html);
+</script> -->
+                    <!-- fim footer -->
+
+
+                    <script src="../public/javascripts/produtos.js"></script>
+                </body>
+</html>

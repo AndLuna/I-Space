@@ -2,11 +2,13 @@ var express = require('express');
 const router = express.Router()
 //criando a const do controller
 const MainController = require('../controllers/MainController');
+const PagesController = require('../controllers/PagesController');
 
 
 
 // # chamando a primeira pag (Main)
 router.get('/', MainController.index);
+router.get('/sobre', PagesController.sobre);
 
 //router.get('sobre', MainController.sobre);
 

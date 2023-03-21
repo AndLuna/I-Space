@@ -1,0 +1,17 @@
+const createMenuObject = function (activeMenu){
+    let returnObject = {
+        inicio: false,
+        iphone: false,
+        mac: false,
+        ipad: false,
+        watch: false
+    }
+
+    if(activeMenu !== returnObject) {
+        returnObject[activeMenu] = true
+    }
+
+    return returnObject
+} 
+
+module.exports.createMenuObject = createMenuObject
