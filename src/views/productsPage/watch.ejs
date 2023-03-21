@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/stylesheets/reset.css">
+    <link rel="stylesheet" href="../public/stylesheets/produtos.css">
+    <link rel="stylesheet" href="../public/stylesheets/header.css">
+    <link rel="shortcut icon" type="image/png" href="https://img.freepik.com/icones-gratis/maca_318-631468.jpg">
+
+    <title>Apple Space</title>
+</head>
+<body>
+                        <!-- inicio header -->
+                        <div id="header"></div>
+                        <script>
+                          fetch('../public/partials/header02.html')
+                            .then(response => response.text())
+                            .then(html => document.getElementById('header').innerHTML = html);
+                        </script> 
+                        <script>
+                            //////// header
+                         
+                          document.addEventListener('click',function(e){
+                           // Hamburger menu
+                           if(e.target.classList.contains('hamburger-toggle')){
+                             e.target.children[0].classList.toggle('active');
+                           }
+                         })   
+                         </script>
+                            <!-- Bootstrap 5 JS -->
+                          <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js'></script>
+                                            <!-- fim header -->
+<main class="main-watch">
+
+    <aside class="aside-watch">
+        <div class="title-aside">
+            <h1>Apple Watch </h1>
+            <button id="toggle-button"> Filtros </button>  
+        </div>
+        <div class="line"></div>
+        <div class="category-aside">
+            <ul class="itens-list">
+               <li class="item-aside">
+                  <input type="checkbox" id="item1" name="item1">
+                  <label for="item1">Apple Watch Ultra</label>
+               </li>
+               <li class="item-aside">
+                  <input type="checkbox" id="item2" name="item2">
+                  <label for="item1">Apple Watch Omega</label>
+               </li>
+               <li class="item-aside">
+                  <input type="checkbox" id="item3" name="item3">
+                  <label for="item1">Apple Watch Series</label>
+               </li>
+               <li class="item-aside">
+                  <input type="checkbox" id="item4" name="item4">
+                  <label for="item1">Apple Watch Look</label>
+               </li>
+               <li class="item-aside">
+                  <input type="checkbox" id="item5" name="item5">
+                  <label for="item1">Apple Watch Nike</label>
+               </li>
+            </ul>
+
+
+    </aside>
+
+    <section class="watch-products">
+        <!-- <h2>ordernar por:</h2> -->
+
+        <div class="products-container">
+            <a href="" class="modelo-1 products-card" data-price="1323">
+                <img src="../public//images/produtos/Apple Watch Ultra1.png" alt="">
+                <h3>Apple Watch Ultra Zennin</h3>
+                <p>R$ 1.323,00</p>
+            </a>
+            <a href="#" class="modelo-1 products-card" data-price="1323">
+                <img src="../public//images/produtos/Apple Watch Ultra2.png" alt="">
+                <h3>Apple Watch Ultra Kunoichi</h3>
+                <p>R$ 2.323,00</p>
+            </a>
+            <a href="#" class="modelo-1 products-card" data-price="1323">
+                <img src="../public//images/produtos/Apple Watch Ultra3.png" alt="">
+                <h3>Apple Watch Ultra Sensei</h3>
+                <p>R$ 3.323,00</p>
+            </a>
+
+            <a href="#" class="modelo-2 products-card" data-price="1323" >
+                <img src="../public/images/produtos/Apple Watch omega1.png"alt="">
+                <h3>Apple Watch Omega Frodo</h3>
+                <p>R$ 4.323,00</p>
+            </a>
+            <a href="#" class="modelo-2 products-card"  data-price="1323">
+                <img src="../public/images/produtos/Apple Watch omega2.png" alt="">
+                <h3>Apple Watch Omega Smeagil</h3>
+                <p>R$ 5.323,00</p>
+            </a>
+            <a href="#" class="modelo-2 products-card"  data-price="1323">
+                <img src="../public/images/produtos/Apple Watch omega3.png" alt="">
+                <h3>Apple Watch Omega Hobbit</h3>
+                <p>R$ 6.323,00</p>
+            </a>
+
+            <a href="#" class="modelo-3 products-card" data-price="1323">
+                <img src="../public/images/produtos/Apple Watch Series1.png" alt="">
+                <h3>Apple Watch Series Thrones</h3>
+                <p>R$ 6.549,00</p>
+            </a>
+            <a href="#" class="modelo-3 products-card" data-price="1323">
+                <img src="../public/images/produtos/Apple Watch Series2.png" alt="">
+                <h3>Apple Watch Series Dragon</h3>
+                <p>R$ 7.899,00</p>
+            </a>
+            <a href="#" class="modelo-3 products-card" data-price="1323">
+                <img src="../public/images/produtos/Apple Watch Series3.png" alt="">
+                <h3>Apple Watch Series Snow</h3>
+                <p>R$ 8.359,00</p>
+            </a>
+            <a href="#" class="modelo-4 products-card" data-price="1323">
+                <img src="../public/images/produtos/Apple Watch Look1.png" alt="">
+                <h3>Apple Watch Look Holmes</h3>
+                <p>R$ 4.259,00</p>
+            </a>
+            <a href="#" class="modelo-4 products-card" data-price="1323">
+                <img src="../public/images/produtos/Apple Watch Look2.png" alt="">
+                <h3>Apple Watch Look Christie</h3>
+                <p>R$ 5.339,00</p>
+            </a>
+            <a href="#" class="modelo-4 products-card" data-price="1323">
+                <img src="../public/images/produtos/Apple Watch Look3.png" alt="">
+                <h3>Apple Watch Look Shaldon</h3>
+                <p>R$ 6.429,00</p>
+            </a>
+
+            <a href="#" class="modelo-5 products-card" data-price="1323">
+                <img src="../public/images/produtos/Apple Watch nike1.png" alt="">
+                <h3>Apple Watch Nike CR7</h3>
+                <p>R$ 7.589,00</p>
+            </a>
+            <a href="#" class="modelo-5 products-card" data-price="1323">
+                <img src="../public/images/produtos/Apple Watch nike2.png" alt="">
+                <h3>Apple Watch Nike Messi</h3>
+                <p>R$ 8.189,00</p>
+            </a>
+            <a href="#" class="modelo-5 products-card" data-price="1323">
+                <img src="../public/images/produtos/Apple Watch nike3.png" alt="">
+                <h3>Apple Watch Nike Mbape</h3>
+                <p>R$ 6.489,00</p>
+            </a>
+
+        </div>
+    </section>
+
+
+</main>
+                    <!-- inicio footer -->
+<div id="footer"></div>
+<script>
+  fetch('../public/partials/footer.html')
+    .then(response => response.text())
+    .then(html => document.getElementById('footer').innerHTML = html);
+</script> -->
+                    <!-- fim footer -->
+
+
+                    <script src="../public/javascripts/produtos.js"></script>
+                </body>
+</html>
