@@ -20,11 +20,20 @@
       </div>
       <div class="dots"></div>
   <!--                                      Carrossel Fim            -->
-
+  <!--                                       inicio cat  -->
+  <%- include("partials/nav.categoria.ejs") %> 
+ 
+  <!--                                      fim cat  -->
 
   <!--                                      Tendencias start            -->
   <section id="trending-section">
-    <h2>Tendencias</h2>
+    <section class="zona_titulo">
+      <h1 class="h1_titulo texto_garamond">As Melhores Tendencias</h1>
+      <h2 class="h2_titulo texto_roboto">
+        PARA QUEM QUER ESTILO E AUTONOMIA O TEMPO INTEIRO
+      </h2>
+      <span class="linha_texto"></span>
+  </section>
 
     <div class="card-container">
 
@@ -69,186 +78,71 @@
   </div>
   <!--                                      Modal Fim            -->
 
-  <!--                                       inicio banner  -->
-
-  <section class="banner">
-    <div class="banner-text">
-        <h2>Entre para o Clube e ganhe 20% OFF!</h2>
-
-        <a href="./views/cadastro.html">
-          Cadastre-se gratuiamente
-        </a>
-    </div>
-    <img src="./images/tech-iphone-bateria-27jun22-Apple.png" alt="">
 
 
-  </section>
-  <!--                                      fim banner  -->
+  <div class="index-carrossel carrossel2">
+    <a class="slick-slide" href="#">
+      <img src="./images/pexels-jess-bailey-designs-788946.jpg" alt="">
+    </a>
+    <!-- <a class="slick-slide" href="#">
+      <img src="./images/pexels-sonya-livshits-9821307.jpg" alt="">
+    </a> -->
 
-    <!--                                      Paginacao destaque start            -->
-    <div class="destaque_section">
-      
-      <div class="destaque_title">
-        <p>Destaque</p>
+  </div>
+
+
+
+
+  <div class="container products-wrapper">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="products-title">
+          <section class="zona_titulo">
+            <h1 class="h1_titulo texto_garamond">Ofertas</h1>
+            <h2 class="h2_titulo texto_roboto">
+                OFERTAS INCRIVEIS PELOS MELHORES PRODUTOS DO MERCADO
+            </h2>
+            <span class="linha_texto"></span>
+        </section>
+        </h2>
       </div>
-      <div class="btn-box">
-        <button class="botnn" id="btn-prev">
-          <p> < </p>
-        </button>
-          <button class="botnn" id="btn-next">
-            <p> > </p>
-          </button>
+      <% products.forEach((product) => { let finalPrice = (product.price * ((100 - product.discount) / 100)).toFixed(0) %>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <section class="product-box">
+            <a href="#<%= product.id %>">
+              <p>
+                <%= product.name %>
+              </p>
+              <figure class="product-box_image">
+                <img src="/images/products/<%= product.image %>" alt="imagen do produto">
+              </figure>
+              <article class="product-box_data">
+                <div class="priceOff">
+                  <h3>
+                    De R$ <%= product.price %> 
+                 </h3>
+
+                 <span>
+                   <%= product.discount %> %OFF
+                 </span>
+
+                </div>
+
+                <h2>
+                  R$ <%= toThousand(finalPrice) %>,00
+                </h2>
+
+                
+              </article>
+            </a>
+          </section>
         </div>
-      </div>
-    
-      <!--                                      Paginacao destaque fim             -->
-
-  <!--                                       Destaque start            -->
-  <!-- <a href="../views/carrinho.html" id="linkDestaque"> -->
-    <section class="produtos">
-  
-      <div class="destaque-card-wrap">
-      <div class="destaque-card">
-        <img src="./images/produtos/tendencia8.png" alt="Imagem do produto 1">
-        <div class="left-aligned ">
-        <div class="desconto">10% OFF</div>
-        <p class="originalPrice">De R$ 5.000</p>
-        <div class="preco">R$ 2.289,90</div>
-        <p>ou 10x de R$ 500,99</p>
-        <div class="descricao"> 
-          
-          Tela Super Retina XDR brilhante de 6,1 polegadas*. Ceramic Shield, que é quatro vezes mais resistente a quedas.</div>
-      </div>
-      </div>
-
-      <div class="destaque-card">
-        <img src="./images/produtos/tendencia9.png" alt="Imagem do produto 2">
-        <div class="left-aligned ">
-        <div class="desconto">20% OFF</div>
-       <p class="originalPrice">De R$ 5.000</p>
-        <div class="preco">R$ 3.119,99</div>
-        <p>ou 10x de R$ 500,99</p>
-        <div class="descricao"> Grave vídeos 4K, faça belos retratos e capture paisagens inteiras com o novo sistema de câmera dupla. Tire fotos incríveis com pouca luz usando o modo Noite.  </div>
-      </div>
-      
-      </div>
-      <div class="destaque-card">
-        <img src="./images/produtos/tendencia10.png" alt="Imagem do produto 3">
-        <div class="left-aligned ">
-        <div class="desconto">10% OFF</div>
-       <p class="originalPrice">De R$ 5.000</p>
-        <div class="preco">R$ 4.499,99</div>
-        <p>ou 10x de R$ 500,99</p>
-        <div class="descricao"> O sistema de câmera dupla mais avançado em um iPhone. Chip A15 Bionic com velocidade impressionante. Um grande salto em bateria. Projetado para durar. 5G ultrarrápido.  </div>
-      </div>
-      </div>
-      <div class="destaque-card">
-        <img src="./images/produtos/tendencia13.png" alt="Imagem do produto 4">
-        <div class="left-aligned ">
-        <div class="desconto">20% OFF</div>
-       <p class="originalPrice">De R$ 5.000</p>
-        <div class="preco">R$ 3.199,99</div>
-        <p>ou 10x de R$ 500,99</p>
-     
-        <div class="descricao"> Leve o desempenho sem precedentes do chip A13 Bionic para seus games, realidade aumentada e fotografia.  </div>
-      </div>
-      </div>
-      <div class="destaque-card">
-        <img src="./images/produtos/iphonezenin.png" alt="Imagem do produto 5">
-        <div class="left-aligned ">
-        <div class="desconto">20% OFF</div>
-       <p class="originalPrice">De R$ 5.000</p>
-        <div class="preco">R$ 3299,99</div>
-        <p>ou 10x de R$ 500,99</p>
-        <div class="descricao"> O iPhone 14 tem o sistema de câmera dupla mais impressionante em um iPhone, para fazer fotos espetaculares em pouca e muita luz. </div>
-      </div>
-      </div>
-      <div class="destaque-card">
-        <img src="./images/produtos/iphonerasenganplus.png" alt="Imagem do produto 6">
-        <div class="left-aligned ">
-        <div class="desconto">20% OFF</div>
-       <p class="originalPrice">De R$ 5.000</p>
-        <div class="preco">R$ 3199,99</div>
-        <p>ou 10x de R$ 500,99</p>
-        <div class="descricao"> Com Detecção de Acidente, a maior duração de bateria até hoje e fotos em pouca luz ainda mais espetaculares. Em cinco cores lindas.</div>
-      </div>
-      </div>
-      <div class="destaque-card left-aligned ">
-        <img src="./images/produtos/iphonegojo.png" alt="Imagem do produto 7">
-        <div class="desconto">20% OFF</div>
-       <p class="originalPrice">De R$ 5.000</p>
-        <div class="preco">R$ 3149,99</div>
-        <p>ou 10x de R$ 500,99</p>
-        <div class="descricao"> A tela tem bordas arredondadas que se ajustam ao design curvo do aparelho dentro da sua forma retangular. </div>
-      </div>
-      <div class="destaque-card left-aligned ">
-        <img src="./images/produtos/iphonerobin.png" alt="Imagem do produto 8">
-        <div class="desconto">20% OFF</div>
-       <p class="originalPrice">De R$ 5.000</p>
-        <div class="preco">R$  3249,99</div>
-        <p>ou 10x de R$ 500,99</p>
-        <div class="descricao"> Resistência a respingos, água e poeira. </div>
-      </div>
+      <% }) %>
     </div>
-    </section>
+  </div>
 
-      <!-- <section id="bannerDesconto">
-     <div class="bannerDesconto">
-        <img src="./images/IspaceDesconto.jpg" alt="">
-     </div>
-      </section> -->
-      <div class="index-carrossel carrossel2">
-        <a class="slick-slide" href="#">
-          <img src="./images/pexels-mathias-reding-14942224.jpg" alt="">
-        </a>
-        <a class="slick-slide" href="#">
-          <img src="./images/pexels-sonya-livshits-9821307.jpg" alt="">
-        </a>
-        <a class="slick-slide" href="#">
-          <img src="https://images.pexels.com/photos/14557601/pexels-photo-14557601.jpeg" alt="">
-        </a>
-      </div>
-      <!-- <div class="dots"></div> -->
 
-      <!-- secao produtos -->
-      <div class="container products-wrapper">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="products-title">Ofertas</h2>
-          </div>
-          <% products.forEach((product) => { let finalPrice = (product.price * ((100 - product.discount) / 100)).toFixed(0) %>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <section class="product-box">
-                <a href="#<%= product.id %>">
-                  <figure class="product-box_image">
-                    <img src="/images/products/<%= product.image %>" alt="imagen do produto">
-                  </figure>
-                  <article class="product-box_data">
-                    <div class="priceOff">
-                      <h3>
-                        De R$ <%= product.price %> 
-                     </h3>
- 
-                     <span>
-                       <%= product.discount %> %OFF
-                     </span>
-
-                    </div>
-
-                    <h2>
-                      R$ <%= toThousand(finalPrice) %>,00
-                    </h2>
-                    <p>
-                      <%= product.name %>
-                    </p>
-                    
-                  </article>
-                </a>
-              </section>
-            </div>
-          <% }) %>
-        </div>
-      </div>
+   
     
      
 

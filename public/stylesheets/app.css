@@ -26,10 +26,22 @@ img {
 .product-box {
   background-color: #ffffff;
   border-radius: 5px;
-  overflow: hidden;
-  transition: 300ms;
   margin: 20px 0;
- 
+  display: flex;
+ flex-direction: column;
+ justify-content: center;
+   overflow: hidden;
+  transition: 500ms;
+}
+
+.product-box p{
+  font-size: 1.6em;
+  color: black;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+
 }
 
 .product-box a {
@@ -84,8 +96,8 @@ img {
   color: var(--gray);
   margin: 0;
   height: 0;
-  transition: 300ms;
-  overflow: hidden;
+
+
 }
 
 .product-box_data i {
@@ -103,20 +115,11 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 300ms;
+ 
 }
 
 .product-box:hover {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
 
-.product-box:hover p {
-  height: 40px;
-  margin-top: 15px;
-}
-
-.product-box:hover i {
-  transform: rotate(360deg);
-  box-shadow: 0 0 5px var(--green);
-}
 
