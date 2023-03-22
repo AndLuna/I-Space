@@ -7,7 +7,7 @@
       "image": "iphonerasenganultra.png",
       "modelo": "modelo-1",
       "type":"iphone",
-  "armazenamento":"64GB",
+      "armazenamento":"64GB",
       "cor":"prata"
     },
     {
@@ -30,6 +30,7 @@
       "image": "ipaderen.png",
       "modelo": "modelo-1",
       "type":"iphone",
+      "armazenamento":"260GB",
       "cor":"prata"
     },
     {
@@ -39,7 +40,9 @@
       "price": 5000,
       "modelo": "modelo-2",
       "image": "iphonezenin.png",
-      "type":"iphone"
+      "type":"iphone",
+      "armazenamento":"260GB",
+      "cor":"prata"
     },
     {
       "id": "5",
@@ -49,7 +52,8 @@
       "modelo": "modelo-2",
       "image": "img-samsung-galaxy-s10.jpg",
       "type":"iphone",
-      "cor":"azul"
+      "armazenamento":"260GB",
+      "cor":"prata"
     },
     {
       "id": "6",
@@ -59,7 +63,8 @@
       "modelo": "modelo-2",
       "image": "img-laptop-lenovo.jpg",
       "type":"iphone",
-      "cor":"vermelho"
+      "armazenamento":"260GB",
+      "cor":"prata"
     },
     {
         "id": "7",
@@ -68,7 +73,9 @@
         "price": 36700,
         "modelo": "modelo-3",
         "image": "img-laptop-lenovo.jpg",
-        "type":"iphone"
+        "type":"iphone",
+        "armazenamento":"260GB",
+        "cor":"prata"
       },
       {
         "id": "8",
@@ -77,7 +84,9 @@
         "price": 36700,
         "modelo": "modelo-3",
         "image": "img-laptop-lenovo.jpg",
-        "type":"iphone"
+        "type":"iphone",
+        "armazenamento":"260GB",
+        "cor":"prata"
       },
       {
         "id": "9",
@@ -86,7 +95,9 @@
         "price": 36700,
         "modelo": "modelo-3",
         "image": "img-laptop-lenovo.jpg",
-        "type":"iphone"
+        "type":"iphone",
+        "armazenamento":"260GB",
+        "cor":"prata"
       },
       {
           "id": "10",
@@ -95,7 +106,9 @@
           "price": 36700,
           "modelo": "modelo-4",
           "image": "img-laptop-lenovo.jpg",
-          "type":"iphone"
+          "type":"iphone",
+          "armazenamento":"260GB",
+          "cor":"prata"
         },
         {
           "id": "11",
@@ -104,7 +117,9 @@
           "price": 36700,
           "modelo": "modelo-4",
           "image": "img-laptop-lenovo.jpg",
-          "type":"iphone"
+          "type":"iphone",
+          "armazenamento":"260GB",
+          "cor":"prata"
         }, 
    {
       "id": "12",
@@ -113,7 +128,9 @@
       "price": 36700,
       "modelo": "modelo-4",
       "image": "img-laptop-lenovo.jpg",
-      "type":"iphone"
+      "type":"iphone",
+      "armazenamento":"260GB",
+      "cor":"prata"
     },
     {
         "id": "13",
@@ -122,7 +139,9 @@
         "price": 36700,
         "modelo": "modelo-5",
         "image": "img-laptop-lenovo.jpg",
-        "type":"iphone"
+        "type":"iphone",
+        "armazenamento":"260GB",
+        "cor":"prata"
       },
       {
         "id": "14",
@@ -131,7 +150,9 @@
         "price": 36700,
         "modelo": "modelo-5",
         "image": "img-laptop-lenovo.jpg",
-        "type": "iphone"
+        "type": "iphone",
+        "armazenamento":"260GB",
+        "cor":"prata"
       },
       {
         "id": "15",
@@ -140,7 +161,9 @@
         "price": 36700,
         "modelo": "modelo-5",
         "image": "img-laptop-lenovo.jpg",
-        "type":"iphone"
+        "type":"iphone",
+        "armazenamento":"260GB",
+        "cor":"prata"
       },
 
 
@@ -148,22 +171,26 @@
 
       {
         "id": "16",
-        "name": "ipad Robin",
-        "description": "",
-        "price": 8000,
         "type":"ipad",
-        "image": "iphonerasenganultra.png",
-        "modelo": "modelo-1"
+        "name": "ipad Enma",
+        "modelo": "modelo-1",
+        "armazenamento":"260GB",
+        "cor":"prata",
+        "price": 11399, 
+        "image": "macenma.png",
+        "description": ""
   
       },
       {
         "id": "17",
-        "name": "ipad Enma",
-        "description": "",
-        "price": 11399, 
         "type":"ipad",
+        "name": "ipad Enma",
+        "modelo": "modelo-1",
+        "armazenamento":"260GB",
+        "cor":"prata",
+        "price": 11399, 
         "image": "macenma.png",
-        "modelo": "modelo-1"
+        "description": ""
       },
       {
         "id": "18",
@@ -172,389 +199,471 @@
         "price": 1200,
         "type":"ipad",
         "image": "ipaderen.png",
-        "modelo": "modelo-1"
+        "modelo": "modelo-1",
+        "armazenamento":"260GB",
+        "cor":"prata"
       },
       {
         "id": "19",
-        "name": "ipad Zenin",
-        "description": "",
-        "price": 5000,
-        "modelo": "modelo-2",
         "type":"ipad",
-        "image": "iphonezenin.png"
+        "name": "ipad Enma",
+        "modelo": "modelo-1",
+        "armazenamento":"260GB",
+        "cor":"prata",
+        "price": 11399, 
+        "image": "macenma.png",
+        "description": ""
       },
       {
         "id": "20",
-        "name": "Samsung Galaxy S10",
-        "description": "Samsung Galaxy S10",
-        "price": 72999,
-        "modelo": "modelo-2",
         "type":"ipad",
-        "image": "img-samsung-galaxy-s10.jpg"
+        "name": "ipad Enma",
+        "modelo": "modelo-1",
+        "armazenamento":"260GB",
+        "cor":"prata",
+        "price": 11399, 
+        "image": "macenma.png",
+        "description": ""
       },
       {
         "id": "21",
-        "name": "Notebook Lenovo I3 Intel 8gb RAM",
-        "description": "Notebook Lenovo I3 Intel 8gb RAM",
-        "price": 36700,
-        "modelo": "modelo-2",
         "type":"ipad",
-        "image": "img-laptop-lenovo.jpg"
+        "name": "ipad Enma",
+        "modelo": "modelo-1",
+        "armazenamento":"260GB",
+        "cor":"prata",
+        "price": 11399, 
+        "image": "macenma.png",
+        "description": ""
       },
       {
           "id": "22",
-          "name": "Notebook Lenovo I3 Intel 8gb RAM",
-          "description": "Notebook Lenovo I3 Intel 8gb RAM",
-          "price": 36700,
-          "modelo": "modelo-3",
-  
-        "type":"ipad",
-          "image": "img-laptop-lenovo.jpg"
+          "type":"ipad",
+          "name": "ipad Enma",
+          "modelo": "modelo-1",
+          "armazenamento":"260GB",
+          "cor":"prata",
+          "price": 11399, 
+          "image": "macenma.png",
+          "description": ""
         },
         {
           "id": "23",
-          "name": "Notebook Lenovo I3 Intel 8gb RAM",
-          "description": "Notebook Lenovo I3 Intel 8gb RAM",
-          "price": 36700,
-          "modelo": "modelo-3",
-        "type":"ipad",
-          "image": "img-laptop-lenovo.jpg"
+          "type":"ipad",
+        "name": "ipad Enma",
+        "modelo": "modelo-1",
+        "armazenamento":"260GB",
+        "cor":"prata",
+        "price": 11399, 
+        "image": "macenma.png",
+        "description": ""
         },
         {
           "id": "24",
-          "name": "Notebook Lenovo I3 Intel 8gb RAM",
-          "description": "Notebook Lenovo I3 Intel 8gb RAM",
-          "price": 36700,
-          "modelo": "modelo-3",
-        "type":"ipad",
-          "image": "img-laptop-lenovo.jpg"
+          "type":"ipad",
+        "name": "ipad Enma",
+        "modelo": "modelo-1",
+        "armazenamento":"260GB",
+        "cor":"prata",
+        "price": 11399, 
+        "image": "macenma.png",
+        "description": ""
         },
         {
             "id": "25",
-            "name": "Notebook Lenovo I3 Intel 8gb RAM",
-            "description": "Notebook Lenovo I3 Intel 8gb RAM",
-            "price": 36700,
-            "modelo": "modelo-4", 
-        "type":"ipad",
-            "image": "img-laptop-lenovo.jpg"
+            "type":"ipad",
+        "name": "ipad Enma",
+        "modelo": "modelo-1",
+        "armazenamento":"260GB",
+        "cor":"prata",
+        "price": 11399, 
+        "image": "macenma.png",
+        "description": ""
           },
           {
             "id": "26",
-            "name": "Notebook Lenovo I3 Intel 8gb RAM",
-            "description": "Notebook Lenovo I3 Intel 8gb RAM",
-            "price": 36700,
-            "modelo": "modelo-4",
-        "type":"ipad",
-            "image": "img-laptop-lenovo.jpg"
+            "type":"ipad",
+            "name": "ipad Enma",
+            "modelo": "modelo-1",
+            "armazenamento":"260GB",
+            "cor":"prata",
+            "price": 11399, 
+            "image": "macenma.png",
+            "description": ""
           }, 
      {
         "id": "27",
-        "name": "Notebook Lenovo I3 Intel 8gb RAM",
-        "description": "Notebook Lenovo I3 Intel 8gb RAM",
-        "price": 36700,
-        "modelo": "modelo-4",
         "type":"ipad",
-        "image": "img-laptop-lenovo.jpg"
+        "name": "ipad Enma",
+        "modelo": "modelo-1",
+        "armazenamento":"260GB",
+        "cor":"prata",
+        "price": 11399, 
+        "image": "macenma.png",
+        "description": ""
       },
       {
           "id": "28",
-          "name": "Notebook Lenovo I3 Intel 8gb RAM",
-          "description": "Notebook Lenovo I3 Intel 8gb RAM",
-          "price": 36700,
-          "modelo": "modelo-5",
-        "type":"ipad",
-          "image": "img-laptop-lenovo.jpg"
+          "type":"ipad",
+        "name": "ipad Enma",
+        "modelo": "modelo-1",
+        "armazenamento":"260GB",
+        "cor":"prata",
+        "price": 11399, 
+        "image": "macenma.png",
+        "description": ""
         },
         {
           "id": "29",
-          "name": "Notebook Lenovo I3 Intel 8gb RAM",
-          "description": "Notebook Lenovo I3 Intel 8gb RAM",
-          "price": 36700,
-          "modelo": "modelo-5",
-          "image": "img-laptop-lenovo.jpg",
-          "type": "ipad"
+          "type":"ipad",
+          "name": "ipad Enma",
+          "modelo": "modelo-1",
+          "armazenamento":"260GB",
+          "cor":"prata",
+          "price": 11399, 
+          "image": "macenma.png",
+          "description": ""
         },
         {
           "id": "30",
-          "name": "Notebook Lenovo I3 Intel 8gb RAM",
-          "description": "Notebook Lenovo I3 Intel 8gb RAM",
-          "price": 36700,
-          "modelo": "modelo-5",
-          "image": "img-laptop-lenovo.jpg",
-          "type": "ipad"
+          "type":"ipad",
+          "name": "ipad Enma",
+          "modelo": "modelo-1",
+          "armazenamento":"260GB",
+          "cor":"prata",
+          "price": 11399, 
+          "image": "macenma.png",
+          "description": ""
         },
         {
           "id": "31",
-          "name": "mac Robin",
-          "description": "",
-          "price": 8000,
           "type":"mac",
-          "image": "iphonerasenganultra.png",
-          "modelo": "modelo-1"
-      
+          "name": "Mac Enma",
+          "modelo": "modelo-1",
+          "armazenamento":"260GB",
+          "cor":"prata",
+          "price": 11399, 
+          "image": "macenma.png",
+          "description": ""
         },
         {
           "id": "32",
-          "name": "mac Enma",
-          "description": "",
-          "price": 11399, 
           "type":"mac",
+          "name": "Mac Enma",
+          "modelo": "modelo-1",
+          "armazenamento":"260GB",
+          "cor":"prata",
+          "price": 11399, 
           "image": "macenma.png",
-          "modelo": "modelo-1"
+          "description": ""
         },
         {
           "id": "33",
-          "name": "mac Eren",
-          "description": "",
-          "price": 1200,
           "type":"mac",
-          "image": "maceren.png",
-          "modelo": "modelo-1"
+          "name": "Mac Enma",
+          "modelo": "modelo-1",
+          "armazenamento":"260GB",
+          "cor":"prata",
+          "price": 11399, 
+          "image": "macenma.png",
+          "description": ""
         },
         {
           "id": "34",
-          "name": "mac Zenin",
-          "description": "",
-          "price": 5000,
-          "modelo": "modelo-2",
           "type":"mac",
-          "image": "iphonezenin.png"
+          "name": "Mac Enma",
+          "modelo": "modelo-1",
+          "armazenamento":"260GB",
+          "cor":"prata",
+          "price": 11399, 
+          "image": "macenma.png",
+          "description": ""
         },
         {
           "id": "35",
-          "name": "Samsung Galaxy S10",
-          "description": "Samsung Galaxy S10",
-          "price": 72999,
-          "modelo": "modelo-2",
           "type":"mac",
-          "image": "img-samsung-galaxy-s10.jpg"
+          "name": "Mac Enma",
+          "modelo": "modelo-1",
+          "armazenamento":"260GB",
+          "cor":"prata",
+          "price": 11399, 
+          "image": "macenma.png",
+          "description": ""
         },
         {
           "id": "36",
-          "name": "Notebook Lenovo I3 Intel 8gb RAM",
-          "description": "Notebook Lenovo I3 Intel 8gb RAM",
-          "price": 36700,
-          "modelo": "modelo-2",
           "type":"mac",
-          "image": "img-laptop-lenovo.jpg"
+          "name": "Mac Enma",
+          "modelo": "modelo-1",
+          "armazenamento":"260GB",
+          "cor":"prata",
+          "price": 11399, 
+          "image": "macenma.png",
+          "description": ""
         },
         {
             "id": "37",
-            "name": "Notebook Lenovo I3 Intel 8gb RAM",
-            "description": "Notebook Lenovo I3 Intel 8gb RAM",
-            "price": 36700,
-            "modelo": "modelo-3",
-      
-          "type":"mac",
-            "image": "img-laptop-lenovo.jpg"
+            "type":"mac",
+            "name": "Mac Enma",
+            "modelo": "modelo-1",
+            "armazenamento":"260GB",
+            "cor":"prata",
+            "price": 11399, 
+            "image": "macenma.png",
+            "description": ""
           },
           {
             "id": "38",
-            "name": "Notebook Lenovo I3 Intel 8gb RAM",
-            "description": "Notebook Lenovo I3 Intel 8gb RAM",
-            "price": 36700,
-            "modelo": "modelo-3",
-          "type":"mac",
-            "image": "img-laptop-lenovo.jpg"
+            "type":"mac",
+            "name": "Mac Enma",
+            "modelo": "modelo-1",
+            "armazenamento":"260GB",
+            "cor":"prata",
+            "price": 11399, 
+            "image": "macenma.png",
+            "description": ""
           },
           {
             "id": "39",
-            "name": "Notebook Lenovo I3 Intel 8gb RAM",
-            "description": "Notebook Lenovo I3 Intel 8gb RAM",
-            "price": 36700,
-            "modelo": "modelo-3",
-          "type":"mac",
-            "image": "img-laptop-lenovo.jpg"
+            "type":"mac",
+            "name": "Mac Enma",
+            "modelo": "modelo-1",
+            "armazenamento":"260GB",
+            "cor":"prata",
+            "price": 11399, 
+            "image": "macenma.png",
+            "description": ""
           },
           {
               "id": "40",
-              "name": "Notebook Lenovo I3 Intel 8gb RAM",
-              "description": "Notebook Lenovo I3 Intel 8gb RAM",
-              "price": 36700,
-              "modelo": "modelo-4", 
-          "type":"mac",
-              "image": "img-laptop-lenovo.jpg"
+              "type":"mac",
+              "name": "Mac Enma",
+              "modelo": "modelo-1",
+              "armazenamento":"260GB",
+              "cor":"prata",
+              "price": 11399, 
+              "image": "macenma.png",
+              "description": ""
             },
             {
               "id": "41",
-              "name": "Notebook Lenovo I3 Intel 8gb RAM",
-              "description": "Notebook Lenovo I3 Intel 8gb RAM",
-              "price": 36700,
-              "modelo": "modelo-4",
-          "type":"mac",
-              "image": "img-laptop-lenovo.jpg"
+              "type":"mac",
+              "name": "Mac Enma",
+              "modelo": "modelo-1",
+              "armazenamento":"260GB",
+              "cor":"prata",
+              "price": 11399, 
+              "image": "macenma.png",
+              "description": ""
             }, 
        {
           "id": "42",
-          "name": "Notebook Lenovo I3 Intel 8gb RAM",
-          "description": "Notebook Lenovo I3 Intel 8gb RAM",
-          "price": 36700,
-          "modelo": "modelo-4",
           "type":"mac",
-          "image": "img-laptop-lenovo.jpg"
+          "name": "Mac Enma",
+          "modelo": "modelo-1",
+          "armazenamento":"260GB",
+          "cor":"prata",
+          "price": 11399, 
+          "image": "macenma.png",
+          "description": ""
         },
         {
             "id": "43",
-            "name": "Notebook Lenovo I3 Intel 8gb RAM",
-            "description": "Notebook Lenovo I3 Intel 8gb RAM",
-            "price": 36700,
-            "modelo": "modelo-5",
-          "type":"mac",
-            "image": "img-laptop-lenovo.jpg"
+            "type":"mac",
+            "name": "Mac Enma",
+            "modelo": "modelo-1",
+            "armazenamento":"260GB",
+            "cor":"prata",
+            "price": 11399, 
+            "image": "macenma.png",
+            "description": ""
           },
           {
             "id": "44",
-            "name": "Notebook Lenovo I3 Intel 8gb RAM",
-            "description": "Notebook Lenovo I3 Intel 8gb RAM",
-            "price": 36700,
-            "modelo": "modelo-5",
-            "image": "img-laptop-lenovo.jpg",
-            "type": "mac"
+            "type":"mac",
+            "name": "Mac Enma",
+            "modelo": "modelo-1",
+            "armazenamento":"260GB",
+            "cor":"prata",
+            "price": 11399, 
+            "image": "macenma.png",
+            "description": ""
           },
           {
             "id": "45",
-            "name": "Notebook Lenovo I3 Intel 8gb RAM",
-            "description": "Notebook Lenovo I3 Intel 8gb RAM",
-            "price": 36700,
-            "modelo": "modelo-5",
-            "image": "img-laptop-lenovo.jpg",
-            "type": "mac"
+            "type":"mac",
+            "name": "Mac Enma",
+            "modelo": "modelo-1",
+            "armazenamento":"260GB",
+            "cor":"prata",
+            "price": 11399, 
+            "image": "macenma.png",
+            "description": ""
           },
           {
             "id": "46",
-            "name": "watch Robin",
-            "description": "",
-            "price": 8000,
-            "image": "watchrasenganultra.png",
+            "type":"mac",
+            "name": "Watch Enma",
             "modelo": "modelo-1",
-            "type":"watch"
+            "armazenamento":"260GB",
+            "cor":"prata",
+            "price": 11399, 
+            "image": "macenma.png",
+            "description": ""
           },
           {
             "id": "47",
-            "name": "watch Enma",
-            "description": "",
+            "type":"mac",
+            "name": "Watch Enma",
+            "modelo": "modelo-1",
+            "armazenamento":"260GB",
+            "cor":"prata",
             "price": 11399, 
             "image": "macenma.png",
-            "modelo": "modelo-1",
-            "type":"watch"
-            
+            "description": ""
           },
           {
             "id": "48",
-            "name": "ipad Eren",
-            "description": "",
-            "price": 1200,
-            "image": "ipaderen.png",
+            "type":"mac",
+            "name": "Watch Enma",
             "modelo": "modelo-1",
-            "type":"watch"
+            "armazenamento":"260GB",
+            "cor":"prata",
+            "price": 11399, 
+            "image": "macenma.png",
+            "description": ""
           },
           {
             "id": "49",
-            "name": "watch Zenin",
-            "description": "",
-            "price": 5000,
-            "modelo": "modelo-2",
-            "image": "watchzenin.png",
-            "type":"watch"
+            "type":"mac",
+            "name": "Watch Enma",
+            "modelo": "modelo-1",
+            "armazenamento":"260GB",
+            "cor":"prata",
+            "price": 11399, 
+            "image": "macenma.png",
+            "description": ""
           },
           {
             "id": "50",
-            "name": "Samsung Galaxy S10",
-            "description": "Samsung Galaxy S10",
-            "price": 72999,
-            "modelo": "modelo-2",
-            "image": "img-samsung-galaxy-s10.jpg",
-            "type":"watch"
+            "type":"mac",
+            "name": "Watch Enma",
+            "modelo": "modelo-1",
+            "armazenamento":"260GB",
+            "cor":"prata",
+            "price": 11399, 
+            "image": "macenma.png",
+            "description": ""
           },
           {
             "id": "51",
-            "name": "Notebook Lenovo I3 Intel 8gb RAM",
-            "description": "Notebook Lenovo I3 Intel 8gb RAM",
-            "price": 36700,
-            "modelo": "modelo-2",
-            "image": "img-laptop-lenovo.jpg",
-            "type":"watch"
+            "type":"mac",
+            "name": "Watch Enma",
+            "modelo": "modelo-1",
+            "armazenamento":"260GB",
+            "cor":"prata",
+            "price": 11399, 
+            "image": "macenma.png",
+            "description": ""
           },
           {
               "id": "52",
-              "name": "Notebook Lenovo I3 Intel 8gb RAM",
-              "description": "Notebook Lenovo I3 Intel 8gb RAM",
-              "price": 36700,
-              "modelo": "modelo-3",
-              "image": "img-laptop-lenovo.jpg",
-              "type":"watch"
+              "type":"mac",
+              "name": "Watch Enma",
+              "modelo": "modelo-1",
+              "armazenamento":"260GB",
+              "cor":"prata",
+              "price": 11399, 
+              "image": "macenma.png",
+              "description": ""
             },
             {
               "id": "53",
-              "name": "Notebook Lenovo I3 Intel 8gb RAM",
-              "description": "Notebook Lenovo I3 Intel 8gb RAM",
-              "price": 36700,
-              "modelo": "modelo-3",
-              "image": "img-laptop-lenovo.jpg",
-              "type":"watch"
+              "type":"mac",
+              "name": "Watch Enma",
+              "modelo": "modelo-1",
+              "armazenamento":"260GB",
+              "cor":"prata",
+              "price": 11399, 
+              "image": "macenma.png",
+              "description": ""
             },
             {
               "id": "54",
-              "name": "Notebook Lenovo I3 Intel 8gb RAM",
-              "description": "Notebook Lenovo I3 Intel 8gb RAM",
-              "price": 36700,
-              "modelo": "modelo-3",
-              "image": "img-laptop-lenovo.jpg",
-              "type":"watch"
+              "type":"mac",
+              "name": "Watch Enma",
+              "modelo": "modelo-1",
+              "armazenamento":"260GB",
+              "cor":"prata",
+              "price": 11399, 
+              "image": "macenma.png",
+              "description": ""
             },
             {
                 "id": "55",
-                "name": "Notebook Lenovo I3 Intel 8gb RAM",
-                "description": "Notebook Lenovo I3 Intel 8gb RAM",
-                "price": 36700,
-                "modelo": "modelo-4",
-                "image": "img-laptop-lenovo.jpg",
-                "type":"watch"
+                "type":"mac",
+                "name": "Watch Enma",
+                "modelo": "modelo-1",
+                "armazenamento":"260GB",
+                "cor":"prata",
+                "price": 11399, 
+                "image": "macenma.png",
+                "description": ""
               },
               {
                 "id": "56",
-                "name": "Notebook Lenovo I3 Intel 8gb RAM",
-                "description": "Notebook Lenovo I3 Intel 8gb RAM",
-                "price": 36700,
-                "modelo": "modelo-4",
-                "image": "img-laptop-lenovo.jpg",
-                "type":"watch"
+                "type":"mac",
+                "name": "Watch Enma",
+                "modelo": "modelo-1",
+                "armazenamento":"260GB",
+                "cor":"prata",
+                "price": 11399, 
+                "image": "macenma.png",
+                "description": ""
               }, 
          {
             "id": "57",
-            "name": "Notebook Lenovo I3 Intel 8gb RAM",
-            "description": "Notebook Lenovo I3 Intel 8gb RAM",
-            "price": 36700,
-            "modelo": "modelo-4",
-            "image": "img-laptop-lenovo.jpg",
-            "type":"watch"
+            "type":"mac",
+            "name": "Watch Enma",
+            "modelo": "modelo-1",
+            "armazenamento":"260GB",
+            "cor":"prata",
+            "price": 11399, 
+            "image": "macenma.png",
+            "description": ""
           },
           {
               "id": "58",
-              "name": "Notebook Lenovo I3 Intel 8gb RAM",
-              "description": "Notebook Lenovo I3 Intel 8gb RAM",
-              "price": 36700,
-              "modelo": "modelo-5",
-              "image": "img-laptop-lenovo.jpg",
-              "type":"watch"
+              "type":"mac",
+              "name": "Watch Enma",
+              "modelo": "modelo-1",
+              "armazenamento":"260GB",
+              "cor":"prata",
+              "price": 11399, 
+              "image": "macenma.png",
+              "description": ""
             },
             {
               "id": "59",
-              "name": "Notebook Lenovo I3 Intel 8gb RAM",
-              "description": "Notebook Lenovo I3 Intel 8gb RAM",
-              "price": 36700,
-              "modelo": "modelo-5",
-              "image": "img-laptop-lenovo.jpg",
-              "type": "watch"
+              "type":"mac",
+              "name": "Watch Enma",
+              "modelo": "modelo-1",
+              "armazenamento":"260GB",
+              "cor":"prata",
+              "price": 11399, 
+              "image": "macenma.png",
+              "description": ""
             },
             {
               "id": "60",
-              "name": "Notebook Lenovo I3 Intel 8gb RAM",
-              "description": "Notebook Lenovo I3 Intel 8gb RAM",
-              "price": 36700,
-              "modelo": "modelo-5",
-              "image": "img-laptop-lenovo.jpg",
-              "type":"watch"
+              "type":"mac",
+              "name": "Watch Enma",
+              "modelo": "modelo-1",
+              "armazenamento":"260GB",
+              "cor":"prata",
+              "price": 11399, 
+              "image": "macenma.png",
+              "description": ""
             }
 
    

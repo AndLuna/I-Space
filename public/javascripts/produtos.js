@@ -6,6 +6,8 @@ checkboxes.forEach((checkbox) => {
       .map((c) => c.value);
     const selectedCores = Array.from(document.querySelectorAll('input[name=cor]:checked'))
       .map((c) => c.value);
+      const selectedStorage = Array.from(document.querySelectorAll('input[name=armazenamento]:checked'))
+      .map((c) => c.value);
 
     const produtos = document.querySelectorAll('.products-card');
 
@@ -13,11 +15,12 @@ checkboxes.forEach((checkbox) => {
       produto.classList.remove('hidden');
     });
 
-    if (selectedModelos.length > 0 || selectedCores.length > 0) {
+    if (selectedModelos.length > 0 || selectedCores.length > 0 || selectedStorage.length > 0) {
       produtos.forEach((produto) => {
         const isModeloSelected = selectedModelos.includes(produto.getAttribute('data-modelo'));
         const isCorSelected = selectedCores.includes(produto.getAttribute('data-cor'));
-        produto.classList.toggle('hidden', !(isModeloSelected || isCorSelected));
+        const isStorageSelected = selectedStorage.includes(produto.getAttribute('data-storage'));
+        produto.classList.toggle('hidden', !(isModeloSelected || isCorSelected || isStorageSelected));
       });
     }
   });
