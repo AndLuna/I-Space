@@ -1,4 +1,4 @@
-const DBiphone = require('../database/DBiphone.json');
+const DB = require('../database/DB.json');
 const DBipad = require('../database/DBipad.json');
 const DBmac = require('../database/DBmac.json');
 const DBwatch = require('../database/DBwatch.json');
@@ -13,7 +13,7 @@ const PagesController = {
 
     iphone: (req, res) => {
         res.render('productsPage/iphone', {
-            DBiphone,
+            DB,
             toThousand
         });
     },
@@ -27,7 +27,7 @@ const PagesController = {
 
     ipad: (req, res) => {
         res.render('productsPage/ipad', {
-            DBipad,
+            DB,
             toThousand
         });
     },

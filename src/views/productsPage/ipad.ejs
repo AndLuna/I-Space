@@ -51,19 +51,22 @@
                             </aside>
                         
                             <section class="watch-products">
-                                <div class="products-container">
-                                    <% DBipad.forEach((DBipad) => { 
-                                      let finalPrice = (DBipad.price * ((100 - DBipad.discount) / 100)).toFixed(0); 
-                                    %>
-                                      <a href="#/<%= DBipad.id %>" class="products-card <%= DBipad.modelo %>">
-                                        <figure class="product-box_image">
-                                          <img src="/images/produtos/<%= DBipad.image %>" alt="imagem do produto">
-                                        </figure>
-                                        <h3><%= DBipad.name %></h3>
-                                        <p><%= DBipad.price %> </p>
-                                      </a>
-                                    <% }) %>
-                                  </div>
+                              <div class="products-container">
+                                <% DB.forEach((product) => { 
+                                  if (product.type === 'ipad') {
+                                    let finalPrice = (product.price * ((100 - product.discount) / 100)).toFixed(0); 
+                                %>
+                                  <a href="#/<%= product.id %>" class="products-card <%= product.modelo %>">
+                                    <figure class="product-box_image">
+                                      <img src="/images/produtos/<%= product.image %>" alt="imagem do produto">
+                                    </figure>
+                                    <h3><%= product.name %></h3>
+                                    <p><%= product.price %> </p>
+                                  </a>
+                                <% }
+                                }) %>
+                              </div>
+                              
                           
                             </section>
                         
