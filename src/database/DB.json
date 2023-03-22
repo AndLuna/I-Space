@@ -28,7 +28,7 @@
       "description": "",
       "price": 1200,
       "image": "ipaderen.png",
-      "modelo": "modelo-1",
+      "modelo": "modelo-2",
       "type":"iphone",
       "armazenamento":"260GB",
       "cor":"prata"
@@ -328,7 +328,7 @@
           "id": "30",
           "type":"ipad",
           "name": "ipad Enma",
-          "modelo": "modelo-1",
+          "modelo": "modelo-2",
           "armazenamento":"260GB",
           "cor":"prata",
           "price": 11399, 
@@ -502,7 +502,7 @@
           },
           {
             "id": "46",
-            "type":"mac",
+            "type":"watch",
             "name": "Watch Enma",
             "modelo": "modelo-1",
             "armazenamento":"260GB",
@@ -513,7 +513,7 @@
           },
           {
             "id": "47",
-            "type":"mac",
+            "type":"watch",
             "name": "Watch Enma",
             "modelo": "modelo-1",
             "armazenamento":"260GB",
@@ -524,7 +524,7 @@
           },
           {
             "id": "48",
-            "type":"mac",
+            "type":"watch",
             "name": "Watch Enma",
             "modelo": "modelo-1",
             "armazenamento":"260GB",
@@ -535,7 +535,7 @@
           },
           {
             "id": "49",
-            "type":"mac",
+            "type":"watch",
             "name": "Watch Enma",
             "modelo": "modelo-1",
             "armazenamento":"260GB",
@@ -546,7 +546,7 @@
           },
           {
             "id": "50",
-            "type":"mac",
+            "type":"watch",
             "name": "Watch Enma",
             "modelo": "modelo-1",
             "armazenamento":"260GB",
@@ -557,7 +557,7 @@
           },
           {
             "id": "51",
-            "type":"mac",
+            "type":"watch",
             "name": "Watch Enma",
             "modelo": "modelo-1",
             "armazenamento":"260GB",
@@ -568,7 +568,7 @@
           },
           {
               "id": "52",
-              "type":"mac",
+              "type":"watch",
               "name": "Watch Enma",
               "modelo": "modelo-1",
               "armazenamento":"260GB",
@@ -579,7 +579,7 @@
             },
             {
               "id": "53",
-              "type":"mac",
+              "type":"watch",
               "name": "Watch Enma",
               "modelo": "modelo-1",
               "armazenamento":"260GB",
@@ -590,7 +590,7 @@
             },
             {
               "id": "54",
-              "type":"mac",
+              "type":"watch",
               "name": "Watch Enma",
               "modelo": "modelo-1",
               "armazenamento":"260GB",
@@ -601,7 +601,7 @@
             },
             {
                 "id": "55",
-                "type":"mac",
+                "type":"watch",
                 "name": "Watch Enma",
                 "modelo": "modelo-1",
                 "armazenamento":"260GB",
@@ -612,7 +612,7 @@
               },
               {
                 "id": "56",
-                "type":"mac",
+                "type":"watch",
                 "name": "Watch Enma",
                 "modelo": "modelo-1",
                 "armazenamento":"260GB",
@@ -623,7 +623,7 @@
               }, 
          {
             "id": "57",
-            "type":"mac",
+            "type":"watch",
             "name": "Watch Enma",
             "modelo": "modelo-1",
             "armazenamento":"260GB",
@@ -634,7 +634,7 @@
           },
           {
               "id": "58",
-              "type":"mac",
+              "type":"watch",
               "name": "Watch Enma",
               "modelo": "modelo-1",
               "armazenamento":"260GB",
@@ -645,7 +645,7 @@
             },
             {
               "id": "59",
-              "type":"mac",
+              "type":"watch",
               "name": "Watch Enma",
               "modelo": "modelo-1",
               "armazenamento":"260GB",
@@ -656,7 +656,7 @@
             },
             {
               "id": "60",
-              "type":"mac",
+              "type":"watch",
               "name": "Watch Enma",
               "modelo": "modelo-1",
               "armazenamento":"260GB",
