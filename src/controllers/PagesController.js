@@ -1,7 +1,4 @@
 const DB = require('../database/DB.json');
-const DBipad = require('../database/DBipad.json');
-const DBmac = require('../database/DBmac.json');
-const DBwatch = require('../database/DBwatch.json');
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
@@ -20,7 +17,7 @@ const PagesController = {
 
     mac: (req, res) => {
         res.render('productsPage/mac', {
-            DBmac,
+            DB,
             toThousand
         });
     },
@@ -34,7 +31,7 @@ const PagesController = {
 
     watch: (req, res) => {
         res.render('productsPage/watch', {
-            DBwatch,
+            DB,
             toThousand
         });
     },

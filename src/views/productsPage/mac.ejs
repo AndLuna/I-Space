@@ -54,19 +54,21 @@
                                                 </aside>
                                             
                                                 <section class="watch-products">
-                                                    <div class="products-container">
-                                                        <% DBmac.forEach((DBmac) => { 
-                                                          let finalPrice = (DBmac.price * ((100 - DBmac.discount) / 100)).toFixed(0); 
-                                                        %>
-                                                          <a href="#/<%= DBmac.id %>" class="products-card <%= DBmac.modelo %>">
-                                                            <figure class="product-box_image">
-                                                              <img src="/images/produtos/<%= DBmac.image %>" alt="imagem do produto">
-                                                            </figure>
-                                                            <h3><%= DBmac.name %></h3>
-                                                            <p><%= DBmac.price %> </p>
-                                                          </a>
-                                                        <% }) %>
-                                                      </div>
+                                                  <div class="products-container">
+                                                    <% DB.forEach((product) => { 
+                                                      if (product.type === 'mac') {
+                                                        let finalPrice = (product.price * ((100 - product.discount) / 100)).toFixed(0); 
+                                                    %>
+                                                      <a href="#/<%= product.id %>" class="products-card <%= product.modelo %>">
+                                                        <figure class="product-box_image">
+                                                          <img src="/images/produtos/<%= product.image %>" alt="imagem do produto">
+                                                        </figure>
+                                                        <h3><%= product.name %></h3>
+                                                        <p><%= product.price %> </p>
+                                                      </a>
+                                                    <% }
+                                                    }) %>
+                                                  </div>
                                               
                                                 </section>
                                             

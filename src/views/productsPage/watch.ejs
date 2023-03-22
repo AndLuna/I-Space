@@ -54,19 +54,21 @@
                                                 </aside>
                                             
                                                 <section class="watch-products">
-                                                    <div class="products-container">
-                                                        <% DBwatch.forEach((DBwatch) => { 
-                                                          let finalPrice = (DBwatch.price * ((100 - DBwatch.discount) / 100)).toFixed(0); 
-                                                        %>
-                                                          <a href="#/<%= DBwatch.id %>" class="products-card <%= DBwatch.modelo %>">
-                                                            <figure class="product-box_image">
-                                                              <img src="/images/produtos/<%= DBwatch.image %>" alt="imagem do produto">
-                                                            </figure>
-                                                            <h3><%= DBwatch.name %></h3>
-                                                            <p><%= DBwatch.price %> </p>
-                                                          </a>
-                                                        <% }) %>
-                                                      </div>
+                                                  <div class="products-container">
+                                                    <% DB.forEach((product) => { 
+                                                      if (product.type === 'watch') {
+                                                        let finalPrice = (product.price * ((100 - product.discount) / 100)).toFixed(0); 
+                                                    %>
+                                                      <a href="#/<%= product.id %>" class="products-card <%= product.modelo %>">
+                                                        <figure class="product-box_image">
+                                                          <img src="/images/produtos/<%= product.image %>" alt="imagem do produto">
+                                                        </figure>
+                                                        <h3><%= product.name %></h3>
+                                                        <p><%= product.price %> </p>
+                                                      </a>
+                                                    <% }
+                                                    }) %>
+                                                  </div>
                                               
                                                 </section>
                                             
