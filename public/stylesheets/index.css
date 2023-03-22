@@ -37,13 +37,16 @@ a {
 
 }
 .carrossel2{
-  height: 700px;
-  margin: 20px 0px 20px 0px;
+  height: 39vh;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 25px;
+  border-radius: 5px;
   
   
 }
 .carrossel2 img{
-  height: 700px;
+  height: 39vh;
   border-radius: 10px;
 }
 

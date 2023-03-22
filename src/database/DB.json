@@ -6,7 +6,9 @@
       "price": 8000,
       "image": "iphonerasenganultra.png",
       "modelo": "modelo-1",
-      "type":"iphone"
+      "type":"iphone",
+  "armazenamento":"64GB",
+      "cor":"prata"
     },
     {
       "id": "2",
@@ -15,7 +17,9 @@
       "price": 11399, 
       "image": "macenma.png",
       "modelo": "modelo-1",
-      "type":"iphone"
+      "type":"iphone",
+      "armazenamento":"64GB",
+      "cor":"preto"
       
     },
     {
@@ -25,7 +29,8 @@
       "price": 1200,
       "image": "ipaderen.png",
       "modelo": "modelo-1",
-      "type":"iphone"
+      "type":"iphone",
+      "cor":"prata"
     },
     {
       "id": "4",
@@ -43,7 +48,8 @@
       "price": 72999,
       "modelo": "modelo-2",
       "image": "img-samsung-galaxy-s10.jpg",
-      "type":"iphone"
+      "type":"iphone",
+      "cor":"azul"
     },
     {
       "id": "6",
@@ -52,7 +58,8 @@
       "price": 36700,
       "modelo": "modelo-2",
       "image": "img-laptop-lenovo.jpg",
-      "type":"iphone"
+      "type":"iphone",
+      "cor":"vermelho"
     },
     {
         "id": "7",

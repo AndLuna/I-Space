@@ -1,26 +1,35 @@
-const checkboxes = document.querySelectorAll('input[type=checkbox][name=modelo]');
+const checkboxes = document.querySelectorAll('input[type=checkbox]');
 
 checkboxes.forEach((checkbox) => {
   checkbox.addEventListener('change', function() {
-    const selectedModelos = Array.from(checkboxes)
-      .filter((c) => c.checked)
+    const selectedModelos = Array.from(document.querySelectorAll('input[name=modelo]:checked'))
+      .map((c) => c.value);
+    const selectedCores = Array.from(document.querySelectorAll('input[name=cor]:checked'))
       .map((c) => c.value);
 
     const produtos = document.querySelectorAll('.products-card');
 
-    if (selectedModelos.length === 0) {
-      // Se nenhuma caixa de seleção estiver selecionada, exiba todos os produtos
+    produtos.forEach((produto) => {
+      produto.classList.remove('hidden');
+    });
+
+    if (selectedModelos.length > 0 || selectedCores.length > 0) {
       produtos.forEach((produto) => {
-        produto.classList.remove('hidden');
-      });
-    } else {
-      // Filtra os produtos com base nas caixas de seleção selecionadas
-      produtos.forEach((produto) => {
-        produto.classList.toggle('hidden', !selectedModelos.includes(produto.classList[1]));
+        const isModeloSelected = selectedModelos.includes(produto.getAttribute('data-modelo'));
+        const isCorSelected = selectedCores.includes(produto.getAttribute('data-cor'));
+        produto.classList.toggle('hidden', !(isModeloSelected || isCorSelected));
       });
     }
   });
 });
+
+
+
+
+
+
+
+
 
 
 const tipoProduto = "iPad";
