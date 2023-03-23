@@ -114,6 +114,7 @@
       </div>
       <% // product id é um array onde eu seleciono pelo ID os produtos que eu quero q apareçam %>
       <% let productIds = [1, 6, 9, 41, 10, 22, 50, 34]; %>
+      <% // com a count eu defino quantos itens quero que apareçam na home %>
       <% let count = 0; %>
       <% products.filter((product) => productIds.includes(parseInt(product.id))).forEach((product) => {
         if (count < 8) {
