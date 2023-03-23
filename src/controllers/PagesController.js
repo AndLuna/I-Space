@@ -10,8 +10,13 @@ const PagesController = {
       },
     sobre: (req, res) => {
         res.render('sobre', {});
+    }, 
+    cadastro: (req, res) => {
+        res.render('cadastro', {});
     }
+
 };
+
 
 
 

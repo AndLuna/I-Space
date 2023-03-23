@@ -19,7 +19,7 @@ router.get('/productPage/:type', PagesController.productPage);
 // # rota de paginas
 router.get('/sobre', PagesController.sobre);
 
-
+router.get('/cadastro', PagesController.cadastro);
 
 
 
