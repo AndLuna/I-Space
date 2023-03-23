@@ -97,7 +97,7 @@
           if (product.type === 'iphone') {
             let finalPrice = (product.price * ((100 - product.discount) / 100)).toFixed(0); 
         %>
-            <a href="#/<%= product.id %>" class="products-card" data-modelo="<%= product.modelo %>" data-cor="<%= product.cor %>" data-storage="<%= product.armazenamento %>">
+            <a href="/product/detail/<%= product.id %>" class="products-card" data-modelo="<%= product.modelo %>" data-cor="<%= product.cor %>" data-storage="<%= product.armazenamento %>">
               <figure class="product-box_image">
                 <img src="/images/produtos/<%= product.image %>" alt="imagem do produto">
               </figure>
