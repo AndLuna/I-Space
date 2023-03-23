@@ -13,7 +13,7 @@
 </head>
 <body>
                         <!-- inicio header -->
-                        <%- include('../partials/header') %>
+                        <%- include('partials/header') %>
 <main class="main-watch">
 
     <aside class="aside-watch">
@@ -93,31 +93,24 @@
 
     <section class="watch-products">
       <div class="products-container">
-        <% DB.forEach((product) => { 
-          if (product.type === 'iphone') {
-            let finalPrice = (product.price * ((100 - product.discount) / 100)).toFixed(0); 
-        %>
-            <a href="/product/detail/<%= product.id %>" class="products-card" data-modelo="<%= product.modelo %>" data-cor="<%= product.cor %>" data-storage="<%= product.armazenamento %>">
-              <figure class="product-box_image">
-                <img src="/images/produtos/<%= product.image %>" alt="imagem do produto">
-              </figure>
-              <h3><%= product.name %></h3>
-              <p><%= product.price %> </p>
-            </a>
-        <% }
-        }) %>
-        
+        <% products.forEach((product) => { %>
+          <a href="/product/detail/<%= product.id %>" class="products-card" data-modelo="<%= product.modelo %>" data-cor="<%= product.cor %>" data-storage="<%= product.armazenamento %>">
+            <figure class="product-box_image">
+              <img src="/images/produtos/<%= product.image %>" alt="imagem do produto">
+            </figure>
+            <h3><%= product.name %></h3>
+            <p><%= toThousand(product.price) %> </p>
+          </a>
+        <% }) %>
       </div>
-      
-      
-  
     </section>
+    
 
 
 </main>
 
                     <!-- inicio footer -->
-                    <%- include('../partials/footer') %> -->
+                    <%- include('partials/footer') %> -->
                     <!-- fim footer -->
 
 
