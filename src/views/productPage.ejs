@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/reset.css">
+    <link rel="stylesheet" href="/stylesheets/produtos.css">
+    <link rel="stylesheet" href="/stylesheets/header.css">
+    <link rel="shortcut icon" type="image/png" href="https://img.freepik.com/icones-gratis/maca_318-631468.jpg">
+
+    <title>Apple Space</title>
+</head>
+<body>
+                        <!-- inicio header -->
+                        <%- include('../partials/header') %>
+<main class="main-watch">
+
+    <aside class="aside-watch">
+
+        <div class="title-aside">
+            <h1>Apple Iphone </h1>
+            <button id="toggle-button"> Filtros </button>            
+        </div>
+        <div class="line"></div>
+
+        <div class="category-aside">
+          <h2>Modelos</h2>
+            <ul class="itens-list">
+              <li class="item-aside">
+                
+                <input type="checkbox" id="modelo-1" name="modelo" value="modelo-1">
+                <label for="modelo-1">Modelo 1</label>
+              </li>
+              <li class="item-aside">
+                <input type="checkbox" id="modelo-2" name="modelo" value="modelo-2">
+                <label for="modelo-2">Modelo 2</label>
+              </li>
+              <li class="item-aside">
+                <input type="checkbox" id="modelo-2" name="modelo" value="modelo-3">
+                <label for="modelo-2">Modelo 3</label>
+              </li>
+              <li class="item-aside">
+                <input type="checkbox" id="modelo-2" name="modelo" value="modelo-4">
+                <label for="modelo-2">Modelo 4</label>
+              </li>
+              <li class="item-aside">
+                <input type="checkbox" id="modelo-2" name="modelo" value="modelo-5">
+                <label for="modelo-2">Modelo 5</label>
+              </li>
+            </ul>
+            <ul>
+              <h2>Cor</h2>
+              <li class="item-aside">
+            
+            <input type="checkbox" id="cor-prata" name="cor" value="prata">
+            <label for="cor-prata">Prata</label>
+          </li>
+          <li class="item-aside">
+            <input type="checkbox" id="cor-preto" name="cor" value="preto">
+            <label for="cor-preto">Preto</label>
+          </li>
+          <li class="item-aside">
+            <input type="checkbox" id="cor-azul" name="cor" value="azul">
+            <label for="cor-azul">Azul</label>
+          </li>
+          <li class="item-aside">
+            <input type="checkbox" id="cor-vermelho" name="cor" value="vermelho">
+            <label for="cor-vermelho">Vermelho</label>
+          </li>
+        </ul>
+        <ul>
+
+          <h2>Armazenamento</h2>
+          <li class="item-aside">      
+            <input type="checkbox" id="cor-prata" name="cor" value="prata">
+            <label for="cor-prata">64GB</label>
+          </li>
+      <li class="item-aside">      
+        <input type="checkbox" id="cor-prata" name="cor" value="prata">
+        <label for="cor-prata">120GB</label>
+      </li>
+      <li class="item-aside">
+        <input type="checkbox" id="cor-preto" name="cor" value="preto">
+        <label for="cor-preto">260GB</label>
+      </li>
+      </ul>
+            
+            
+
+          </div>
+    </aside>
+
+    <section class="watch-products">
+      <div class="products-container">
+        <% DB.forEach((product) => { 
+          if (product.type === 'iphone') {
+            let finalPrice = (product.price * ((100 - product.discount) / 100)).toFixed(0); 
+        %>
+            <a href="/product/detail/<%= product.id %>" class="products-card" data-modelo="<%= product.modelo %>" data-cor="<%= product.cor %>" data-storage="<%= product.armazenamento %>">
+              <figure class="product-box_image">
+                <img src="/images/produtos/<%= product.image %>" alt="imagem do produto">
+              </figure>
+              <h3><%= product.name %></h3>
+              <p><%= product.price %> </p>
+            </a>
+        <% }
+        }) %>
+        
+      </div>
+      
+      
+  
+    </section>
+
+
+</main>
+
+                    <!-- inicio footer -->
+                    <%- include('../partials/footer') %> -->
+                    <!-- fim footer -->
+
+
+                    <script src="/javascripts/produtos.js"></script>
+                </body>
+</html>

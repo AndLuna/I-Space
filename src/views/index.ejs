@@ -112,42 +112,42 @@
         </section>
         </h2>
       </div>
+      <% // product id é um array onde eu seleciono pelo ID os produtos que eu quero q apareçam %>
+      <% let productIds = [1, 6, 9, 41, 10, 22, 50, 34]; %>
       <% let count = 0; %>
-      <%# Loop que mostra até 6 produtos %>
-      <% products.forEach((product) => {
-          if (count < 8) {
-              let finalPrice = (product.price * ((100 - product.discount) / 100)).toFixed(0) %>
-              <div class="col-12 col-sm-6 col-lg-3">
-                <section class="product-box">
-                  <a href="/product/detail/<%= product.id %>">
-                    <p>
-                      <%= product.name %>
-                    </p>
-                    <figure class="product-box_image">
-                      <img src="/images/produtos/<%= product.image %>" alt="imagem do produto">
-                    </figure>
-                    <article class="product-box_data">
-                      <div class="priceOff">
-                        <h3>
-                          De R$ <%= product.price %> 
-                       </h3>
-      
-                       <span>
-                         <%= product.discount %> %OFF
-                       </span>
-      
-                      </div>
-      
-                      <h2>
-                        R$ <%= toThousand(finalPrice) %>,00
-                      </h2>
-                    </article>
-                  </a>
-                </section>
-              </div>
-              <% count++; 
-          } 
+      <% products.filter((product) => productIds.includes(parseInt(product.id))).forEach((product) => {
+        if (count < 8) {
+          let finalPrice = (product.price * ((100 - product.discount) / 100)).toFixed(0) %>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <section class="product-box">
+              <a href="/product/detail/<%= product.id %>">
+                <p>
+                  <%= product.name %>
+                </p>
+                <figure class="product-box_image">
+                  <img src="/images/produtos/<%= product.image %>" alt="imagem do produto">
+                </figure>
+                <article class="product-box_data">
+                  <div class="priceOff">
+                    <h3>
+                      De R$ <%= product.price %> 
+                   </h3>
+                   <span>
+                     <%= product.discount %> %OFF
+                   </span>
+                  </div>
+                  <h2>
+                    R$ <%= toThousand(finalPrice) %>,00
+                  </h2>
+                </article>
+              </a>
+            </section>
+          </div>
+          <% count++; 
+        } 
       }); %>
+      
+      
       
       
     </div>
