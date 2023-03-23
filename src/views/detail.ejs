@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/detalhes.css">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="containner-one">
+            <div class="grade-img-top">
+              <img src="/images/products/<%= product.image %>" alt="product image" class="product-detail-img">
+            </div>
+        <div class="img-min">
+            <img class="card-min" src="/images/w1.png" alt="">
+            <img class="card-min" src="/images/w2.png" alt="">
+            <img class="card-min" src="/images/w3.png" alt="">
+            <img class="card-min" src="/images/w4.png" alt="">
+            
+        </div>    
+
+
+        </div>
+        <div class="containner-two">
+          
+     <div class="description">
+        
+         <div class="text-details">
+            <h1> <%= product.name %> </h1>
+         </div>
+         <div class="icon-box">
+            <iconify-icon icon="mdi:heart-circle" width="50"></iconify-icon>
+            <iconify-icon icon="material-symbols:share" width="50"></iconify-icon>
+            
+         </div>
+        </div>
+        <div class="ref">
+            <div class="ref-number">
+            <h5>Ref: 222469 </h5>
+            </div>
+                <div class="stars">
+                <iconify-icon icon="ic:sharp-star-border" style="color: black;" width="20"></iconify-icon>
+                <iconify-icon icon="ic:sharp-star-border" style="color: black;" width="20"></iconify-icon>
+                <iconify-icon icon="ic:sharp-star-border" style="color: black;" width="20"></iconify-icon>
+                <iconify-icon icon="ic:sharp-star-border" style="color: black;" width="20"></iconify-icon>
+                <iconify-icon icon="ic:sharp-star-border" style="color: black;" width="20"></iconify-icon>
+                </div>
+            </div>
+            
+            <div class="box-price">
+                <div class="price"><%= product.price %></div>
+                <div class="second-price">à vista</div>
+            </div>
+            <div class="second-box-price">ou <strong>12x </strong> de <strong> R$ 858,25</strong></div>
+
+        <div class="installment">
+            <h4>ou em 21x de R$ 490,43 no cartão Bradesco    </h4>
+        </div>
+        <div class="installment">
+            <h4>ou em 15x de R$ 686,60 no cartão Banco do Brasil</h4>
+        </div>
+        <div class="link-installment">
+            <a href="#">Ver mais formas de pagamento em até 12x </a>
+        </div>
+        <label class="label-cep" for="cep">Calcular o prazo de entrega</label>
+           <div class="cep"> 
+            <input class="input-cep" id="cep" type="text">
+            <button>Calcular</button>
+        </div>
+        <div class="colors">
+           <div class="add-color">Escolha a cor</div>
+            <button class="button-cor" ></button>
+        </div>
+        <div class="size">
+           <div class="add-size">Escolha o Tamanho</div>
+            <button class="button-size" >49 mm</button>
+        </div>
+        <div class="conect">
+            <div class="add-conect">Escolha a Conectividade</div>
+            <button class="button-conect">GPS + Cellular</button>
+        </div>
+        <div class="add-box">
+            <button class="button-add" >Adicionatr ao carrinho</button>
+        </div>
+
+        </div>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+</html>

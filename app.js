@@ -1,9 +1,14 @@
+const routes = require('./src/routes');
 const express = require('express');
 const app = express();
 const path = require('path');
-app.use(express.json());
+const methodOverride = require('method-override') 
 
-const routes = require('./src/routes');
+app.use(express.json());
+app.use(methodOverride('_method'))
+
+
+
 
 
 //views
@@ -16,6 +21,7 @@ app.use(express.static(path.resolve('public')));
 
 
 app.use(routes);
+
 
 
 app.listen(3000, () => {

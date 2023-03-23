@@ -7,6 +7,7 @@ const PagesController = {
     sobre: (req, res) => {
         res.render('sobre', {});
     },
+    
 
     iphone: (req, res) => {
         res.render('productsPage/iphone', {

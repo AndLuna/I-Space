@@ -13,7 +13,7 @@ $('.index-carrossel').slick({
 var numSlides = $('.index-carrossel .slick-slide').length;
 
 // Cria os dots dinamicamente
-for (var i = 0; i < 2; i++) {
+for (var i = 0; i < 3; i++) {
     var dot = document.createElement('div');
     dot.className = 'dot';
     $('.dots').append(dot);
