@@ -3,12 +3,8 @@
     "id": "1",
     "name": "Iphone 5 Pro",
     "description": "",
-<<<<<<< HEAD
     "price": 8.000,
-=======
 
-    "price": 8000,
->>>>>>> c8658232d0fe3c67bfafd2a5775bfcdc9157aef0
     "image": "iphonerasenganultra.png",
     "modelo": "modelo-1",
     "type":"iphone",
@@ -20,12 +16,9 @@
     "id": "2",
     "name": "Iphone 5 Utra",
     "description": "",
-<<<<<<< HEAD
-    "price": 9.399, 
-=======
 
-    "price": 11399, 
->>>>>>> c8658232d0fe3c67bfafd2a5775bfcdc9157aef0
+    "price": 9.399, 
+
     "image": "macenma.png",
     "modelo": "modelo-1",
     "type":"iphone",
@@ -38,12 +31,9 @@
     "id": "3",
     "name": "iphone 5 Max",
     "description": "",
-<<<<<<< HEAD
-    "price": 6.369,
-=======
 
-    "price": 1200,
->>>>>>> c8658232d0fe3c67bfafd2a5775bfcdc9157aef0
+    "price": 6.369,
+
     "image": "ipaderen.png",
     "modelo": "modelo-2",
     "type":"iphone",
@@ -55,12 +45,11 @@
     "id": "4",
     "name": "Iphone 6 Pro",
     "description": "",
-<<<<<<< HEAD
-    "price": 5.000,
-=======
 
-    "price": 5000,
->>>>>>> c8658232d0fe3c67bfafd2a5775bfcdc9157aef0
+    "price": 5.000,
+
+
+
     "modelo": "modelo-2",
     "image": "iphonezenin.png",
     "type":"iphone",
@@ -74,7 +63,8 @@
     "description": "Samsung Galaxy S10",
     "price": 7.899,
     "modelo": "modelo-2",
-    "image": "iphonezenin.png",    "type":"iphone",
+    "image": "iphonezenin.png", 
+       "type":"iphone",
     "armazenamento":"260GB",
     "cor":"prata",
     "discount":"10"
@@ -227,12 +217,11 @@
       "id": "18",
       "name": "ipad Pro 11",
       "description": "",
-<<<<<<< HEAD
+
       "price": 5.469,
-=======
+
       "discount":"10",
-      "price": 1200,
->>>>>>> c8658232d0fe3c67bfafd2a5775bfcdc9157aef0
+
       "type":"ipad",
       "image": "ipaderen.png",
       "modelo": "modelo-1",
