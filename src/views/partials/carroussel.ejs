@@ -1,0 +1,152 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Meu projeto</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <style>
+        #product-carousel .carousel-inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+   
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .carousel {
+      
+            width: 65%;
+            margin: 0 auto;
+            margin-bottom: 60px;
+      
+        }
+
+
+        #product-carousel .carousel-item {
+            flex: 0 0 auto;
+            width: 70%;
+            margin-right: 15px;
+        }
+
+        #product-carousel .carousel-item:last-of-type {
+            margin-right: 0;
+        }
+
+        .carrousel-card{    text-decoration: none; color: black; 
+         }
+
+        #product-carousel .carousel-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #product-carousel .carousel-item .card {
+            border: none;
+            text-align: center;     
+        }
+
+        #product-carousel .carousel-item .card-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        #product-carousel .carousel-item .card-text {
+            font-size: 1rem;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 50px;
+            /* define a largura dos botões */
+            height: 50px;
+            /* define a altura dos botões */
+            background-color: black;
+            /* define a cor de fundo dos botões */
+            margin-top: 4.8%;
+            border-radius: 50%;
+            
+        }
+        
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute; /* adiciona position: absolute para posicionar os botões */
+            top: 50%; /* posiciona os botões 50% abaixo do topo da div do carrossel */
+            transform: translateY(-50%);
+        }
+
+    </style>
+</head>
+
+<html>
+
+
+<div id="product-carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="row">
+                <a href="product/detail/6" class="col-md-3 carrousel-card">
+                    <img src="/images/produtos/iphoneraengan1.png" alt="anel masculino" />
+                    <h4>Product 1</h4>
+                    <p>$9.99</p>
+                </a>
+                <a href="#" class="col-md-3 carrousel-card">
+                    <img src="/images/produtos/iphonerasenganultra.png" alt="anel masculino" />
+                    <h4>Product 2</h4>
+                    <p>$19.99</p>
+                </a>
+                <a href="#" class="col-md-3 carrousel-card">
+                    <img src="/images/produtos/iphoneraengan1.png" alt="anel masculino" />
+                    <h4>Product 3</h4>
+                    <p>$29.99</p>
+                </a>
+                <a href="#" class="col-md-3 carrousel-card">
+                    <img src="/images/produtos/iphoneraengan1.png" alt="anel masculino" />
+                    <h4>Product 4</h4>
+                    <p>$39.99</p>
+                </a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="row">
+                <a href="#" class="col-md-3 carrousel-card">
+                    <img src="/images/produtos/iphoneraengan1.png" alt="anel masculino" />
+                    <h4>Product 5</h4>
+                    <p>$49.99</p>
+                </a>
+                <a href="#" class="col-md-3 carrousel-card">
+                    <img src="/images/produtos/iphoneraengan1.png" alt="anel masculino" />
+                    <h4>Product 6</h4>
+                    <p>$59.99</p>
+                </a>
+                <a href="#" class="col-md-3 carrousel-card">
+                    <img src="/images/produtos/iphoneraengan1.png" alt="anel masculino" />
+                    <h4>Product 7</h4>
+                    <p>$69.99</p>
+                </a>
+                <a href="#" class="col-md-3 carrousel-card">
+                    <img src="/images/produtos/iphoneraengan1.png" alt="anel masculino" />
+                    <h4>Product 8</h4>
+                    <p>$79.99</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#product-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#product-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+</html>
