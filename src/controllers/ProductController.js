@@ -32,6 +32,22 @@ const ProductController = {
 			product,
 			toThousand
 		})
-	}
+	},
+  updateFormEJS: (req, res) => {
+    let id = req.params.id
+		let productToEdit = products.find(product => product.id == id)
+		res.render('product-edit-form', { productToEdit })
+  },
+  deleteEJS: (req, res) => {
+    const { id } = req.params
+    
+    const productIndex = products.findIndex(product => String(product.id) === id)
+  
+    if (productIndex != -1) {
+        products.splice(productIndex, 1)
+        res.redirect('/')
+    }
+    else return res.status(400).json({ error: 'Produto não encontrado.' })
+  }
 }
 module.exports = ProductController

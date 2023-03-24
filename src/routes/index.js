@@ -14,8 +14,8 @@ router.get('/', MainController.index);
 // GET - EJS Detail producto - View
 router.get('/product/detail/:id', productController.detailEJS)
 router.get('/productPage/:type', PagesController.productPage);
-
-
+router.get('/product/update/:id', productController.updateFormEJS)
+router.delete('/product/:id', productController.deleteEJS)
 // # rota de paginas
 router.get('/sobre', PagesController.sobre);
 
