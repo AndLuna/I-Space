@@ -30,7 +30,7 @@ img {
  flex-direction: column;
  justify-content: center;
    overflow: hidden;
-  transition: 500ms;
+
 }
 
 .product-box p{
