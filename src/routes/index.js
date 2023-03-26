@@ -3,7 +3,8 @@ const router = express.Router()
 //criando a const do controller
 const MainController = require('../controllers/MainController');
 const PagesController = require('../controllers/PagesController');
-const productController = require('../controllers/ProductController')
+const productController = require('../controllers/ProductController');
+const usuariosController = require('../controllers/UsuariosController');
 
 
 
