@@ -15,11 +15,18 @@ main { /* campo universal do carrinho*/
     border-radius: 1%;
     padding: 1%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+   
+    
     align-items: stretch;
    
 
+}
+
+
+.itemDestaque{
+   
+    background-color: rgb(98, 96, 96);
+    flex-grow: 1;
 }
 
 .caixaLista{
@@ -27,11 +34,6 @@ main { /* campo universal do carrinho*/
    flex-grow: 1;
 }
 
-.itemDestaque{
-   
-    background-color: rgb(98, 96, 96);
-    flex-grow: 1;
-}
 
 .item1{
 
