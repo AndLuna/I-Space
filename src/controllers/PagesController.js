@@ -12,7 +12,10 @@ const PagesController = {
         res.render('sobre', {});
     }, 
     cadastro: (req, res) => {
-        res.render('cadastro', {});
+        res.send('Página de cadastro');
+    },
+    login: (req,res) => {
+        res.send('Página de Login')
     }
 
 };

@@ -30,6 +30,8 @@ router.get('/sobre', PagesController.sobre);
 
 router.get('/cadastro', PagesController.cadastro);
 
+router.get('/login', PagesController.login)
+
 
 
 module.exports = router;
