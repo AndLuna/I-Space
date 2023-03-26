@@ -191,20 +191,52 @@ height: 30px;
 }
 
 .add-box{
-    height: 50px;
+    height: 250px;
 }
 .button-add{
 background-color: #46CAF2;
 width:80%;
-height: 80%;
+height: 50px;
 border: transparent;
-font-size: 20px;
+font-size: 20px;margin-bottom: 5px;
 color: #000000;
 
+}
+.action-button-create{
+ background-color: #46f268;
+width:80%;
+height: 50px;
+border: transparent;
+font-size: 20px;margin-bottom: 5px;
+color: #000000;
+}
+.action-button-edit {
+    background-color: #f29808;
+    width:80%;
+    height: 50px;
+    border: transparent;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #000000;
+}
+.action-button-delete{
+    background-color: #f2382e;
+    width:80%;
+    height: 50px;
+    border: transparent;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #000000;
 }
 
 .grid-product{
     background-color: #e730ce;
     height: 300px;
     width: 100%;
+}
+
+form{
+  
+    width: 100%;
+
 }
