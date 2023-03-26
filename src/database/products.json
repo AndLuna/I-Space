@@ -1,11 +1,11 @@
 [
   {
     "id": "1",
-    "name": "Iphone 5 Pro",
+    "name": "Iphone Robin",
     "description": "",
-    "price": 8.000,
+    "price": "8000",
 
-    "image": "iphonerasenganultra.png",
+    "image": "iphonegojo.png",
     "modelo": "modelo-1",
     "type":"iphone",
     "armazenamento":"64GB",
@@ -14,25 +14,25 @@
   },
   {
     "id": "2",
-    "name": "Iphone 5 Utra",
+    "name": "Iphone Luffy",
     "description": "",
 
-    "price": 9.399, 
+    "price": "9399", 
 
-    "image": "macenma.png",
+    "image": "iphone2.jpg",
     "modelo": "modelo-1",
     "type":"iphone",
-    "armazenamento":"64GB",
+    "armazenamento":"120GB",
     "cor":"preto",
     "discount":"5"
     
   },
   {
     "id": "3",
-    "name": "iphone 5 Max",
+    "name": "iphone Zoro",
     "description": "",
 
-    "price": 6.369,
+    "price": "10369",
 
     "image": "ipaderen.png",
     "modelo": "modelo-2",
@@ -43,37 +43,37 @@
   },
   {
     "id": "4",
-    "name": "Iphone 6 Pro",
+    "name": "Iphone Zenin",
     "description": "",
 
-    "price": 5.000,
+    "price": "5000",
 
 
 
     "modelo": "modelo-2",
     "image": "iphonezenin.png",
     "type":"iphone",
-    "armazenamento":"260GB",
+    "armazenamento":"64GB",
     "cor":"prata",
     "discount":"15"
   },
   {
     "id": "5",
-    "name": "Iphone 6 Ultra",
+    "name": "Iphone Satoru",
     "description": "Samsung Galaxy S10",
-    "price": 7.899,
+    "price": "7899",
     "modelo": "modelo-2",
     "image": "iphonezenin.png", 
        "type":"iphone",
-    "armazenamento":"260GB",
+    "armazenamento":"120GB",
     "cor":"prata",
     "discount":"10"
   },
   {
     "id": "6",
-    "name": "Iphone 6 Max",
+    "name": "Iphone Jujutsu",
     "description": "Notebook Lenovo I3 Intel 8gb RAM",
-    "price": 8.599,
+    "price": "8599",
     "modelo": "modelo-2",
     "image": "iphonezenin.png",
         "type":"iphone",
@@ -83,33 +83,33 @@
   },
   {
       "id": "7",
-      "name": "Iphone 7 Pro",
+      "name": "Iphone Hyuga",
       "description": "Notebook Lenovo I3 Intel 8gb RAM",
-      "price": 6.700,
+      "price": "6700",
       "modelo": "modelo-3",
       "image": "iphonezenin.png",
       "type":"iphone",
-      "armazenamento":"260GB",
+      "armazenamento":"64GB",
       "cor":"prata",
       "discount":"10"
     },
     {
       "id": "8",
-      "name": "Iphone 7 Ultra",
+      "name": "Iphone Uzumaki",
       "description": "Notebook Lenovo I3 Intel 8gb RAM",
-      "price": 9.869,
+      "price": "9869",
       "modelo": "modelo-3",
       "image": "iphonezenin.png",
       "type":"iphone",
-      "armazenamento":"260GB",
+      "armazenamento":"120GB",
       "cor":"prata",
       "discount":"20"
     },
     {
       "id": "9",
-      "name": "Iphone 7 Max",
+      "name": "Iphone Uchiha",
       "description": "Notebook Lenovo I3 Intel 8gb RAM",
-      "price": 8.479,
+      "price": "8479",
       "modelo": "modelo-3",
       "image": "iphonerasenganultra.png",
       "type":"iphone",
@@ -119,32 +119,32 @@
     },
     {
         "id": "10",
-        "name": "Iphone 8 Pro",
+        "name": "Iphone Levi",
         "description": "Notebook Lenovo I3 Intel 8gb RAM",
-        "price": 9.499,
+        "price": "9499",
         "modelo": "modelo-4",
         "image": "iphonerasenganultra.png",
         "type":"iphone",
-        "armazenamento":"260GB",
+        "armazenamento":"64GB",
         "cor":"prata",
         "discount":"10"
       },
       {
         "id": "11",
-        "name": "Iphone 8 Ultra",
+        "name": "Iphone Mikasa",
         "description": "Notebook Lenovo I3 Intel 8gb RAM",
-        "price": 8.750,
+        "price": "8750",
         "modelo": "modelo-4",
         "image": "img-laptop-lenovo.jpg",
         "type":"iphone",
-        "armazenamento":"260GB",
+        "armazenamento":"120GB",
         "cor":"prata"
       }, 
  {
     "id": "12",
-    "name": "Iphone 8 Max",
+    "name": "Iphone Eren",
     "description": "Notebook Lenovo I3 Intel 8gb RAM",
-    "price": 9.879,
+    "price": "9879",
     "modelo": "modelo-4",
     "image": "img-laptop-lenovo.jpg",
     "type":"iphone",
@@ -153,31 +153,31 @@
   },
   {
       "id": "13",
-      "name": "Iphone 9 Pro",
+      "name": "Iphone Konan",
       "description": "Notebook Lenovo I3 Intel 8gb RAM",
-      "price": 9.599,
+      "price": "9599",
       "modelo": "modelo-5",
       "image": "img-laptop-lenovo.jpg",
       "type":"iphone",
-      "armazenamento":"260GB",
+      "armazenamento":"64GB",
       "cor":"prata"
     },
     {
       "id": "14",
-      "name": "Iphone 9 Ultra",
+      "name": "Iphone Pain",
       "description": "Notebook Lenovo I3 Intel 8gb RAM",
-      "price": 10.479,
+      "price": "10479",
       "modelo": "modelo-5",
       "image": "img-laptop-lenovo.jpg",
       "type": "iphone",
-      "armazenamento":"260GB",
+      "armazenamento":"120GB",
       "cor":"prata"
     },
     {
       "id": "15",
-      "name": "Iphone 9 Max",
+      "name": "Iphone Nagato",
       "description": "Notebook Lenovo I3 Intel 8gb RAM",
-      "price": 10.999,
+      "price": "10999",
       "modelo": "modelo-5",
       "image": "img-laptop-lenovo.jpg",
       "type":"iphone",
@@ -191,11 +191,11 @@
     {
       "id": "16",
       "type":"ipad",
-      "name": "ipad Pro 9",
+      "name": "ipad Sharingan",
       "modelo": "modelo-1",
-      "armazenamento":"260GB",
+      "armazenamento":"64GB",
       "cor":"prata",
-      "price": 4.599, 
+      "price": "4599", 
       "image": "macenma.png",
       "description": "",
       "discount":"10"
@@ -204,21 +204,21 @@
     {
       "id": "17",
       "type":"ipad",
-      "name": "ipad Pro 10",
+      "name": "ipad Rinnegan",
       "modelo": "modelo-1",
-      "armazenamento":"260GB",
+      "armazenamento":"120GB",
       "cor":"prata",
-      "price": 4.789, 
+      "price": "4789", 
       "image": "macenma.png",
       "description": "",
       "discount":"10"
     },
     {
       "id": "18",
-      "name": "ipad Pro 11",
+      "name": "ipad Byakugan",
       "description": "",
 
-      "price": 5.469,
+      "price": "5469",
 
       "discount":"10",
 
@@ -231,11 +231,11 @@
     {
       "id": "19",
       "type":"ipad",
-      "name": "ipad Pro 11",
+      "name": "ipad Gomu Gomu",
       "modelo": "modelo-1",
-      "armazenamento":"260GB",
+      "armazenamento":"64GB",
       "cor":"prata",
-      "price": 6.200, 
+      "price": "6200", 
       "image": "macenma.png",
       "description": "",
       "discount":"10"
@@ -243,11 +243,11 @@
     {
       "id": "20",
       "type":"ipad",
-      "name": "ipad Air 8",
+      "name": "ipad Hito Hito",
       "modelo": "modelo-1",
-      "armazenamento":"260GB",
+      "armazenamento":"120GB",
       "cor":"prata",
-      "price": 6.999, 
+      "price": "6999", 
       "image": "macenma.png",
       "description": "",
       "discount":"10"
@@ -255,11 +255,11 @@
     {
       "id": "21",
       "type":"ipad",
-      "name": "ipad Air 9",
+      "name": "ipad Mera Mera",
       "modelo": "modelo-1",
       "armazenamento":"260GB",
       "cor":"prata",
-      "price": 7.199, 
+      "price": "7199", 
       "image": "macenma.png",
       "description": "",
       "discount":"10"
@@ -267,11 +267,11 @@
     {
         "id": "22",
         "type":"ipad",
-        "name": "ipad Air 10",
+        "name": "ipad Revengers",
         "modelo": "modelo-1",
-        "armazenamento":"260GB",
+        "armazenamento":"64GB",
         "cor":"prata",
-        "price": 7.450, 
+        "price": "7450", 
         "image": "macenma.png",
         "description": "",
         "discount":"10"
@@ -279,11 +279,11 @@
       {
         "id": "23",
         "type":"ipad",
-      "name": "ipad Mini 4",
+      "name": "ipad One Piece",
       "modelo": "modelo-1",
-      "armazenamento":"260GB",
+      "armazenamento":"120GB",
       "cor":"prata",
-      "price": 3.599, 
+      "price": "3599", 
       "image": "macenma.png",
       "description": "",
       "discount":"10"
@@ -291,11 +291,11 @@
       {
         "id": "24",
         "type":"ipad",
-      "name": "ipad Mini 6",
+      "name": "ipad Shingeki",
       "modelo": "modelo-1",
       "armazenamento":"260GB",
       "cor":"prata",
-      "price": 3.999, 
+      "price": "3999", 
       "image": "macenma.png",
       "description": "",
       "discount":"10"
@@ -303,11 +303,11 @@
       {
           "id": "25",
           "type":"ipad",
-      "name": "ipad Mini 8",
+      "name": "ipad Rasengan",
       "modelo": "modelo-1",
-      "armazenamento":"260GB",
+      "armazenamento":"120GB",
       "cor":"prata",
-      "price": 4.199, 
+      "price": "4199", 
       "image": "macenma.png",
       "description": "",
       "discount":"10"
@@ -315,11 +315,11 @@
         {
           "id": "26",
           "type":"ipad",
-          "name": "ipad Enma 10",
+          "name": "ipad Shidori",
           "modelo": "modelo-1",
           "armazenamento":"260GB",
           "cor":"prata",
-          "price": 7.280, 
+          "price": "7280", 
           "image": "macenma.png",
           "description": "",
           "discount":"10"
@@ -327,11 +327,11 @@
    {
       "id": "27",
       "type":"ipad",
-      "name": "ipad Enma 11",
+      "name": "ipad Shanaro",
       "modelo": "modelo-1",
-      "armazenamento":"260GB",
+      "armazenamento":"64GB",
       "cor":"prata",
-      "price": 8.599, 
+      "price": "8599", 
       "image": "macenma.png",
       "description": "",
       "discount":"10"
@@ -339,11 +339,11 @@
     {
         "id": "28",
         "type":"ipad",
-      "name": "ipad Enma 12",
+      "name": "ipad Enma ",
       "modelo": "modelo-1",
-      "armazenamento":"260GB",
+      "armazenamento":"120GB",
       "cor":"prata",
-      "price": 7.999, 
+      "price": "7999", 
       "image": "macenma.png",
       "description": "",
       "discount":"10"
@@ -351,11 +351,11 @@
       {
         "id": "29",
         "type":"ipad",
-        "name": "ipad Max 6",
+        "name": "ipad Scalibur",
         "modelo": "modelo-1",
         "armazenamento":"260GB",
         "cor":"prata",
-        "price": 11399, 
+        "price": "11399", 
         "image": "macenma.png",
         "description": "",
         "discount":"10"
@@ -363,11 +363,11 @@
       {
         "id": "30",
         "type":"ipad",
-        "name": "ipad Max 7",
+        "name": "ipad Suzui",
         "modelo": "modelo-2",
-        "armazenamento":"260GB",
+        "armazenamento":"64GB",
         "cor":"prata",
-        "price": 3.899, 
+        "price": "3899", 
         "image": "macenma.png",
         "description": "",
         "discount":"10"
@@ -375,11 +375,11 @@
       {
         "id": "31",
         "type":"mac",
-        "name": "Mac Pro 2",
+        "name": "Mac L",
         "modelo": "modelo-1",
-        "armazenamento":"260GB",
+        "armazenamento":"120GB",
         "cor":"prata",
-        "price": 4.789, 
+        "price": "4789", 
         "image": "macenma.png",
         "description": "",
         "discount":"10"
@@ -387,11 +387,11 @@
       {
         "id": "32",
         "type":"mac",
-        "name": "Mac Pro 4",
+        "name": "Mac Kira",
         "modelo": "modelo-1",
         "armazenamento":"260GB",
         "cor":"prata",
-        "price": 5.820, 
+        "price": "5820", 
         "image": "macenma.png",
         "description": "",
         "discount":"10"
@@ -399,11 +399,11 @@
       {
         "id": "33",
         "type":"mac",
-        "name": "Mac Pro 6",
+        "name": "Mac Near",
         "modelo": "modelo-1",
-        "armazenamento":"260GB",
+        "armazenamento":"64GB",
         "cor":"prata",
-        "price": 6.400, 
+        "price": "6400", 
         "image": "macenma.png",
         "description": "",
         "discount":"10"
@@ -411,11 +411,11 @@
       {
         "id": "34",
         "type":"mac",
-        "name": "Mac Enma 11",
+        "name": "Mac Sasuke",
         "modelo": "modelo-1",
-        "armazenamento":"260GB",
+        "armazenamento":"120GB",
         "cor":"prata",
-        "price": 8.999, 
+        "price": "8999", 
         "image": "macenma.png",
         "description": "",
         "discount":"10"
@@ -423,11 +423,11 @@
       {
         "id": "35",
         "type":"mac",
-        "name": "Mac Enma 12",
+        "name": "Mac Sakura",
         "modelo": "modelo-1",
         "armazenamento":"260GB",
         "cor":"prata",
-        "price": 8.779, 
+        "price": "8779", 
         "image": "macenma.png",
         "description": "",
         "discount":"10"
@@ -435,11 +435,11 @@
       {
         "id": "36",
         "type":"mac",
-        "name": "Mac Enma 13",
+        "name": "Mac Naruto",
         "modelo": "modelo-1",
-        "armazenamento":"260GB",
+        "armazenamento":"64GB",
         "cor":"prata",
-        "price": 9.569, 
+        "price": "9569", 
         "image": "macenma.png",
         "description": "",
         "discount":"10"
@@ -447,11 +447,11 @@
       {
           "id": "37",
           "type":"mac",
-          "name": "Mac Ultra 8",
+          "name": "Mac Tanjiro",
           "modelo": "modelo-1",
-          "armazenamento":"260GB",
+          "armazenamento":"120GB",
           "cor":"prata",
-          "price": 10.489, 
+          "price": "10489", 
           "image": "macenma.png",
           "description": "",
           "discount":"10"
@@ -459,11 +459,11 @@
         {
           "id": "38",
           "type":"mac",
-          "name": "Mac Ultra 9",
+          "name": "Mac Nezuko",
           "modelo": "modelo-1",
           "armazenamento":"260GB",
           "cor":"prata",
-          "price": 10.829, 
+          "price": "10829", 
           "image": "macenma.png",
           "description": "",
           "discount":"10"
@@ -471,11 +471,11 @@
         {
           "id": "39",
           "type":"mac",
-          "name": "Mac Ultra 10",
+          "name": "Mac Kanao",
           "modelo": "modelo-1",
-          "armazenamento":"260GB",
+          "armazenamento":"64GB",
           "cor":"prata",
-          "price": 11.199, 
+          "price": "11199", 
           "image": "macenma.png",
           "description": "",
           "discount":"10"
@@ -483,11 +483,11 @@
         {
             "id": "40",
             "type":"mac",
-            "name": "Mac Air 5",
+            "name": "Mac Kamado",
             "modelo": "modelo-1",
-            "armazenamento":"260GB",
+            "armazenamento":"120GB",
             "cor":"prata",
-            "price": 13.499, 
+            "price": "13499", 
             "image": "macenma.png",
             "description": "",
             "discount":"10"
@@ -495,11 +495,11 @@
           {
             "id": "41",
             "type":"mac",
-            "name": "Mac Air 6",
+            "name": "Mac Tsuyuri",
             "modelo": "modelo-1",
             "armazenamento":"260GB",
             "cor":"prata",
-            "price": 12.149, 
+            "price": "12149", 
             "image": "macenma.png",
             "description": "",
             "discount":"10"
@@ -507,11 +507,11 @@
      {
         "id": "42",
         "type":"mac",
-        "name": "Mac Air 7",
+        "name": "Mac Agatsuma",
         "modelo": "modelo-1",
-        "armazenamento":"260GB",
+        "armazenamento":"64GB",
         "cor":"prata",
-        "price": 12.999, 
+        "price": "12999", 
         "image": "macenma.png",
         "description": "",
         "discount":"10"
@@ -519,11 +519,11 @@
       {
           "id": "43",
           "type":"mac",
-          "name": "Mac Pro 10",
+          "name": "Mac Gon",
           "modelo": "modelo-1",
-          "armazenamento":"260GB",
+          "armazenamento":"120GB",
           "cor":"prata",
-          "price": 13.599, 
+          "price": "13599", 
           "image": "macenma.png",
           "description": "",
           "discount":"10"
@@ -531,11 +531,11 @@
         {
           "id": "44",
           "type":"mac",
-          "name": "Mac Pro 11",
+          "name": "Mac Killua",
           "modelo": "modelo-1",
           "armazenamento":"260GB",
           "cor":"prata",
-          "price": 13.789, 
+          "price": "13789", 
           "image": "macenma.png",
           "description": "",
           "discount":"10"
@@ -543,11 +543,11 @@
         {
           "id": "45",
           "type":"mac",
-          "name": "Mac Pro 12",
+          "name": "Mac Hisoka",
           "modelo": "modelo-1",
-          "armazenamento":"260GB",
+          "armazenamento":"64GB",
           "cor":"prata",
-          "price": 13.999, 
+          "price": "13999", 
           "image": "macenma.png",
           "description": "",
           "discount":"10"
@@ -555,11 +555,11 @@
         {
           "id": "46",
           "type":"watch",
-          "name": "Watch Series 8",
+          "name": "Watch Madara",
           "modelo": "modelo-1",
-          "armazenamento":"260GB",
+          "armazenamento":"120GB",
           "cor":"prata",
-          "price": 4.199, 
+          "price": "4199", 
           "image": "macenma.png",
           "description": "",
           "discount":"10"
@@ -567,11 +567,11 @@
         {
           "id": "47",
           "type":"watch",
-          "name": "Watch Series 9",
+          "name": "Watch Hashirama",
           "modelo": "modelo-1",
           "armazenamento":"260GB",
           "cor":"prata",
-          "price": 4.580, 
+          "price": "4580", 
           "image": "macenma.png",
           "description": "",
           "discount":"10"
@@ -579,11 +579,11 @@
         {
           "id": "48",
           "type":"watch",
-          "name": "Watch Series 10",
+          "name": "Watch Hagoromo",
           "modelo": "modelo-1",
-          "armazenamento":"260GB",
+          "armazenamento":"64GB",
           "cor":"prata",
-          "price": 4.899, 
+          "price": "4899", 
           "image": "macenma.png",
           "description": "",
           "discount":"10"
@@ -591,11 +591,11 @@
         {
           "id": "49",
           "type":"watch",
-          "name": "Watch SE",
+          "name": "Watch Anya",
           "modelo": "modelo-1",
-          "armazenamento":"260GB",
+          "armazenamento":"120GB",
           "cor":"prata",
-          "price": 3.149, 
+          "price": "3149", 
           "image": "macenma.png",
           "description": "",
           "discount":"10"
@@ -603,11 +603,11 @@
         {
           "id": "50",
           "type":"watch",
-          "name": "Watch SE",
+          "name": "Watch Forger",
           "modelo": "modelo-1",
           "armazenamento":"260GB",
           "cor":"prata",
-          "price": 3.489, 
+          "price": "3489", 
           "image": "macenma.png",
           "description": "",
           "discount":"10"
@@ -615,11 +615,11 @@
         {
           "id": "51",
           "type":"watch",
-          "name": "Watch SE",
+          "name": "Watch Yor",
           "modelo": "modelo-1",
-          "armazenamento":"260GB",
+          "armazenamento":"65GB",
           "cor":"prata",
-          "price": 3.999, 
+          "price": "3999", 
           "image": "macenma.png",
           "description": "",
           "discount":"10"
@@ -627,11 +627,11 @@
         {
             "id": "52",
             "type":"watch",
-            "name": "Watch Ultra 11",
+            "name": "Watch Yuta",
             "modelo": "modelo-1",
-            "armazenamento":"260GB",
+            "armazenamento":"120GB",
             "cor":"prata",
-            "price": 8.100, 
+            "price": "8100", 
             "image": "macenma.png",
             "description": "",
             "discount":"10"
@@ -639,11 +639,11 @@
           {
             "id": "53",
             "type":"watch",
-            "name": "Watch Ultra 12",
+            "name": "Watch Geto",
             "modelo": "modelo-1",
             "armazenamento":"260GB",
             "cor":"prata",
-            "price": 8.599, 
+            "price": "8599", 
             "image": "macenma.png",
             "description": "",
             "discount":"10"
@@ -651,11 +651,11 @@
           {
             "id": "54",
             "type":"watch",
-            "name": "Watch Ultra 13",
+            "name": "Watch Gojo",
             "modelo": "modelo-1",
-            "armazenamento":"260GB",
+            "armazenamento":"64GB",
             "cor":"prata",
-            "price": 8.789, 
+            "price": "8789", 
             "image": "macenma.png",
             "description": "",
             "discount":"10"
@@ -663,11 +663,11 @@
           {
               "id": "55",
               "type":"watch",
-              "name": "Watch Hito 6",
+              "name": "Watch Fushiguro",
               "modelo": "modelo-1",
-              "armazenamento":"260GB",
+              "armazenamento":"120GB",
               "cor":"prata",
-              "price": 6.499, 
+              "price": "6499", 
               "image": "macenma.png",
               "description": "",
               "discount":"10"
@@ -675,11 +675,11 @@
             {
               "id": "56",
               "type":"watch",
-              "name": "Watch Hito 7",
+              "name": "Watch Itadori",
               "modelo": "modelo-1",
               "armazenamento":"260GB",
               "cor":"prata",
-              "price": 6.799, 
+              "price": "6799", 
               "image": "macenma.png",
               "description": "",
               "discount":"10"
@@ -687,11 +687,11 @@
        {
           "id": "57",
           "type":"watch",
-          "name": "Watch Hito 8",
+          "name": "Watch Hunter",
           "modelo": "modelo-1",
-          "armazenamento":"260GB",
+          "armazenamento":"64GB",
           "cor":"prata",
-          "price": 7.899, 
+          "price": "7899", 
           "image": "macenma.png",
           "description": "",
           "discount":"10"
@@ -699,11 +699,11 @@
         {
             "id": "58",
             "type":"watch",
-            "name": "Watch Enma 12",
+            "name": "Watch Bleach",
             "modelo": "modelo-1",
-            "armazenamento":"260GB",
+            "armazenamento":"120GB",
             "cor":"prata",
-            "price": 7.599, 
+            "price": "7599", 
             "image": "macenma.png",
             "description": "",
             "discount":"10"
@@ -711,11 +711,11 @@
           {
             "id": "59",
             "type":"watch",
-            "name": "Watch Enma 13",
+            "name": "Watch Dragon",
             "modelo": "modelo-1",
             "armazenamento":"260GB",
             "cor":"prata",
-            "price": 8.100, 
+            "price": "8100", 
             "image": "macenma.png",
             "description": "",
             "discount":"10"
@@ -723,11 +723,11 @@
           {
             "id": "60",
             "type":"watch",
-            "name": "Watch Enma 4",
+            "name": "Watch Otaku",
             "modelo": "modelo-1",
-            "armazenamento":"260GB",
+            "armazenamento":"64GB",
             "cor":"prata",
-            "price": 8.899, 
+            "price": "8899", 
             "image": "macenma.png",
             "description": "",
             "discount":"10"
