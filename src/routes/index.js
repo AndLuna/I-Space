@@ -3,7 +3,8 @@ const router = express.Router()
 //criando a const do controller
 const MainController = require('../controllers/MainController');
 const PagesController = require('../controllers/PagesController');
-const productController = require('../controllers/ProductController')
+const productController = require('../controllers/ProductController');
+const usuariosController = require('../controllers/UsuariosController');
 
 
 
@@ -29,6 +30,8 @@ router.delete('/product/:id', productController.deleteEJS)
 router.get('/sobre', PagesController.sobre);
 
 router.get('/cadastro', PagesController.cadastro);
+
+router.get('/login', PagesController.login)
 
 
 
