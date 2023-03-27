@@ -19,11 +19,10 @@
 
     "price": "9399", 
 
-<<<<<<< HEAD
+
     "image": "iphonegomugomu.png",
-=======
-    "image": "iphoneluffy.png",
->>>>>>> 689937964f9c4393ae89f9f654b9435f56593fd5
+
+
     "modelo": "modelo-1",
     "type":"iphone",
     "armazenamento":"120GB",
