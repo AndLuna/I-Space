@@ -69,10 +69,18 @@ const ProductController = {
   },
   // Create product
   createEJS: (req, res) => {
+    let image = ''
+
+    if (req.files[0] !== undefined) {
+        image = req.files[0].filename
+    } else {
+        image = 'default-image.png'
+    }
+
     let newProduct = {
 			id: Number(products[products.length - 1].id) + 1,
 			...req.body,
-      image: 'default-image.png'
+      image: image
 		}
     products.push(newProduct)
     res.redirect('/')
@@ -86,18 +94,24 @@ const ProductController = {
   // Update product
   updateEJS: (req, res) => {
     const { id } = req.params
-    
+    let image = ''
     const productIndex = products.findIndex(product => String(product.id) === id) // índice
     let productToEdit = products.find(product => product.id == id) // objeto
     
     if (productIndex != -1) {
-        productToEdit = {
-          id: productToEdit.id,
-          ...req.body,
-          image: productToEdit.image
-        }
+      if (req.files[0] !== undefined) {
+          image = req.files[0].filename
+      } else {
+          image = productToEdit.image
+      }
 
-        products[productIndex] = productToEdit // atualiza
+      productToEdit = {
+        id: productToEdit.id,
+        ...req.body,
+        image: image
+      }
+
+      products[productIndex] = productToEdit // atualiza
 
         res.redirect('/')
     }
