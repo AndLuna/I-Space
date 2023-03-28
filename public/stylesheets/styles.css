@@ -137,8 +137,18 @@ form {
 
 .flex-1 {
   flex: 1;
-}
 
+}
+.nomeEemail, .formEmail{
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+}
+.formNome{
+  display: flex;
+  width: 33%;
+  gap: 5%;
+}
 .fixed-button {
   position: fixed;
   min-width: 58px;

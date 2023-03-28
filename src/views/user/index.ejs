@@ -10,12 +10,20 @@
           <div class="card">
             <div class="row">
               <div class="column justify-center flex-1">
-                <div class="label">Nome</div>
-                <div class="data"><%= user.name %></div>
-                <div style="height: 18px"></div>
-                <div class="label">Email</div>
-                <div class="data"><%= user.email %></div>
+                <div class="nomeEemail">
+                  <div class="formNome">
+                    <div class="label">Nome:</div>
+                    <div class="data"><%= user.name %></div>
+                  </div>
+             
+                <!-- <div style="height: 18px"></div> -->
+                <div class="formEmail">
+                  <div class="label">Email:</div>
+                  <div class="data"><%= user.email %></div>
+                </div>
+     
               </div>
+            </div>
               <div class="column">
                 <a class="button" href="/users/show/<%= user.id %>">
                   <i class="fas fa-eye"></i>
