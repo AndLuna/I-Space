@@ -8,7 +8,8 @@
     <title><%= product.name %></title>
 </head>
 <body>
-    <header></header>
+                           <!-- inicio header -->
+                           <%- include('partials/header') %>
     <main>
         <div class="containner-one">
             <div class="grade-img-top">
@@ -86,7 +87,7 @@
             <button class="button-add" >
                 Adicionar ao carrinho
             </button>
-           <a href=""> 
+           <a href="/product/create"> 
             <button class="action-button-create" >
                 Criar novo item 
             <button> </a>
@@ -123,7 +124,7 @@
 
 
     </main>
-    <footer></footer>
+    <%- include('partials/footer') %>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
