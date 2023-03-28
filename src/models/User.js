@@ -32,9 +32,16 @@ const User = {
 
   update: (id, user, avatar) => {
     const userIndex = db.users.findIndex(user => user.id === id);
+  
+    // Verifica se o avatar foi enviado na requisição
+    if (!avatar) {
+      avatar = db.users[userIndex].avatar;
+    }
+  
     db.users[userIndex] = { id, ...user, avatar };
     writeToDB();
   },
+  
 
   delete: (id) => {
     const userIndex = db.users.findIndex(user => user.id === id);

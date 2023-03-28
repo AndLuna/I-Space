@@ -30,13 +30,14 @@
             <div style="width: 16px"></div>
             <div class="column">
               <div class="label">Avatar</div>
-              <input type="file" name="avatar" required>
+              <input type="file" name="avatar" <%= required ? 'required' : '' %>>
             </div>
           </div>
         <% } else { %>
           <div class="label">Avatar</div>
           <input type="file" name="avatar" required>
         <% } %>
+        
 
         <div style="height: 24px"></div>
 
