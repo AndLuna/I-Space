@@ -12,6 +12,18 @@
     >
       <div class="column">
         <!-- <a class="go-back" href="/users/"><i class="fas fa-chevron-left"></i> Voltar</a> -->
+      
+        <div style="height: 18px"></div>
+        <div class="label">Nome</div>
+        <input type="text" name="name" required value="<%= user ? user.name : '' %>">
+        <div style="height: 18px"></div>
+        <div class="label">Email</div>
+        <input type="text" name="email" required value="<%= user ? user.email : '' %>">
+        <div style="height: 24px"></div>
+        <div class="label">Senha</div>
+        <input type="text" name="password" required value="<%= user ? user.password : '' %>">
+        <div style="height: 24px"></div>
+
         <% if(user) { %>
           <div class="row">
             <img class="avatar" width="49px" height="49px" src="/uploads/<%= user.avatar %>"/>
@@ -25,16 +37,9 @@
           <div class="label">Avatar</div>
           <input type="file" name="avatar" required>
         <% } %>
-        <div style="height: 18px"></div>
-        <div class="label">Nome</div>
-        <input type="text" name="name" required value="<%= user ? user.name : '' %>">
-        <div style="height: 18px"></div>
-        <div class="label">Email</div>
-        <input type="text" name="email" required value="<%= user ? user.email : '' %>">
+
         <div style="height: 24px"></div>
-        <div class="label">Senha</div>
-        <input type="password" name="password" required value="<%= user ? user.password : '' %>">
-        <div style="height: 24px"></div>
+
         <button class="button bg-success">
           <i class="fas fa-save"></i>
         </button>
