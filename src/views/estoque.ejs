@@ -68,11 +68,42 @@
             display: flex;
             flex-direction: column;
           }
+          aside {
+            margin-left: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            width: 150px;
+          }
+    
+          aside ul {
+            margin: 0;
+            padding: 0;
+          }
+    
+          aside li {
+            margin-bottom: 10px;
+          }
+    
+          aside a {
+            display: block;
+            padding: 5px;
+          }
+    
+          aside a.active {
+            background-color: #ddd;
+            font-weight: bold;
+          }
+          main{
+            display: flex;
+          }
       </style>
       
   </head>
 
   <body>
+    <%- include('partials/header') %>
+
+    <main>
     <div class="estoque">
     <h1>Estoque</h1> 
     
@@ -81,33 +112,63 @@
                 Criar novo item 
             </button>
                  </a>     
+                 <aside>
+                  <h2>Filtros</h2>
+                  <ul>
+                    <li><a href="#" data-type="all">Todos</a></li>
+                    <li><a href="#" data-type="iphone">iPhone</a></li>
+                    <li><a href="#" data-type="mac">Mac</a></li>
+                    <li><a href="#" data-type="ipad">iPad</a></li>
+                    <li><a href="#" data-type="watch">Watch</a></li>
+                  </ul>
+                </aside>
     </div>
-   
 
+    
     <div class="container">
-        <% products.forEach(function(product) { %>
-        
-            <ul>
-                <li>
-                    <a href="/product/detail/<%= product.id %>">
-                        <img src="<%= '/images/produtos/' + product.image %>" alt="<%= product.name %>">
-                       
-                    </a>
-                    <h2><%= product.name %></h2>
-                    <p>Preço: R$<%= toThousand(product.price) %></p>
-
-                    <form action="/product/update/<%= product.id %>" method="get">
-                        <input type="hidden" name="_method" value="PUT" />
-                        <button type="submit">Editar</button>
-                    </form>
-
-                    <form action="/product/<%= product.id %>?_method=DELETE" method="POST" style="display: inline-flex">
-                        <button type="submit" class="action-button-delete">Remover Produto</button>
-                    </form>
-                </li>
-            </ul>
-
-        <% }); %>
+      <% products.forEach(function(product) { %>
+        <ul class="product-list" data-type="<%= product.type %>">
+          <li>
+            <a href="/product/detail/<%= product.id %>">
+              <img src="<%= '/images/produtos/' + product.image %>" alt="<%= product.name %>">
+            </a>
+            <h2><%= product.name %></h2>
+            <p>Preço: R$<%= toThousand(product.price) %></p>
+            <form action="/product/update/<%= product.id %>" method="get">
+              <input type="hidden" name="_method" value="PUT" />
+              <button type="submit">Editar</button>
+            </form>
+            <form action="/product/<%= product.id %>?_method=DELETE" method="POST" style="display: inline-flex">
+              <button type="submit" class="action-button-delete">Remover Produto</button>
+            </form>
+          </li>
+        </ul>
+      <% }); %>
     </div>
+  </main>
+    <script>
+      const filterLinks = document.querySelectorAll('aside a');
+      const productLists = document.querySelectorAll('.product-list');
+    
+      // Adiciona um ouvinte de eventos para cada link de filtro
+      filterLinks.forEach(link => {
+        link.addEventListener('click', (event) => {
+          event.preventDefault();
+    
+          const type = link.dataset.type;
+    
+          // Mostra ou oculta cada lista de produtos com base no tipo selecionado
+          productLists.forEach(list => {
+            if (type === 'all' || list.dataset.type === type) {
+              list.style.display = 'block';
+            } else {
+              list.style.display = 'none';
+            }
+          });
+        });
+      });
+    </script>
+ 
+    <%- include('partials/footer') %>
   </body>
 </html>
