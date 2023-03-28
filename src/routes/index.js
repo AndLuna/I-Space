@@ -47,6 +47,7 @@ router.get('/cadastro', PagesController.cadastro);
 
 router.get('/login', PagesController.login)
 
-
+// Rota para exibir a lista de produtos na página de estoque em EJS
+router.get('/estoque', productController.showAllEJS);
 
 module.exports = router;

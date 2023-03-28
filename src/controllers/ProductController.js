@@ -127,10 +127,11 @@ const ProductController = {
   
     if (productIndex != -1) {
         products.splice(productIndex, 1)
-        res.redirect('/')
+        res.redirect('/estoque')
     }
     else return res.status(400).json({ error: 'Produto não encontrado.' })
+  }, showAllEJS: (req, res) => {
+    res.render('estoque', { products, toThousand });
   }
-  
-}
+};
 module.exports = ProductController
