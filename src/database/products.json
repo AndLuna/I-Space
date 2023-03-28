@@ -320,7 +320,7 @@
           "armazenamento":"260GB",
           "cor":"prata",
           "price": "7280", 
-          "image": "macenma.png",
+          "image": "ipadmikasa.png",
           "description": "",
           "discount":"10"
         }, 
@@ -332,7 +332,7 @@
       "armazenamento":"64GB",
       "cor":"prata",
       "price": "8599", 
-      "image": "macenma.png",
+      "image": "ipadlevi.png",
       "description": "",
       "discount":"10"
     },
@@ -344,7 +344,7 @@
       "armazenamento":"120GB",
       "cor":"prata",
       "price": "7999", 
-      "image": "macenma.png",
+      "image": "ipademma.png",
       "description": "",
       "discount":"10"
       },
@@ -356,7 +356,7 @@
         "armazenamento":"260GB",
         "cor":"prata",
         "price": "11399", 
-        "image": "macenma.png",
+        "image": "ipadnorman.png",
         "description": "",
         "discount":"10"
       },
@@ -368,7 +368,7 @@
         "armazenamento":"64GB",
         "cor":"prata",
         "price": "3899", 
-        "image": "macenma.png",
+        "image": "ipadray.png",
         "description": "",
         "discount":"10"
       },
@@ -392,7 +392,7 @@
         "armazenamento":"260GB",
         "cor":"prata",
         "price": "5820", 
-        "image": "macenma.png",
+        "image": "macscalubur.png",
         "description": "",
         "discount":"10"
       },
@@ -404,7 +404,7 @@
         "armazenamento":"64GB",
         "cor":"prata",
         "price": "6400", 
-        "image": "macenma.png",
+        "image": "macregalias.png",
         "description": "",
         "discount":"10"
       },
@@ -416,7 +416,7 @@
         "armazenamento":"120GB",
         "cor":"prata",
         "price": "8999", 
-        "image": "macenma.png",
+        "image": "macsayajin.png",
         "description": "",
         "discount":"10"
       },
@@ -428,7 +428,7 @@
         "armazenamento":"260GB",
         "cor":"prata",
         "price": "8779", 
-        "image": "macenma.png",
+        "image": "macnika.png",
         "description": "",
         "discount":"10"
       },
@@ -440,7 +440,7 @@
         "armazenamento":"64GB",
         "cor":"prata",
         "price": "9569", 
-        "image": "macenma.png",
+        "image": "mackatsuiu.png",
         "description": "",
         "discount":"10"
       },
@@ -452,7 +452,7 @@
           "armazenamento":"120GB",
           "cor":"prata",
           "price": "10489", 
-          "image": "macenma.png",
+          "image": "macroger.png",
           "description": "",
           "discount":"10"
         },
@@ -464,7 +464,7 @@
           "armazenamento":"260GB",
           "cor":"prata",
           "price": "10829", 
-          "image": "macenma.png",
+          "image": "macmadara.png",
           "description": "",
           "discount":"10"
         },
@@ -476,7 +476,7 @@
           "armazenamento":"64GB",
           "cor":"prata",
           "price": "11199", 
-          "image": "macenma.png",
+          "image": "machashirama.png",
           "description": "",
           "discount":"10"
         },
@@ -488,7 +488,7 @@
             "armazenamento":"120GB",
             "cor":"prata",
             "price": "13499", 
-            "image": "macenma.png",
+            "image": "macmanda.png",
             "description": "",
             "discount":"10"
           },
@@ -500,7 +500,7 @@
             "armazenamento":"260GB",
             "cor":"prata",
             "price": "12149", 
-            "image": "macenma.png",
+            "image": "macrikudou.png",
             "description": "",
             "discount":"10"
           }, 
@@ -512,43 +512,43 @@
         "armazenamento":"64GB",
         "cor":"prata",
         "price": "12999", 
-        "image": "macenma.png",
+        "image": "mac444.png",
         "description": "",
         "discount":"10"
       },
       {
           "id": "43",
           "type":"mac",
-          "name": "Mac Gon",
+          "name": "IMac Gon",
           "modelo": "modelo-1",
           "armazenamento":"120GB",
           "cor":"prata",
           "price": "13599", 
-          "image": "macenma.png",
+          "image": "imacdeidara.png",
           "description": "",
           "discount":"10"
         },
         {
           "id": "44",
           "type":"mac",
-          "name": "Mac Killua",
+          "name": "IMac Killua",
           "modelo": "modelo-1",
           "armazenamento":"260GB",
           "cor":"prata",
           "price": "13789", 
-          "image": "macenma.png",
+          "image": "imackonan.png",
           "description": "",
           "discount":"10"
         },
         {
           "id": "45",
           "type":"mac",
-          "name": "Mac Hisoka",
+          "name": "IMac Hisoka",
           "modelo": "modelo-1",
           "armazenamento":"64GB",
           "cor":"prata",
           "price": "13999", 
-          "image": "macenma.png",
+          "image": "imacpain.png",
           "description": "",
           "discount":"10"
         },
@@ -560,7 +560,7 @@
           "armazenamento":"120GB",
           "cor":"prata",
           "price": "4199", 
-          "image": "macenma.png",
+          "image": "Apple Watch Series1.png",
           "description": "",
           "discount":"10"
         },
@@ -572,7 +572,7 @@
           "armazenamento":"260GB",
           "cor":"prata",
           "price": "4580", 
-          "image": "macenma.png",
+          "image": "Apple Watch Series2.png",
           "description": "",
           "discount":"10"
         },
@@ -584,7 +584,7 @@
           "armazenamento":"64GB",
           "cor":"prata",
           "price": "4899", 
-          "image": "macenma.png",
+          "image": "Apple Watch Series3.png",
           "description": "",
           "discount":"10"
         },
@@ -596,7 +596,7 @@
           "armazenamento":"120GB",
           "cor":"prata",
           "price": "3149", 
-          "image": "macenma.png",
+          "image": "Apple Watch Ultra1.png",
           "description": "",
           "discount":"10"
         },
@@ -608,7 +608,7 @@
           "armazenamento":"260GB",
           "cor":"prata",
           "price": "3489", 
-          "image": "macenma.png",
+          "image": "Apple Watch Ultra2.png",
           "description": "",
           "discount":"10"
         },
@@ -620,7 +620,7 @@
           "armazenamento":"65GB",
           "cor":"prata",
           "price": "3999", 
-          "image": "macenma.png",
+          "image": "Apple Watch Ultra3.png",
           "description": "",
           "discount":"10"
         },
@@ -632,7 +632,7 @@
             "armazenamento":"120GB",
             "cor":"prata",
             "price": "8100", 
-            "image": "macenma.png",
+            "image": "Apple Watch Nike1.png",
             "description": "",
             "discount":"10"
           },
@@ -644,7 +644,7 @@
             "armazenamento":"260GB",
             "cor":"prata",
             "price": "8599", 
-            "image": "macenma.png",
+            "image": "Apple Watch Nike2.png",
             "description": "",
             "discount":"10"
           },
@@ -656,7 +656,7 @@
             "armazenamento":"64GB",
             "cor":"prata",
             "price": "8789", 
-            "image": "macenma.png",
+            "image": "Apple Watch Nike3.png",
             "description": "",
             "discount":"10"
           },
@@ -668,7 +668,7 @@
               "armazenamento":"120GB",
               "cor":"prata",
               "price": "6499", 
-              "image": "macenma.png",
+              "image": "Apple Watch Look1.png",
               "description": "",
               "discount":"10"
             },
@@ -680,7 +680,7 @@
               "armazenamento":"260GB",
               "cor":"prata",
               "price": "6799", 
-              "image": "macenma.png",
+              "image": "Apple Watch Look2.png",
               "description": "",
               "discount":"10"
             }, 
@@ -692,7 +692,7 @@
           "armazenamento":"64GB",
           "cor":"prata",
           "price": "7899", 
-          "image": "macenma.png",
+          "image": "Apple Watch Look3.png",
           "description": "",
           "discount":"10"
         },
@@ -704,7 +704,7 @@
             "armazenamento":"120GB",
             "cor":"prata",
             "price": "7599", 
-            "image": "macenma.png",
+            "image": "Apple Watch omega1.png",
             "description": "",
             "discount":"10"
           },
@@ -716,7 +716,7 @@
             "armazenamento":"260GB",
             "cor":"prata",
             "price": "8100", 
-            "image": "macenma.png",
+            "image": "Apple Watch omega2.png",
             "description": "",
             "discount":"10"
           },
@@ -728,7 +728,7 @@
             "armazenamento":"64GB",
             "cor":"prata",
             "price": "8899", 
-            "image": "macenma.png",
+            "image": "Apple Watch omega3.png",
             "description": "",
             "discount":"10"
           }
