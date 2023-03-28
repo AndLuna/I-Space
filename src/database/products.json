@@ -32,7 +32,7 @@
     "modelo": "modelo-2",
     "type": "iphone",
     "armazenamento": "260GB",
-    "cor": "Azul",
+    "cor": "azul",
     "discount": "10"
   },
   {
@@ -44,7 +44,7 @@
     "image": "iphonerasenganplus.png",
     "type": "iphone",
     "armazenamento": "64GB",
-    "cor": "Vermelho",
+    "cor": "vermelho",
     "discount": "15"
   },
   {
@@ -56,7 +56,7 @@
     "image": "iphonerasenganultra.png",
     "type": "iphone",
     "armazenamento": "120GB",
-    "cor": "Azul",
+    "cor": "azul",
     "discount": "10"
   },
   {
@@ -68,7 +68,7 @@
     "image": "tendencia2.png",
     "type": "iphone",
     "armazenamento": "260GB",
-    "cor": "Prata",
+    "cor": "prata",
     "discount": "50"
   },
   {
@@ -80,7 +80,7 @@
     "image": "iphonezenin.png",
     "type": "iphone",
     "armazenamento": "64GB",
-    "cor": "Preto",
+    "cor": "preto",
     "discount": "10"
   },
   {
@@ -92,7 +92,7 @@
     "image": "iphonegojo.png",
     "type": "iphone",
     "armazenamento": "120GB",
-    "cor": "Prata",
+    "cor": "prata",
     "discount": "20"
   },
   {
@@ -104,7 +104,7 @@
     "image": "iphonekamo.png",
     "type": "iphone",
     "armazenamento": "260GB",
-    "cor": "Prata",
+    "cor": "prata",
     "discount": "10"
   },
   {
@@ -116,7 +116,7 @@
     "image": "ofertas3.png",
     "type": "iphone",
     "armazenamento": "64GB",
-    "cor": "Prata",
+    "cor": "prata",
     "discount": "10"
   },
   {
@@ -128,7 +128,7 @@
     "image": "home1.png",
     "type": "iphone",
     "armazenamento": "120GB",
-    "cor": "Prata"
+    "cor": "prata"
   },
   {
     "id": "12",
@@ -139,7 +139,7 @@
     "image": "ofertas1.png",
     "type": "iphone",
     "armazenamento": "260GB",
-    "cor": "Preto"
+    "cor": "preto"
   },
   {
     "id": "13",
@@ -150,7 +150,7 @@
     "image": "hokageskakashi.png",
     "type": "iphone",
     "armazenamento": "64GB",
-    "cor": "Azul"
+    "cor": "azul"
   },
   {
     "id": "14",
@@ -161,7 +161,7 @@
     "image": "hokagesnaruto.png",
     "type": "iphone",
     "armazenamento": "120GB",
-    "cor": "Vermelho"
+    "cor": "vermelho"
   },
   {
     "id": "15",
@@ -172,7 +172,7 @@
     "image": "hokagestsunade.png",
     "type": "iphone",
     "armazenamento": "260GB",
-    "cor": "Vermelho"
+    "cor": "vermelho"
   },
 
   {
@@ -181,7 +181,7 @@
     "name": "ipad Sharingan",
     "modelo": "modelo-1",
     "armazenamento": "64GB",
-    "cor": "Azul",
+    "cor": "azul",
     "price": "4599",
     "image": "ipadkillua.png",
     "description": "ipad Sharingan (64gb) azul",
@@ -193,7 +193,7 @@
     "name": "ipad Rinnegan",
     "modelo": "modelo-1",
     "armazenamento": "120GB",
-    "cor": "Azul",
+    "cor": "azul",
     "price": "4789",
     "image": "ipadhisoka.png",
     "description": "ipad Rinnegan (120gb) azul",
@@ -209,7 +209,7 @@
     "image": "ipadgon.png",
     "modelo": "modelo-1",
     "armazenamento": "260GB",
-    "cor": "Preto"
+    "cor": "preto"
   },
   {
     "id": "19",
@@ -217,7 +217,7 @@
     "name": "ipad Gomu Gomu",
     "modelo": "modelo-1",
     "armazenamento": "64GB",
-    "cor": "Azul",
+    "cor": "azul",
     "price": "6200",
     "image": "Iped mini 1.png",
     "description": "ipad Gomu Gomu (64gb) azul",
@@ -229,7 +229,7 @@
     "name": "ipad Hito Hito",
     "modelo": "modelo-1",
     "armazenamento": "120GB",
-    "cor": "Vermelho",
+    "cor": "vermelho",
     "price": "6999",
     "image": "Iped mini2.png",
     "description": "ipad Hito Hito (120gb) vermelho ",
@@ -241,7 +241,7 @@
     "name": "ipad Mera Mera",
     "modelo": "modelo-1",
     "armazenamento": "260GB",
-    "cor": "Prata",
+    "cor": "prata",
     "price": "7199",
     "image": "Iped mini3.png",
     "description": "ipad Mera Mera (260gb) prata",
@@ -253,7 +253,7 @@
     "name": "ipad Revengers",
     "modelo": "modelo-1",
     "armazenamento": "64GB",
-    "cor": "Preto",
+    "cor": "preto",
     "price": "7450",
     "image": "ipadnaoto.png",
     "description": "ipad Revengers (64gb) preto",
@@ -265,7 +265,7 @@
     "name": "ipad One Piece",
     "modelo": "modelo-1",
     "armazenamento": "120GB",
-    "cor": "Preto",
+    "cor": "preto",
     "price": "3599",
     "image": "ipaddraken.png",
     "description": "ipad One Piece (120gb) preto ",
@@ -277,7 +277,7 @@
     "name": "ipad Shingeki",
     "modelo": "modelo-1",
     "armazenamento": "260GB",
-    "cor": "Azul",
+    "cor": "azul",
     "price": "3999",
     "image": "ipadtakemichi.png",
     "description": "ipad Shingeki (260gb) azul",
@@ -289,7 +289,7 @@
     "name": "ipad Rasengan",
     "modelo": "modelo-1",
     "armazenamento": "120GB",
-    "cor": "Preto",
+    "cor": "preto",
     "price": "4199",
     "image": "ipaderen.png",
     "description": "ipad Rasengan (120gb) preto ",
@@ -313,7 +313,7 @@
     "name": "ipad Shanaro",
     "modelo": "modelo-1",
     "armazenamento": "64GB",
-    "cor": "Vermelho",
+    "cor": "vermelho",
     "price": "8599",
     "image": "ipadlevi.png",
     "description": "ipad Shanaro (64gb) vermelho",
@@ -325,7 +325,7 @@
     "name": "ipad Enma ",
     "modelo": "modelo-1",
     "armazenamento": "120GB",
-    "cor": "Preto",
+    "cor": "preto",
     "price": "7999",
     "image": "ipademma.png",
     "description": "ipad Enma (120gb) preto",
@@ -337,7 +337,7 @@
     "name": "ipad Scalibur",
     "modelo": "modelo-1",
     "armazenamento": "260GB",
-    "cor": "Azul",
+    "cor": "azul",
     "price": "11399",
     "image": "ipadnorman.png",
     "description": "ipad Scalibur (260gb) azul",
@@ -373,7 +373,7 @@
     "name": "Mac Kira",
     "modelo": "modelo-1",
     "armazenamento": "260GB",
-    "cor": "Vermelho",
+    "cor": "vermelho",
     "price": "5820",
     "image": "macscalubur.png",
     "description": "Mac Kira (260gb) vermelho",
@@ -385,7 +385,7 @@
     "name": "Mac Near",
     "modelo": "modelo-1",
     "armazenamento": "64GB",
-    "cor": "Vermelho",
+    "cor": "vermelho",
     "price": "6400",
     "image": "macregalias.png",
     "description": "Mac Near (64gb) vermelho",
@@ -433,7 +433,7 @@
     "name": "Mac Tanjiro",
     "modelo": "modelo-1",
     "armazenamento": "120GB",
-    "cor": "Azul",
+    "cor": "azul",
     "price": "10489",
     "image": "macroger.png",
     "description": "Mac Tanjiro (120gb) azul",
@@ -445,7 +445,7 @@
     "name": "Mac Nezuko",
     "modelo": "modelo-1",
     "armazenamento": "260GB",
-    "cor": "Vermelho",
+    "cor": "vermelho",
     "price": "10829",
     "image": "macmadara.png",
     "description": "Mac Nezuko (260gb) vermelho",
@@ -457,7 +457,7 @@
     "name": "Mac Kanao",
     "modelo": "modelo-1",
     "armazenamento": "64GB",
-    "cor": "Azul",
+    "cor": "azul",
     "price": "11199",
     "image": "machashirama.png",
     "description": "Mac Kanao (64gb) azul",
@@ -469,7 +469,7 @@
     "name": "Mac Kamado",
     "modelo": "modelo-1",
     "armazenamento": "120GB",
-    "cor": "Vermelho",
+    "cor": "vermelho",
     "price": "13499",
     "image": "macmanda.png",
     "description": "Mac Kamado (120gb) vermelho",
@@ -517,7 +517,7 @@
     "name": "IMac Killua",
     "modelo": "modelo-1",
     "armazenamento": "260GB",
-    "cor": "Azul",
+    "cor": "azul",
     "price": "13789",
     "image": "imackonan.png",
     "description": "IMac Killua (260gb) azul",
@@ -565,7 +565,7 @@
     "name": "Watch Hagoromo",
     "modelo": "modelo-1",
     "armazenamento": "64GB",
-    "cor": "Vermelho",
+    "cor": "vermelho",
     "price": "4899",
     "image": "Apple Watch Series3.png",
     "description": "Watch Hagoromo (64gb) vermelho",
@@ -601,7 +601,7 @@
     "name": "Watch Yor",
     "modelo": "modelo-1",
     "armazenamento": "64GB",
-    "cor": "Vermelho",
+    "cor": "vermelho",
     "price": "3999",
     "image": "Apple Watch Ultra3.png",
     "description": "Watch Yor (64gb) vermelho ",
@@ -613,7 +613,7 @@
     "name": "Watch Yuta",
     "modelo": "modelo-1",
     "armazenamento": "120GB",
-    "cor": "Azul",
+    "cor": "azul",
     "price": "8100",
     "image": "Apple Watch Nike1.png",
     "description": "Watch Yuta (120gb) azul",
@@ -637,7 +637,7 @@
     "name": "Watch Gojo",
     "modelo": "modelo-1",
     "armazenamento": "64GB",
-    "cor": "Vermelho",
+    "cor": "vermelho",
     "price": "8789",
     "image": "Apple Watch Nike3.png",
     "description": "Watch Gojo (64gb) vermelho",
@@ -661,7 +661,7 @@
     "name": "Watch Itadori",
     "modelo": "modelo-1",
     "armazenamento": "260GB",
-    "cor": "Azul",
+    "cor": "azul",
     "price": "6799",
     "image": "Apple Watch Look2.png",
     "description": "Watch Itadori (260gb) azul ",
