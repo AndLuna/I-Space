@@ -1,7 +1,11 @@
+const express = require('express');
+const methodOverride = require('method-override');
+
 const routes = require('./src/routes');
+const initialRoutes = require('./src/routes/initial.routes');
+const usersRoutes = require('./src/routes/users.routes');
 const path = require("path")
-const express = require('express')
-const methodOverride = require('method-override') // métodos PUT e DELETE
+
 const app = express()
 
 
@@ -21,10 +25,18 @@ app.set("views", path.resolve("src", "views"))
 // liberando acesso a pasta public
 app.use(express.static(path.resolve("public")))
 
+// permitir o uso de req.body
+app.use(express.urlencoded({extended: false}));
+
+
+
 /**
  * Rotas
  */
 app.use(routes)
+app.use('/', initialRoutes);
+app.use('/users', usersRoutes);
+
 
 app.listen(3000, () => {
   console.log('Servidor Rodando!')
