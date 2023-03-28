@@ -98,7 +98,9 @@ const ProductController = {
     const productIndex = products.findIndex(product => String(product.id) === id) // índice
     let productToEdit = products.find(product => product.id == id) // objeto
     
+    // console.log('func ', req.files )
     if (productIndex != -1) {
+      
       if (req.files[0] !== undefined) {
           image = req.files[0].filename
       } else {
@@ -110,7 +112,7 @@ const ProductController = {
         ...req.body,
         image: image
       }
-
+             console.log('productedit ', productToEdit)
       products[productIndex] = productToEdit // atualiza
 
         res.redirect('/')

@@ -13,7 +13,7 @@ const usuariosController = require('../controllers/UsuariosController');
  */
 const storage = multer.diskStorage({
     destination: function(req, file, cb) {
-      cb(null, 'public/images/products')
+      cb(null, 'public/images/produtos')
     },
     filename: function(req, file, cb) {
       cb(null, Date.now() + "-" + file.originalname)
