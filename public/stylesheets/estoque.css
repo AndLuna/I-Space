@@ -102,3 +102,17 @@ li.product-item {
     display: flex;
     margin-top: 15px;
   }
+
+
+  @media screen and (max-width: 768px) {
+    .container, .main-estoque {
+      flex-direction: column;
+    }
+  
+    ul.product-list {
+      width: 100%;
+    }
+
+    
+  }
+  
