@@ -3,6 +3,7 @@
     <%- include('../partials/head') %>
   <!-- </head> -->
   <body>
+    <%- include('../partials/header') %>
     <div class="column">
       <% if (users && users.length > 0) { %>
         <% users.map(user => { %>
@@ -41,5 +42,6 @@
         <i class="fas fa-plus"></i>
       </a>
     </div>
+    <%- include('../partials/footer') %>
   </body>
 </html>
