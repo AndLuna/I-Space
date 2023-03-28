@@ -28,7 +28,7 @@ const UserController = {
     
     User.create(user, avatar);
     
-    res.redirect('/users');
+    res.redirect('/');
   },
   
   update: (req, res) => {
