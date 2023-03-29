@@ -8,52 +8,92 @@
   <style>
     .products-wrapper{
       margin: 130px 0px 130px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .mainCreate{
+       margin: 50px;
+       font-size: 20px;
+  
+    }
+
+    .product-detail{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        
+    }
+    .form01{
+       display: flex;
+       justify-content: center;       
+    }
+    .cardCreate{
+        margin: 10px;
+     
+    }
+    .cardCreate label{
+        margin-right: 50px;
+        width: 40px;
+    }
+    .cardCreate input{
+        width: 250px;
+    }
+
+    .createTitle{
+        font-size: 24px;
+        padding: 30px;
+        
+    }
+    .containertitle{
+        margin: 0 auto;
     }
   </style>
 </head>
 <body>
-  <body>
+  
     <!-- Header -->
     <%- include('partials/header') %>
     <!-- /Header -->
 
-
+<main class="mainCreate">
     <div class="container products-wrapper">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="products-title">Formulário de Inclusão de Produto</h2>
+        <div class="row containertitle">
+            <div class="col-12 createTitle">
+                <h1 class="products-title">Formulário de Inclusão de Produto</h1>
             </div>
         </div>
-        <div class="col-12">
-            <form action="/product" method="POST" enctype="multipart/form-data">
+        <div class="col-12 createFormulario">
+            <form action="/product" method="POST" enctype="multipart/form-data" class="form01">
                 <div class="row product-detail">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 cardCreate">
                         <label for="name" class="form-label">Nome:</label>
                         <input type="text" id="name" name="name" placeholder="Informe o nome do produto" class="form-input">
                     </div>
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 cardCreate">
                         <label for="price" class="form-label">Preço:</label>
                         <input type="number" id="price" name="price" placeholder="Informe o preço do produto" class="form-input">
                     </div>
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 cardCreate">
                         <label for="discount" class="form-label">Desconto:</label>
                         <input type="number" id="discount" name="discount" placeholder="Informe o desconto do produto" class="form-input">
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 cardCreate">
                         <label for="type" class="form-label">Tipo:</label>
                         <input type="text" name="type" id="type" class="form-label" placeholder="iphone/mac/ipad/watch"></input>
                     </div>
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 cardCreate">
                         <label for="image" class="form-label">Imagem:</label>
-                        <input type="file" id="image" name="image" class="form-input">
+                        <input type="file" id="image" name="image" class="form-input input-img">
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 cardCreate">
                         <button type="submit" class="buy-now-button">Salvar</button>
                     </div>
                 </div>
             </form>
         </div>
     </div>
+</main>
       <!-- /todos los productos -->
 
 
@@ -61,5 +101,5 @@
       <%- include('partials/footer') %>
       <!-- /footer -->
   </body>
-</body>
+
 </html>

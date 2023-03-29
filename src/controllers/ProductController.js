@@ -83,7 +83,7 @@ const ProductController = {
       image: image
 		}
     products.push(newProduct)
-    res.redirect('/')
+    res.redirect('estoque')
   },
   // Update form product - View
   updateFormEJS: (req, res) => {
