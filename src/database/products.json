@@ -26,7 +26,11 @@
   {
     "id": "3",
     "name": "iPhone Zoro",
+<<<<<<< HEAD
     "description": "Iphone Zoro (260gb) azul",
+=======
+    "description": "",
+>>>>>>> 32c10c4abf5e48b56dcc0071edafd7a866390949
     "price": "10369",
     "image": "iphonezoro.png",
     "modelo": "modelo-2",
