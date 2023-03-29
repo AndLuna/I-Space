@@ -13,7 +13,6 @@ main { /* campo universal do carrinho*/
     width: 80%;
     height: 100%;
     border-radius: 1%;
-    padding: 1%;
     display: flex;
    
     
@@ -23,10 +22,45 @@ main { /* campo universal do carrinho*/
 }
 
 
-.itemDestaque{
-   
-    background-color: rgb(98, 96, 96);
+.itemDestaque{  
+   display: flex;
+    background-color: rgb(162, 161, 161);
+    margin: 0.2%;
+    flex-grow: 2;
+    flex-direction: column;
+  
+}
+
+.cabecaCarrinho{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    margin: 0.2%;
     flex-grow: 1;
+
+}
+
+.itemvisualizado{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    margin: 0.2%;
+    flex-grow: 6;
+
+}
+
+.prazoEntrega{
+    display:flex ;
+    background-color: rgb(255, 255, 255);
+    margin: 0.2%;
+    flex-grow: 1;
+
+}
+
+.cupons{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    margin: 0.2%;
+    flex-grow: 1;
+
 }
 
 .caixaLista{
