@@ -10,117 +10,67 @@
 <body>
                            <!-- inicio header -->
                            <%- include('partials/header') %>
-    <main>
-        <div class="containner-one">
-            <div class="grade-img-top">
-              <img src="/images/produtos/<%= product.image %>" alt="product image" class="product-detail-img">
+<main>
+    <div class="div-pai">
+        <div class="div-revendedor"> <img src="/images/sela-garantia.png" alt=""> A LOJA GARANTE  <span>  90 DIAS  </span>  DE GARANTIA!</div>
+        <div class="img-columns"> 
+            <div class="img">
+                <img src="/images/image-not-found.jpg" alt="">
             </div>
-        <div class="img-min">
-            <img class="card-min" src="/images/w1.png" alt="">
-            <img class="card-min" src="/images/w2.png" alt="">
-            <img class="card-min" src="/images/w3.png" alt="">
-            <img class="card-min" src="/images/w4.png" alt="">
-            
-        </div>    
 
-
-        </div>
-        <div class="containner-two">
-          
-     <div class="description">
-        
-         <div class="text-details">
-            <h1> <%= product.name %> </h1>
-         </div>
-         <div class="icon-box">
-            <iconify-icon icon="mdi:heart-circle" width="50"></iconify-icon>
-            <iconify-icon icon="material-symbols:share" width="50"></iconify-icon>
-            
-         </div>
-        </div>
-        <div class="ref">
-            <div class="ref-number">
-            <h5>Ref: 222469 </h5>
+            <div class="img">
+                <img src="/images/image-not-found.jpg" alt="">
             </div>
-                <div class="stars">
-                <iconify-icon icon="ic:sharp-star-border" style="color: black;" width="20"></iconify-icon>
-                <iconify-icon icon="ic:sharp-star-border" style="color: black;" width="20"></iconify-icon>
-                <iconify-icon icon="ic:sharp-star-border" style="color: black;" width="20"></iconify-icon>
-                <iconify-icon icon="ic:sharp-star-border" style="color: black;" width="20"></iconify-icon>
-                <iconify-icon icon="ic:sharp-star-border" style="color: black;" width="20"></iconify-icon>
-                </div>
+
+            <div class="img">
+                <img src="/images/image-not-found.jpg" alt="">
             </div>
-            
-            <div class="box-price">
-                <div class="price"><%= product.price %></div>
-                <div class="second-price">à vista</div>
+
+            <div class="img">
+                <img src="/images/image-not-found.jpg" alt="">
             </div>
-            <div class="second-box-price">ou <strong>12x </strong> de <strong> R$ 858,25</strong></div>
 
-        <div class="installment">
-            <h4>ou em 21x de R$ 490,43 no cartão Bradesco    </h4>
+            <div class="img">
+                <img src="/images/image-not-found.jpg" alt="">
+            </div>
         </div>
-        <div class="installment">
-            <h4>ou em 15x de R$ 686,60 no cartão Banco do Brasil</h4>
-        </div>
-        <div class="link-installment">
-            <a href="#">Ver mais formas de pagamento em até 12x </a>
-        </div>
-        <label class="label-cep" for="cep">Calcular o prazo de entrega</label>
-           <div class="cep"> 
-            <input class="input-cep" id="cep" type="text">
-            <button>Calcular</button>
-        </div>
-        <div class="colors">
-           <div class="add-color">Escolha a cor</div>
-            <button class="button-cor" ></button>
-        </div>
-        <div class="size">
-           <div class="add-size">Escolha o Tamanho</div>
-            <button class="button-size" >49 mm</button>
-        </div>
-        <div class="conect">
-            <div class="add-conect">Escolha a Conectividade</div>
-            <button class="button-conect">GPS + Cellular</button>
-        </div>
-        <div class="add-box">
-            <button class="button-add" >
-                Adicionar ao carrinho
-            </button>
-
-           
-           <a href="/product/update/<%= product.id %>">
-             <button class="action-button-edit " > 
-                Alterar 
-            </button> </a>
-          
-            <form action="/product/<%= product.id %>?_method=DELETE" method="POST" style="display: inline-flex">
-                <button type="submit" class="action-button-delete">Remover Produto</button>
-              </form>
-          
-                     
+        <div class="div-img-produto">
+            <img src="/images/produtos/<%= product.image %>" alt="" srcset="">
         </div>
 
+        <div class="detalhes-produto">
+            <h1><%= product.name %></h1>
+            <small class="small1">Vendido e entregue por I-Place</small>
+            <small class="small2">Ver detalhes do vendedor</small>
+            <div class="div-div2"></div>
+        <div class="div-price">
+            <small>por </small><span class="value"><%= Number(product.price).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })%></span>
+            <small class="small-parcelas"><span class="quantidade-parcelas">10x</span> de <span class="span-valor"><%= Number(product.price / 10).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) %></span> sem juros no cartão</small>
         </div>
-   
+        <div class="div-div2"></div>
+        <div class="div-armazenamento">
+            <h2>Armazenamento</h2>
+            <div>8GB</div>
+            <div>16GB</div>
+            <div>32GB</div>
+            <div>64GB</div>
+            <div>128GB</div>
+            <div>240GB</div>
+        </div>
+        <div class="comprar-carrinho">
+            <button class="button-comprar">COMPRAR</button>
+            <button class="button-carrinho">ADICIONAR AO CARRINHO</button>
+        </div>
 
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </main>
+</div>
+<div class="div-carrossel-products">
+    <h2>Conheça mais lançamentos</h2>
+        <div class="div-div"></div>
+<%- include("partials/carroussel.ejs") %> 
+</div>
+</main>
     <%- include('partials/footer') %>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
