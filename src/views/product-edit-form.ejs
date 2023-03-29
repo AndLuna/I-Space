@@ -11,11 +11,15 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      margin: 0 auto;
+      
     }
 
     .mainCreate{
       margin: 50px;
       font-size: 20px;
+
+
  
    }
    .product-detail{
@@ -56,6 +60,12 @@
 .form-input{
   padding-left: 10px;
 }
+.formCenter{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
   </style>
 </head>
 <body>
@@ -73,7 +83,7 @@
             <h2 class="products-title">Você está editando: <i><%= productToEdit.name %></i></h2>
           </div>
         </div>
-        <div class="col-12">
+        <div class="col-12 formCenter">
           <form action="/product/<%= productToEdit.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
             <div class="row product-detail">
               <div class="col-12 col-md-6 cardCreate">
