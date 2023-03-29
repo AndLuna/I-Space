@@ -115,7 +115,7 @@ const ProductController = {
              console.log('productedit ', productToEdit)
       products[productIndex] = productToEdit // atualiza
 
-        res.redirect('/')
+        res.redirect('/estoque')
     }
     else return res.status(400).json({ error: 'Produto não encontrado.' })
   },
