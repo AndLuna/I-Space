@@ -6,7 +6,7 @@ const multer = require('multer');
 const MainController = require('../controllers/MainController');
 const PagesController = require('../controllers/PagesController');
 const productController = require('../controllers/ProductController');
-const usuariosController = require('../controllers/UsuariosController');
+
 
 /**
  * Multer

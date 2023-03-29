@@ -1,0 +1,118 @@
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ 
+}
+
+ul.product-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  width: 45%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  
+}
+
+li.product-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    border: 1px solid #8a8a8abd;
+    padding: 10px;
+    justify-content: space-between;
+    
+ 
+  }
+  
+  li.product-item img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-right: 10px;
+  }
+  
+  li.product-item h2 {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  li.product-item p {
+    margin: 0;
+  }
+  
+  li.product-item form {
+    display: flex;
+    align-items: center;
+  }
+  
+  li.product-item form button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  
+  li.product-item form:last-child button {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  li.product-item form:last-child button:hover {
+    background-color: #c82333;
+  }
+  .estoque{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  aside.estoque-aside {
+    margin-left: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 150px;
+  }
+
+  aside.estoque-aside ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  aside.estoque-aside li {
+    margin-bottom: 10px;
+  }
+
+  aside.estoque-aside a {
+    display: block;
+    padding: 5px;
+  }
+
+  aside.estoque-aside a.active {
+    background-color: #ddd;
+    font-weight: bold;
+  }
+  .main-estoque{
+    display: flex;
+    margin: 50px 0px 100px 30px;
+   
+  }
+  .botoes{
+    display: flex;
+    margin-top: 15px;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .container, .main-estoque {
+      flex-direction: column;
+    }
+  
+    ul.product-list {
+      width: 100%;
+    }
+
+    
+  }
+  
