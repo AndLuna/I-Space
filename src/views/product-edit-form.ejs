@@ -124,10 +124,14 @@
 								<label for="image" class="form-label">Imagem:</label>
 								<input type="file" id="image" name="image" class="form-input">
 							</div>
-              <div class="col-12 cardCreate">
-                <label for="type" class="form-label">Tipo:</label>
-                <input type="text" name="type" id="type" class="form-label" placeholder="iphone/mac/ipad/watch"></input>
-            </div>
+              <label for="type" class="form-label">Tipo:</label>
+              <select name="type" id="type" class="form-label">
+                <option value="iphone">iPhone</option>
+                <option value="mac">Mac</option>
+                <option value="ipad">iPad</option>
+                <option value="watch">Watch</option>
+              </select>
+              
               <div class="col-12 cardCreate">
                 <button type="submit" class="buy-now-button">Salvar</button>
               </div>
