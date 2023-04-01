@@ -65,19 +65,36 @@ main { /* campo universal do carrinho*/
 }
 
 .caixaLista{
-   background-color: rgb(120, 120, 123);
-   flex-grow: 1;
+    display: flex;
+    background-color: rgb(162, 161, 161);
+    margin: 0.2%;
+    flex-grow: 1;
+    flex-direction: column;
 }
 
 
-.item1{
+.item1{ 
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    margin: 0.6%;
+    flex-grow: 2;
+}
+    
 
+
+
+.item2{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    margin: 0.6%;
+    flex-grow: 11;
 }
 
-.intem2{
-
-}
 
 .item3{
-
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    margin: 0.6%;
+    flex-grow: 2;
 }
+
