@@ -37,15 +37,33 @@
 
           <div class="cabecaCarrinho">Carrinho - I-Space <br> 3 itens adicionados</div>
           <div class="itemvisualizado"> Produto selecionado e detalhado</div>
-          <div class="prazoEntrega">Prazo de entrega - Informe o CEP para consultar: <input type="text" size="10%" max="5%"><input type="button"></div>
-          <div class="cupons">Cupons e vales <br> Insira um cupom válido: <input type="text" size="5%"><input type="button"> </div>
+          <div class="prazoEntrega"> 
+            <form>
+              <label for="prazo">Prazo de entrega :</label>
+              <input type="number" id="prazo" name="prazo" placeholder="Digite o seu CEP!" > <button>Buscar</button>
+             
+            </form>
+            </div>
+          <div class="cupons">
+            <form>
+              <label for="cupom">Cupons e vales :</label> 
+              <input type="text" id="cupom" name="cupom" placeholder="Insira um cupom válido!"> <button>Buscar</button>
+              <label for="utilizar">Deseja utilizar o cupom?</label>
+              <input type="radio" name="utilizar" value="Sim">Sim
+              <input type="radio" name="utilizar" value="Não">Não<br>
+
+            </form>  
+            
+          </div>
 
         </div>
         <ul class="caixaLista">
           
           <li class="item1"> aba vazia por enquanto </li>
           <li class="item2"> itens no carrinho </li>
-          <li class="item3"> finalizar compra </li>
+          <li class="item3"> <button>Finalizar compra</button> <br> 
+            <button>Escolher mais produtos</button>
+            </li>
         </ul>
        </div><!-- //codigo da pagina aqui  -->
 
