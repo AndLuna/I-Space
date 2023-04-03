@@ -98,3 +98,6 @@ main { /* campo universal do carrinho*/
     flex-grow: 2;
 }
 
+button:hover{
+    background-color: rgb(108, 108, 248);
+}
