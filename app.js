@@ -4,6 +4,7 @@ const methodOverride = require('method-override');
 const routes = require('./src/routes/index.routes');
 const initialRoutes = require('./src/routes/initial.routes');
 const usersRoutes = require('./src/routes/users.routes');
+const log = require('./src/middlewares/log')
 const path = require("path")
 
 const app = express()
@@ -28,7 +29,8 @@ app.use(express.static(path.resolve("public")))
 // permitir o uso de req.body
 app.use(express.urlencoded({extended: false}));
 
-
+/* Middleware log acessar as rotas do usuario e registrando no arquivo log.txt */
+app.use(log)
 
 /**
  * Rotas
