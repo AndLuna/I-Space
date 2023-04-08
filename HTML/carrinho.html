@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../public/stylesheets/carrinho.css">
     <link rel="shortcut icon" type="image/png" href="https://img.freepik.com/icones-gratis/maca_318-631468.jpg">
 
+    <scrip async src="carrinho.js"></script>
     <title>Serviços</title>
 </head>
 <body>
@@ -69,8 +70,47 @@
               <option value="pix">Pix</option>
             </select>
           </form> </li>
-          <li class="item2"> itens no carrinho </li>
-          <li class="item3"> <button>Finalizar compra</button> <br> 
+          <li class="item2"> <!-- itens no carrinho  -->
+            <table>
+              <tr>
+                <td>
+                 <img src="/public/images/iphoneAzul.jpg" alt="iphoneAzul">
+                 <Strong>Miniatura</Strong>
+                </td>
+                <td>
+                  <span>valor</span>
+                </td>
+                <td>
+                  <input type="number" min="1">
+                  <button type="button"> Remover</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                 <img src="/public/images/iphoneRed.jpg" alt="iphoneRed">
+                 <Strong>Miniatura</Strong>
+                </td>
+                <td>
+                  <span>valor</span>
+                </td>
+                <td>
+                  <input type="number" min="1">
+                  <button type="button"> Remover</button>
+                </td>
+              </tr>
+              
+            </table>
+          
+          </li>
+          <li class="item3">
+            <tr>
+              <td colspan="3">
+                <strong>Total</strong>
+                <span>valor total</span>
+              </td>
+            </tr>
+             <button>Finalizar compra</button> <br> 
             <button>Escolher mais produtos</button>
             </li>
         </ul>
