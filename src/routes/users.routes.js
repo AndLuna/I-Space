@@ -39,4 +39,6 @@ router.put('/:id', upload.single('avatar'), UserController.update);
 
 router.delete('/:id', UserController.delete);
 
+
+
 module.exports = router;
