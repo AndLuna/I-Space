@@ -11,6 +11,11 @@ const productController = require('../controllers/ProductController');
 /**
  * Multer
  */
+
+const upload = require('../middlewares/upload')
+const log = require('../middlewares/log')
+
+
 const storage = multer.diskStorage({
     destination: function(req, file, cb) {
       cb(null, 'public/images/produtos')
