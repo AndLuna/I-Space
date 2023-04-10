@@ -1,6 +1,5 @@
 var express = require('express');
 const router = express.Router();
-const multer = require('multer');
 
 //criando a const do controller
 const MainController = require('../controllers/MainController');
@@ -8,19 +7,8 @@ const PagesController = require('../controllers/PagesController');
 const productController = require('../controllers/ProductController');
 
 
-/**
- * Multer
- */
-const storage = multer.diskStorage({
-    destination: function(req, file, cb) {
-      cb(null, 'public/images/produtos')
-    },
-    filename: function(req, file, cb) {
-      cb(null, Date.now() + "-" + file.originalname)
-    }
-  })
-  const upload = multer({ storage: storage })
-  
+const upload = require('../middlewares/upload')
+const log = require('../middlewares/log')
 
 // # chamando a primeira pag (Main)
 router.get('/', MainController.index);

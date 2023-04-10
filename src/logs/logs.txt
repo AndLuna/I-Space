@@ -1,0 +1,11 @@
+O usuário acessou a rota: /
+O usuário acessou a rota: /
+O usuário acessou a rota: /productPage/iphone
+O usuário acessou a rota: /stylesheets/header.css
+O usuário acessou a rota: /stylesheets/header.css
+O usuário acessou a rota: /estoque
+O usuário acessou a rota: /stylesheets/header.css
+O usuário acessou a rota: /stylesheets/header.css
+O usuário acessou a rota: /users
+O usuário acessou a rota: /stylesheets/header.css
+O usuário acessou a rota: /stylesheets/header.css
