@@ -11,20 +11,12 @@ const productController = require('../controllers/ProductController');
 /**
  * Multer
  */
-const storage = multer.diskStorage({
-    destination: function(req, file, cb) {
-      cb(null, 'public/images/produtos')
-    },
-    filename: function(req, file, cb) {
-      cb(null, Date.now() + "-" + file.originalname)
-    }
-  })
-  const upload = multer({ storage: storage })
+const upload = require('../middlewares/upload')
   
 
 // # chamando a primeira pag (Main)
 router.get('/', MainController.index);
-
+// 
 
 // GET - EJS Detail producto - View
 router.get('/product/detail/:id', productController.detailEJS)
