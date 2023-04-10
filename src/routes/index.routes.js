@@ -23,7 +23,14 @@ router.get('/productPage/:type', PagesController.productPage);
 router.get('/product/create', productController.createFormEJS)
 router.get('/product/update/:id', productController.updateFormEJS)
 // POST - EJS Create
-router.post('/product', upload.any(), productController.createEJS)
+router.post(
+  '/product', 
+  upload.any(), 
+  body('name')
+  .notEmpty()
+  .withMessage('Nome do produto deve ser informado!'),
+  productController.createEJS
+  )
 // PUT - EJS Update
 router.put('/product/:id', upload.any(), productController.updateEJS)
 // DELETE - EJS Delete
