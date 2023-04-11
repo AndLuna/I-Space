@@ -6,8 +6,7 @@
     <%- include('../partials/header') %>
     <form
       method="POST"
-      action="<%= user ? `/users/${user.id}?_method=PUT` : '/users/' %>"
-      enctype="multipart/form-data"
+      action="/users/create"
       class="form-cad"
     >
       <div class="column">
@@ -15,32 +14,13 @@
       
         <div style="height: 18px"></div>
         <div class="label">Nome</div>
-        <input type="text" name="name" required value="<%= user ? user.name : '' %>">
+        <input type="text" name="name">
         <div style="height: 18px"></div>
         <div class="label">Email</div>
-        <input type="text" name="email" required value="<%= user ? user.email : '' %>">
+        <input type="text" name="email">
         <div style="height: 24px"></div>
         <div class="label">Senha</div>
-        <input type="text" name="password" required value="<%= user ? user.password : '' %>">
-        <div style="height: 24px"></div>
-
-        <% if(user) { %>
-          <div class="row justify-center">
-            <img class="avatar" width="49px" height="49px" src="/uploads/<%= user.avatar %>"/>
-            <div style="width: 16px"></div>
-            <div class="column">
-              <div class="label">Avatar</div>
-              <input type="file" name="avatar" <%= required ? 'required' : '' %>>
-            </div>
-          </div>
-        <% } else { %>
-          <div class="label">Avatar</div>
-          <input type="file" name="avatar" required>
-        <% } %>
-        
-
-        <div style="height: 24px"></div>
-
+        <input type="text" name="pwd">
         <button class="button bg-success">
           <i class="fas fa-save"></i>
         </button>

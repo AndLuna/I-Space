@@ -1,67 +1,96 @@
-const User = require('../models/User');
+const users = require('../database/usuarios.json')
+const bcrypt = require('bcrypt')
+const jwt = require('jsonwebtoken')
 
 const UserController = {
-  index: (req, res) => {
-    const users = User.findAll();
-    res.render('user/index', { users });
-  },
+/*    mostrarId: (req,res) => {
+        const { id } = req.params
 
-  show: (req, res) => {
-    const { id } = req.params;
-    const user = User.findById(id);
-    res.render('user/show', { user });
-  },
+        const showById = produtos.find(item => String(item.id) === id)
 
-  createForm: (req, res) => {
-    res.render('user/form', { user: null });
-  },
+        if(showById){
+        return res.render('detalhes', {showById})
+        } else {
+            res.redirect('/')
+        }
+    }, */
+    viewCriarUsuario: (req, res) => {
+        res.render('user/form')
+    },
+    criarUsuario: (req, res) => {
 
-  editForm: (req, res) => {
-    const { id } = req.params;
-    const user = User.findById(id);
-    const required = user ? false : true; // Se o usuário já existe, não é obrigatório enviar um novo avatar
+        const user = users.find(user => user.email === req.body.email) // verifica se o email ja é existente
 
-    res.render('user/form', { user, required });
-  },
+        if(!user){
 
-  create: (req, res) => {
-    const user = req.body;
-    const avatar = req.file.filename;
+            let newUser = {
+                id: Number(users[users.length - 1].id) + 1,
+                ...req.body
+            }
 
-    User.create(user, avatar);
+            const hash = bcrypt.hashSync(newUser.pwd, 10) // gera o hash da senha
+            newUser.pwd = hash // salva na propriedade senha
+            console.log(newUser)
+            users.push(newUser)
+            res.redirect('/')
+        }else{
+            res.render('user/form')
+        }
+},
+    viewLogin: (req, res) => {
+        res.render('login')
+    },
+    login: (req,res) => {
+        const user = users.find(user => user.email === req.body.email)
 
-    res.redirect('/');
-  },
+        if(user && bcrypt.compareSync(req.body.pwd, user.pwd)){
+            const token = jwt.sign({ id:user.id, email: user.email}, 'segredo')
 
-  update: (req, res) => {
-    const { id } = req.params;
-    const user = req.body;
-    let avatar = '';
-  
-    // Verifica se o usuário está atualizando um registro existente
-    const existingUser = User.findById(id);
-    if (existingUser && existingUser.avatar) {
-      avatar = existingUser.avatar;
+            res.cookie('token', token, {maxAge:2592000000 }) // expira em 30 dias
+
+            res.redirect('/')
+        } else {
+           res.render('login')
+        }
     }
-  
-    if (req.file) {
-      avatar = req.file.filename;
-    }
-  
-    User.update(id, user, avatar);
-  
-    res.redirect('/users');
-  },
-  
 
-  delete: (req, res) => {
-    const { id } = req.params;
+/*,
+    viewEditarProduto:(req, res) => {
+        const { id } = req.params
 
-    User.removeAvatar(id);
-    User.delete(id);
+        const showById = produtos.find(item => String(item.id) === id)
+        return res.render('editar-produto', {showById})
+    },
+    editarProduto: (req, res) => {
+        const { id } = req.params
+        
+        const findIndexProduct = produtos.findIndex(item => String(item.id === id)) // encontrando indice do produto no array
+        let showById = produtos.find(item => item.id == id) // encontrando produto no array
 
-    res.redirect('/users');
-  }
+        if(findIndexProduct != -1){
+            showById = {
+                id: showById.id,
+                name: req.body.name,
+                price: req.body.price,
+                marca: req.body.marca,
+                image: showById.image,
+                tamanhos: showById.tamanhos,
+            }
+            produtos[findIndexProduct] = showById
+            res.redirect('/')
+        }
+    },
+
+    deletarProduto: (req, res) => {
+        const {id} = req.params
+
+        const findIndexProduct = produtos.findIndex(item => String(item.id === id))
+        
+        if(findIndexProduct != -1){
+            produtos.splice(findIndexProduct, 1)
+            res.redirect('/')
+        }
+    } */
 }
 
-module.exports = UserController;
+module.exports = UserController
