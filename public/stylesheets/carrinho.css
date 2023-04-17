@@ -117,13 +117,13 @@ button:hover{
 }
 
 .colunaProduto td{
-    align-self:center ;
+   
+    
 
 }
 
 .prodIdent{
-    display: flex;
-    align-items: center;
+    
 }
 
 .prodImage{
@@ -137,8 +137,8 @@ button:hover{
 }
 .prodValor{
     margin-left: 6px;
-    display: flex;
-    align-items: center;
+    
+
 }
 
 .prodQtd{
