@@ -1,4 +1,5 @@
 const log = require('./src/middlewares/log')
+const cookieParser = require('cookie-parser')
 const express = require('express');
 const methodOverride = require('method-override');
 
@@ -18,6 +19,9 @@ app.use(express.json())
 
 // métodos PUT e DELETE
 app.use(methodOverride('_method'))
+
+app.use(cookieParser())
+
 
 // instanciando como view engine
 app.set("view engine", "ejs")

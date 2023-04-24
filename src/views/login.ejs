@@ -54,20 +54,13 @@
         </div>
 
         <div class="inputs-form-login">
-          <form action="">
-          <label class="label" for="email">E-mail*</label>
-          <input class="input-login" id="email" type="email">
-          
-          <label class="label" for="pass">Senha</label>
-          <input class="input-login" id="pass" type="password">
-
-          <div class="link-login-senha">
-                <a href="">Não sei minha senha</a> 
-                <div class="button-login">
-              <button>Continuar</button>
-                </div>
-          </div> 
-        </form> 
+          <form action="/users/login" method="POST" class="form-input-create-produto">
+            <span>e-mail</span>
+            <input type="email" name="email">
+            <span>senha</span>
+            <input type="password" name="pwd">
+            <button type="submit">Enviar</button>
+        </form>
         </div>
 
    </div>
