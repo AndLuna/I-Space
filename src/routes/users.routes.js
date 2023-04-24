@@ -1,13 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const multer = require('multer');
-
-const { storage } = require('../config/upload');
 
 const UserController = require('../controllers/UserController');
 
 // Inicialização do multer com as configuração de storage
-const upload = multer({ storage });
+const upload = require('../middlewares/upload')
 
 
 //* Rota para listar todos os usuários

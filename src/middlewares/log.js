@@ -2,7 +2,7 @@ const fs = require("fs");
 
 
 const log = (req,res,next) => {
-    const file = 'src\\log\\logs.txt'
+    const file = 'src\\logs\\logs.txt'
 
     if(!fs.existsSync(file))
         fs.writeFileSync(file,'')

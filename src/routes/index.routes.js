@@ -1,6 +1,7 @@
+const { body } = require('express-validator')
+
 var express = require('express');
 const router = express.Router();
-const multer = require('multer');
 
 //criando a const do controller
 const MainController = require('../controllers/MainController');
@@ -8,11 +9,15 @@ const PagesController = require('../controllers/PagesController');
 const productController = require('../controllers/ProductController');
 
 
+
 /**
  * Multer
  */
+
+
 const upload = require('../middlewares/upload')
-  
+const log = require('../middlewares/log')
+
 
 // # chamando a primeira pag (Main)
 router.get('/', MainController.index);
@@ -25,7 +30,14 @@ router.get('/productPage/:type', PagesController.productPage);
 router.get('/product/create', productController.createFormEJS)
 router.get('/product/update/:id', productController.updateFormEJS)
 // POST - EJS Create
-router.post('/product', upload.any(), productController.createEJS)
+router.post(
+  '/product', 
+  upload.any(), 
+  body('name')
+  .notEmpty()
+  .withMessage('Nome do produto deve ser informado!'),
+  productController.createEJS
+  )
 // PUT - EJS Update
 router.put('/product/:id', upload.any(), productController.updateEJS)
 // DELETE - EJS Delete
