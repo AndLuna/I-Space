@@ -72,31 +72,31 @@
           </form> </li>
           <li class="item2"> <!-- itens no carrinho  -->
             <table>
-              <tr>
-                <td>
-                 <img src="/public/images/iphoneAzul.jpg" alt="iphoneAzul">
-                 <Strong>Miniatura</Strong>
+              <tr class="colunaProduto">
+                <td class="prodIdent">
+                 <img class="prodImage" src="/public/images/iphoneAzul.jpg" alt="iphoneAzul">
+                 <Strong class="prodTitulo">Miniatura</Strong>
                 </td>
                 <td>
-                  <span>valor</span>
+                  <span class="prodValor">valor</span>
                 </td>
                 <td>
-                  <input type="number" min="1">
-                  <button type="button"> Remover</button>
+                  <input class="prodQtd" type="number" min="1">
+                  <button class="prodRemove" type="button"> Remover</button>
                 </td>
               </tr>
 
-              <tr>
-                <td>
-                 <img src="/public/images/iphoneRed.jpg" alt="iphoneRed">
-                 <Strong>Miniatura</Strong>
+              <tr class="colunaProduto">
+                <td class="prodIdent">
+                 <img class="prodImage" src="/public/images/iphoneRed.jpg" alt="iphoneRed">
+                 <Strong class="prodTitulo">Miniatura</Strong>
                 </td>
                 <td>
-                  <span>valor</span>
+                  <span class="prodValor">valor</span>
                 </td>
                 <td>
-                  <input type="number" min="1">
-                  <button type="button"> Remover</button>
+                  <input class="prodQtd" type="number" min="1">
+                  <button class="prodRemove" type="button"> Remover</button>
                 </td>
               </tr>
               
@@ -104,14 +104,15 @@
           
           </li>
           <li class="item3">
+            <button class="finalizaBotao">Finalizar compra</button> <br> 
+            <button class="finalizaBotao">Escolher mais produtos</button>
             <tr>
               <td colspan="3">
-                <strong>Total</strong>
-                <span>valor total</span>
+                <strong class="totalTitulo">Total</strong>
+                <span class="valorTotal">v t</span>
               </td>
             </tr>
-             <button>Finalizar compra</button> <br> 
-            <button>Escolher mais produtos</button>
+          
             </li>
         </ul>
        </div><!-- //codigo da pagina aqui  -->

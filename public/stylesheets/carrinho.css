@@ -96,8 +96,80 @@ main { /* campo universal do carrinho*/
     background-color: rgb(255, 255, 255);
     margin: 0.6%;
     flex-grow: 2;
+    border-top: 2px solid rgb(255, 255, 255);
+    text-align: end;
+    justify-content: center;
+    align-items: center;
+   
 }
+
+.totalTitulo{
+    margin-left: 12px;
+}
+
+.valorTotal{
+    margin-left: 6px;
+}
+
 
 button:hover{
     background-color: rgb(108, 108, 248);
+}
+
+.colunaProduto td{
+   
+    
+
+}
+
+.prodIdent{
+    
+}
+
+.prodImage{
+    margin-left: 6px;
+    width: 120px;
+    height: 70px;
+}
+.prodTitulo{
+    margin-left: 6px;
+    font-size: 18px;
+}
+.prodValor{
+    margin-left: 6px;
+    
+
+}
+
+.prodQtd{
+    margin-left: 6px;
+    width: 48px;
+    height: 34px;
+    border-radius: 6px;
+    border: 2px solid #56c5db;
+    text-align: center;
+    background-color: #eee;
+}
+
+.prodRemove{
+    margin-left: 6px;
+    background-color: #ff0000;
+    color: var(--white);
+    padding: 10px 8px;
+    border: 0;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+.prodRemove:hover {
+    filter: brightness(0.8);
+}
+
+.finalizaBotao{
+    margin-left: 6px;
+   
+    height: 34px;
+    border-radius: 6px;
+    border: 2px solid #56c5db;
+    text-align: center;
+    background-color: #eee;
 }
