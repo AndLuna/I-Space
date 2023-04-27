@@ -30,7 +30,6 @@ const UserController = {
 
             const hash = bcrypt.hashSync(newUser.pwd, 10) // gera o hash da senha
             newUser.pwd = hash // salva na propriedade senha
-            console.log(newUser)
             users.push(newUser)
             res.redirect('/')
         }else{
@@ -45,9 +44,8 @@ const UserController = {
 
         if(user && bcrypt.compareSync(req.body.pwd, user.pwd)){
             const token = jwt.sign({ id:user.id, email: user.email}, 'segredo')
-
             res.cookie('token', token, {maxAge:2592000000 }) // expira em 30 dias
-
+            
             res.redirect('/')
         } else {
            res.render('login')
