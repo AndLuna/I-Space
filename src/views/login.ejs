@@ -35,6 +35,14 @@
            </div>
         </div>
 
+        <% if (typeof errors !== 'undefined') { %>
+          <ul class="div-errors">
+            <% for(let error in errors) { %>
+              <li> <%= errors[error].msg %> </li>
+            <% } %>
+          </ul>
+        <% } %>
+  
         <div class="inputs-form-login">
           <form action="/users/login" method="POST" class="form-input-create-produto">
             <span>e-mail</span>

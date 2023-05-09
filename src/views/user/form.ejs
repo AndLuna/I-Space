@@ -3,12 +3,23 @@
     <%- include('../partials/headUser') %>
   <!-- </head> -->
   <body class="body-form">
+
+
     <%- include('../partials/header') %>
+
+    
     <form
-      method="POST"
-      action="/users/create"
-      class="form-cad"
+    method="POST"
+    action="/users/create"
+    class="form-cad"
     >
+    <% if (typeof errors !== 'undefined') { %>
+      <ul class="div-errors" style="color: red;">
+        <% for(let error in errors) { %>
+          <li> <%= errors[error].msg %> </li>
+        <% } %>
+      </ul>
+    <% } %>
       <div class="column" style="margin-bottom: 5rem;">
         <!-- <a class="go-back" href="/users/"><i class="fas fa-chevron-left"></i> Voltar</a> -->
       
