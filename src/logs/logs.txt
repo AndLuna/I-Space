@@ -1928,6 +1928,7 @@ O usuário acessou a rota: /stylesheets/header.css
 O usuário acessou a rota: /public/stylesheets/reset.css
 O usuário acessou a rota: /public//stylesheets/theme.css
 O usuário acessou a rota: /
+<<<<<<< HEAD
 O usuário acessou a rota: /stylesheets/header.css
 O usuário acessou a rota: /public/stylesheets/reset.css
 O usuário acessou a rota: /public//stylesheets/theme.css
@@ -2479,3 +2480,8 @@ O usuário acessou a rota: /public//stylesheets/theme.css
 O usuário acessou a rota: /trending-1.jpg
 O usuário acessou a rota: /public/stylesheets/reset.css
 O usuário acessou a rota: /public//stylesheets/theme.css
+=======
+O usuário acessou a rota: /
+O usuário acessou a rota: /
+O usuário acessou a rota: /
+>>>>>>> 5300cb0a4c0e96150bcdfd459663d37300c72854

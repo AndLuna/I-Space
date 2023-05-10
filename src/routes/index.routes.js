@@ -9,13 +9,20 @@ const PagesController = require('../controllers/PagesController');
 const productController = require('../controllers/ProductController');
 
 
+
+/**
+ * Multer
+ */
+
+
 const upload = require('../middlewares/upload')
 const log = require('../middlewares/log')
 const auth = require('../middlewares/auth')
 
+
 // # chamando a primeira pag (Main)
 router.get('/', MainController.index);
-
+// 
 
 // GET - EJS Detail producto - View
 router.get('/product/detail/:id', productController.detailEJS)
