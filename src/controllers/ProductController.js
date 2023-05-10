@@ -7,142 +7,127 @@ const {Product} = require('../models')
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")
 
 const ProductController = {
-  // showAll é responsável por retornar todos os produtos em formato JSON. 
-  // e da uma resposta res para enviar a lista de produtos em formato JSON.
+	detailEJS: async(req, res) => {
 
-  // showByID é responsável por retornar um produto específico com base no id fornecido na URL
-  showById: async (req, res) => {
     const id = req.params.id
 
     try {
-      
       const product = await Product.findByPk(id)
 
-      res.render('detail', { product, toThousand })
-
+      res.render('detail', {
+        product, toThousand
+      })
 
     } catch (error) {
       res.status(400).json({error})
     }
 
-  }, create: (req, res) => {
-    products.push(req.body)
-    res.json(products)
-  },
-  update: (req, res) => {
-    const { id } = req.params
-    
-    const productIndex = products.findIndex(product => String(product.id) === id)
-  
-    if (productIndex != -1) {
-        products[productIndex] = req.body
-        return res.json(products)
-    }
-    else return res.status(400).json({ error: 'Produto não encontrado.' })
-  },
-  delete: (req, res) => {
-    const { id } = req.params
-    
-    const productIndex = products.findIndex(product => String(product.id) === id)
-  
-    if (productIndex != -1) {
-        products.splice(productIndex, 1)
-        return res.json(products)
-    }
-    else return res.status(400).json({ error: 'Produto não encontrado.' })
-  },
-
-  /**
-   * EJS
-   */
-  // Detail from one product
-
-  // Detail do produto pela id
-  // é responsável por renderizar a página de detalhes de um produto específico. 
-  //ele extrai o id da requisição req e pesquisa na lista de produtos para encontrar um produto com um id correspondente.
-	detailEJS: (req, res) => {
-
-    //A variável id recebe o valor de req.params.id, que é o valor do id do produto passado pela solicitação do cliente. Em seguida, a função find é usada para procurar na matriz de produtos um objeto cuja propriedade id seja igual ao valor da variável id
-		let id = req.params.id
-		let product = products.find(product => product.id == id)
-		res.render('detail', {
-			product,
-			toThousand
-		})
 	},
-   // Create form product - View
+   
    createFormEJS: (req, res) => {
     res.render('product-create-form')
   },
   // Create product
-  createEJS: (req, res) => {
+  createEJS: async(req, res) => {
     let image = ''
 
     const errors = validationResult(req)
-    if(!errors.isEmpty())
-    res.render('product-create-form' , { errors: errors.mapped() }) // ou arrey()
+    if (!errors.isEmpty())
+        res.render('product-create-form', { errors: errors.mapped() }) // ou array()
 
-    if (req.files[0] !== undefined) {
-        image = req.files[0].filename
-    } else {
-        image = 'default-image.png'
-    }
-
-    let newProduct = {
-			id: Number(products[products.length - 1].id) + 1,
-			...req.body,
-      image: image
-		}
-    products.push(newProduct)
-    res.redirect('estoque')
-  },
-  // Update form product - View
-  updateFormEJS: (req, res) => {
-    let id = req.params.id
-		let productToEdit = products.find(product => product.id == id)
-		res.render('product-edit-form', { productToEdit })
-  },
-  // Update product
-  updateEJS: (req, res) => {
-    const { id } = req.params
-    let image = ''
-    const productIndex = products.findIndex(product => String(product.id) === id) // índice
-    let productToEdit = products.find(product => product.id == id) // objeto
-    
-    // console.log('func ', req.files )
-    if (productIndex != -1) {
-      
+    try {
       if (req.files[0] !== undefined) {
-          image = req.files[0].filename
+        image = req.files[0].filename
       } else {
-          image = productToEdit.image
+        image = 'default-image.png'
       }
-
-      productToEdit = {
-        id: productToEdit.id,
+      
+      let newProduct = {
         ...req.body,
         image: image
       }
-             console.log('productedit ', productToEdit)
-      products[productIndex] = productToEdit // atualiza
 
-        res.redirect('/estoque')
+      await Product.create(newProduct) // cria o registro no banco de dados
+
+      res.redirect('/')
+    } catch (error) {
+      res.status(400).json({ error })
     }
-    else return res.status(400).json({ error: 'Produto não encontrado.' })
+  },
+  // Update form product - View
+  updateFormEJS: async (req, res) => {
+    const id = req.params.id
+
+    try {
+      const productToEdit = await Product.findByPk(id)
+
+      res.render('product-edit-form', { productToEdit })
+    } catch (error) {
+      res.status(400).json({ error })
+    }
+  },
+  // Update product
+  updateEJS: async (req, res) => {
+    const { id } = req.params
+    let image = ''
+    
+    try {
+      const productToEdit = await Product.findByPk(id)
+    
+      if (productToEdit != undefined) {
+          if (req.files[0] !== undefined) {
+              image = req.files[0].filename
+          } else {
+              image = productToEdit.image
+          }
+
+          let product = {
+            ...req.body,
+            image: image
+          }
+
+          await Product.update(
+            product,
+            {
+              where: {
+                id: id
+              }
+            }
+          ) // atualiza o registro no banco de dados
+
+          res.redirect('/estoque')
+      } else return res.status(400).json({ error: 'Produto não encontrado.' })
+
+    } catch (error) {
+      res.status(400).json({ error })
+    }  
   },
   // Delete product
-  deleteEJS: (req, res) => {
+  deleteEJS: async(req, res) => {
     const { id } = req.params
-    
-    const productIndex = products.findIndex(product => String(product.id) === id)
-  
-    if (productIndex != -1) {
-        products.splice(productIndex, 1)
-        res.redirect('/estoque')
+
+    try {
+      await Product.destroy({
+        where: {
+          id: id
+        }
+      }) // remove o registro do banco de dados
+
+      res.redirect('/estoque')
+    } catch (error) {
+      res.status(400).json({ error })
     }
-    else return res.status(400).json({ error: 'Produto não encontrado.' })
-  }, showAllEJS: (req, res) => {
-    res.render('estoque', { products, toThousand });
+  }, showAllEJS: async (req, res) => {
+    try {
+      const products = await Product.findAll()
+      
+      res.render('estoque', {
+          products,
+          toThousand
+      });
+  } catch (error) {
+      res.status(400).json({error})
+  }
   }
 };
 module.exports = ProductController
