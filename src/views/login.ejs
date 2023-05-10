@@ -6,29 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/stylesheets/login.css">
     <link rel="stylesheet" href="/stylesheets/reset.css">
-  
-    <title>Document</title>
+
 </head>
 <body>
                         <!-- inicio header -->
-                        <div id="header"></div>
-                        <script>
-                          fetch('../partials/header02.html')
-                            .then(response => response.text())
-                            .then(html => document.getElementById('header').innerHTML = html);
-                        </script> 
-                        <script>
-                            //////// header
-                         
-                          document.addEventListener('click',function(e){
-                           // Hamburger menu
-                           if(e.target.classList.contains('hamburger-toggle')){
-                             e.target.children[0].classList.toggle('active');
-                           }
-                         })   
-                         </script>
-                            <!-- Bootstrap 5 JS -->
-                          <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js'></script>
+                        
                                             <!-- fim header -->
   
     <main>
@@ -53,13 +35,21 @@
            </div>
         </div>
 
+        <% if (typeof errors !== 'undefined') { %>
+          <ul class="div-errors">
+            <% for(let error in errors) { %>
+              <li> <%= errors[error].msg %> </li>
+            <% } %>
+          </ul>
+        <% } %>
+  
         <div class="inputs-form-login">
           <form action="/users/login" method="POST" class="form-input-create-produto">
             <span>e-mail</span>
-            <input type="email" name="email">
+            <input type="email" name="email" id="input-email">
             <span>senha</span>
-            <input type="password" name="pwd">
-            <button type="submit">Enviar</button>
+            <input type="password" name="pwd" id="input-senha">
+            <button type="submit" id="btn-login">Entrar</button>
         </form>
         </div>
 
@@ -71,5 +61,27 @@
 
 
    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
+   <style>
+    .inputs-form-login form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #input-email{
+      width: 20rem;
+    }
+
+    #input-senha{
+      width: 20rem;
+    }
+
+    #btn-login{
+      margin-top: 4rem;
+      width: 10rem;
+    }
+
+   </style>
 </body>
 </html>

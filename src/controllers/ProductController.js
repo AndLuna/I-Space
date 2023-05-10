@@ -1,24 +1,30 @@
 const{ validationResult } = require('express-validator')
+
 const products = require('../database/products.json')
+
+const {Product} = require('../models')
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")
 
 const ProductController = {
   // showAll é responsável por retornar todos os produtos em formato JSON. 
   // e da uma resposta res para enviar a lista de produtos em formato JSON.
-  showAll: (req, res) => {
-    res.json(products)
-  },
 
   // showByID é responsável por retornar um produto específico com base no id fornecido na URL
-  showById: (req, res) => {
-    //const id faz uso da desestruturação e extrai o valor da propriedade id
-    const { id } = req.params    
-    const product = products.find(product => String(product.id) === id)
-    if (product)
-        return res.json(product)
-    //retorna uma resposta de erro com um status HTTP 400 e uma mensagem informando que o produto não foi encontrado.
-    else return res.status(400).json({ error: 'Produto não encontrado.' })
+  showById: async (req, res) => {
+    const id = req.params.id
+
+    try {
+      
+      const product = await Product.findByPk(id)
+
+      res.render('detail', { product, toThousand })
+
+
+    } catch (error) {
+      res.status(400).json({error})
+    }
+
   }, create: (req, res) => {
     products.push(req.body)
     res.json(products)

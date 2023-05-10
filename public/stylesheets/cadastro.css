@@ -196,6 +196,12 @@ header{
         
     }
 
+    .div-errors li{
+        background-color: red;
+        height: 30px;
+        color: red;
+    }
+
     .text-registration h1{
        font-size: 40px;
     }

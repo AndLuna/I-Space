@@ -19,7 +19,9 @@
     "method-override": "^3.0.0",
     "morgan": "~1.9.1",
     "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.2.4",
     "nodemon": "^2.0.21",
+    "sequelize": "^6.31.1",
     "uuidv4": "^6.2.13"
   },
   "description": "https://jolly-tanuki-c72a93.netlify.app/",
@@ -33,5 +35,8 @@
   "bugs": {
     "url": "https://github.com/AndLuna/I-Space/issues"
   },
-  "homepage": "https://github.com/AndLuna/I-Space#readme"
+  "homepage": "https://github.com/AndLuna/I-Space#readme",
+  "devDependencies": {
+    "sequelize-cli": "^6.6.0"
+  }
 }
