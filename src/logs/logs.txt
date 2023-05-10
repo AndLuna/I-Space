@@ -1927,3 +1927,7 @@ O usuário acessou a rota: /trending-1.jpg
 O usuário acessou a rota: /stylesheets/header.css
 O usuário acessou a rota: /public/stylesheets/reset.css
 O usuário acessou a rota: /public//stylesheets/theme.css
+O usuário acessou a rota: /
+O usuário acessou a rota: /
+O usuário acessou a rota: /
+O usuário acessou a rota: /
