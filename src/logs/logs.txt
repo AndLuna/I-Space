@@ -2493,3 +2493,5 @@ O usuário acessou a rota: /
 =======
 >>>>>>> 5300cb0a4c0e96150bcdfd459663d37300c72854
 >>>>>>> f4eef6e6b146a5ac7777e1de4a78523e8784fff2
+O usuário acessou a rota: /
+O usuário acessou a rota: /
