@@ -1,12 +1,21 @@
-const DB = require('../database/products.json');
+
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
+const {Product} = require('../models')
+
 const PagesController = {
-    productPage: (req, res) => {
-        const { type } = req.params;
-        const filteredProducts = DB.filter((product) => product.type === type);
-        const pageTitle = `Apple ${type}`;
-        res.render('productPage', { products: filteredProducts,  pageTitle: pageTitle, type: type, toThousand });
+    productPage: async(req, res) => {
+        try {
+            const products = await Product.findAll()
+            
+            res.render('productPage', {
+                products,
+                toThousand
+            });
+        } catch (error) {
+            res.status(400).json({error})
+        }
+
       },
     sobre: (req, res) => {
         res.render('sobre', {});
