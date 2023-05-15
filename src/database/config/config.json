@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "28613091alsf*#",
-    "database": "livree",
+    "database": "appleSpace",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
