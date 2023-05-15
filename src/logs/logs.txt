@@ -2764,3 +2764,9 @@ O usuário acessou a rota: /stylesheets/header.css
 =======
 >>>>>>> 1894fcb534565e310e42b462e279c6667a4e622d
 >>>>>>> 3abf9a176bc2d7890ff28ec36095a7f1fd4a399f
+O usuário acessou a rota: /
+O usuário acessou a rota: /favicon.ico
+O usuário acessou a rota: /
+O usuário acessou a rota: /
+O usuário acessou a rota: /
+O usuário acessou a rota: /
