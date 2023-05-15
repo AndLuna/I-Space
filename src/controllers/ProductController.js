@@ -1,8 +1,7 @@
 const{ validationResult } = require('express-validator')
 
-const products = require('../database/products.json')
 
-const {Product} = require('../models')
+const {Product, ProductType} = require('../models')
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")
 
@@ -12,14 +11,23 @@ const ProductController = {
     const id = req.params.id
 
     try {
-      const product = await Product.findByPk(id)
-
-      res.render('detail', {
-        product, toThousand
+      const product = await Product.findOne({
+        where: {
+          id: id
+        },
+        include: {
+          model: ProductType,
+          as: 'productType',
+          required: true 
+        }
       })
 
+      res.render('detail', {
+        product,
+        toThousand
+      })
     } catch (error) {
-      res.status(400).json({error})
+      res.send('error')
     }
 
 	},
@@ -33,7 +41,7 @@ const ProductController = {
 
     const errors = validationResult(req)
     if (!errors.isEmpty())
-        res.render('product-create-form', { errors: errors.mapped() }) // ou array()
+        res.render('product-create-form', { errors: errors.mapped() }) 
 
     try {
       if (req.files[0] !== undefined) {
@@ -47,7 +55,7 @@ const ProductController = {
         image: image
       }
 
-      await Product.create(newProduct) // cria o registro no banco de dados
+      await Product.create(newProduct) 
 
       res.redirect('/')
     } catch (error) {
