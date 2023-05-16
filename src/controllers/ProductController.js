@@ -18,7 +18,7 @@ const ProductController = {
         include: {
           model: ProductType,
           as: 'productType',
-          required: true 
+          required: true
         }
       })
 
