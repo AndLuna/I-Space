@@ -38,6 +38,9 @@ const ProductController = {
   // Create product
   createEJS: async(req, res) => {
     let image = ''
+    let productType = Number(req.body.type)
+
+    console.log(typeof productType)
 
     const errors = validationResult(req)
     if (!errors.isEmpty())
@@ -52,7 +55,8 @@ const ProductController = {
       
       let newProduct = {
         ...req.body,
-        image: image
+        image: image,
+        id_product_type: productType
       }
 
       await Product.create(newProduct) 
@@ -88,6 +92,7 @@ const ProductController = {
           } else {
               image = productToEdit.image
           }
+
 
           let product = {
             ...req.body,
